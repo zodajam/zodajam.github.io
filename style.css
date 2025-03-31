@@ -1,0 +1,38 @@
+html, body {
+    overflow: hidden;
+    background-image: url("img/SpaceBackground.png");
+    font-family: fixedsys;
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(font/fixedsys.ttf);
+}
+
+#main {
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("img/planet.png");
+    background-size: cover;
+}
+
+a {
+    color: cyan;
+    position: absolute;
+}
+
+#ankorville {
+    top: 15%;
+    left: 42%;
+    transform: rotateZ(-27deg);
+}
+
+#buhlk {
+    top: 4%;
+    left: 50%;
+    transform: rotatez(30deg);
+}
