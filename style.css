@@ -36,3 +36,9 @@ a {
     left: 50%;
     transform: rotatez(30deg);
 }
+
+#jefrada {
+    top: 29%;
+    left: 44%;
+    transform: rotateZ(-20deg);
+}
