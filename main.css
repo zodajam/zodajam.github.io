@@ -20,7 +20,4 @@ html, body {
     background-size: cover;
 }
 
-a {
-    color: cyan;
-    position: absolute;
-}
+a {position: absolute;}

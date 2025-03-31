@@ -21,3 +21,9 @@
     left: 50%;
     transform: rotateZ(5deg);
 }
+
+#alexandria {
+    top: 20%;
+    left: 49%;
+    transform: rotateZ(45deg);
+}
