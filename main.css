@@ -21,3 +21,13 @@ html, body {
 }
 
 a {position: absolute;}
+
+#cheatsheet {
+    top: 50%;
+    color: cyan;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
