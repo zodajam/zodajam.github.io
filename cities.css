@@ -2,28 +2,33 @@
     top: 15%;
     left: 42%;
     transform: rotateZ(-27deg);
+    color: cyan;
 }
 
 #buhlk {
     top: 4%;
     left: 50%;
     transform: rotatez(30deg);
+    color: chocolate;
 }
 
 #jefrada {
     top: 29%;
     left: 44%;
     transform: rotateZ(-20deg);
+    color: cyan;
 }
 
 #bigl {
     top: 35%;
     left: 50%;
     transform: rotateZ(5deg);
+    color: cyan;
 }
 
 #alexandria {
     top: 20%;
     left: 49%;
     transform: rotateZ(45deg);
+    color: magenta;
 }
