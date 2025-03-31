@@ -24,21 +24,3 @@ a {
     color: cyan;
     position: absolute;
 }
-
-#ankorville {
-    top: 15%;
-    left: 42%;
-    transform: rotateZ(-27deg);
-}
-
-#buhlk {
-    top: 4%;
-    left: 50%;
-    transform: rotatez(30deg);
-}
-
-#jefrada {
-    top: 29%;
-    left: 44%;
-    transform: rotateZ(-20deg);
-}
