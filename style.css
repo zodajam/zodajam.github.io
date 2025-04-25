@@ -32,6 +32,10 @@ html, body {
     #log {
         width: fit-content;
     }
+
+    #phone1, #phone2, #phone3 {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1930px) {
