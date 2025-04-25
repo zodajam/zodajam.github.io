@@ -56,6 +56,7 @@ html, body {
     scrollbar-color: #ff00ff;
 }
 
+pre {font-family: fixedsys;}
 a {color: cyan; font-family: fixedsys;}
 .cyan {color: cyan;}
 
@@ -103,7 +104,7 @@ p{font-family: fixedsys;}
     overflow-y: scroll;
 }
 
-#settings {
+#unlisted {
     display: none;
     background-color: black;
     border: 4px double magenta;
@@ -186,3 +187,7 @@ button {
 }
 
 #canvas {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7xoekfqZxDbkCP6TLChaSoZvhtgWCZpUfnx5rLVtwxe5VqVaqJe55gHdH-A1Fsxos8Ss&usqp=CAU");}
+
+#unlisted {
+    cursor: pointer;
+}

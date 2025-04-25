@@ -1,17 +1,17 @@
-document.getElementById("settingsBtn").onclick = function() {
-    on('settings');
-    on('cover');
-    document.getElementById('cover').onclick = function() {
-        off('settings');
-        off('cover');
-    }
-}
-
 document.getElementById("changelog").onclick = function() {
     on('log');
     on('cover');
     document.getElementById('cover').onclick = function() {
         off('log');
+        off('cover');
+    }
+}
+
+document.getElementById("unlistedBtn").onclick = function() {
+    on('unlisted');
+    on('cover');
+    document.getElementById('cover').onclick = function() {
+        off('unlisted');
         off('cover');
     }
 }
@@ -22,21 +22,6 @@ function on(id) {
 
 function off(id) {
     document.getElementById(id).style.display = "none";
-}
-
-function play(id) {
-    var audio = document.getElementById(id);
-    audio.play();
-    if (audio.paused) {
-        audio.play();
-    }else{
-        audio.currentTime = 0;
-    }
-}
-
-function pause(id) {
-    var audio = document.getElementById(id);
-    audio.pause();
 }
 
 function isMobile() {

@@ -1,0 +1,487 @@
+/*  zodaCSS run by zodajam on GitHub.  
+    This CSS framework is free to use  
+    and you can change it however you  
+    want and make it into your own!    
+                    
+    The colors are taken from 
+    https://htmlcolorcodes.com         */
+
+/*             RED COLORS              */
+.indianred {color: indianred;}
+.lightcoral {color: lightcoral;}
+.salmon {color: salmon;}
+.darksalmon {color: darksalmon;}
+.lightsalmon {color: lightsalmon;}
+.crimson {color: crimson;}
+.red {color: red;}
+.firebrick {color: firebrick;}
+.darkred {color: darkred;}
+
+/*             PINK COLORS              */
+.pink {color: pink;}
+.lightpink {color: lightpink;}
+.hotpink {color: hotpink;}
+.deeppink {color: deeppink;}
+.mediumvioletred {color: mediumvioletred;}
+.palevioletred {color: palevioletred;}
+
+/*             ORANGE COLORS             */
+.coral {color: coral;}
+.tomato {color: tomato;}
+.orangered {color: orangered;}
+.darkorange {color: darkorange;}
+.orange {color: orange;}
+
+/*             YELLOW COLORS             */
+.gold {color: gold;}
+.yellow {color: yellow;}
+.lightyellow {color: lightyellow;}
+.lemonchiffon {color: lemonchiffon;}
+.lightgoldenrodyellow {color: lightgoldenrodyellow;}
+.papayawhip {color: papayawhip;}
+.moccasin {color: moccasin;}
+.peachpuff {color: peachpuff;}
+.palegoldenrod {color: palegoldenrod;}
+.khaki {color: khaki;}
+.darkkhaki {color: darkkhaki;}
+
+/*             PURPLE COLORS             */
+.lavender {color: lavender;}
+.thistle {color: thistle;}
+.plum {color: plum;}
+.violet {color: violet;}
+.orchid {color: orchid;}
+.fuchsia {color: fuchsia;}
+.magenta {color: magenta;}
+.mediumorchid {color: mediumorchid;}
+.mediumpurple {color: mediumpurple;}
+.rebeccapurple {color: rebeccapurple;}
+.blueviolet {color: blueviolet;}
+.darkviolet {color: darkviolet;}
+.darkorchid {color: darkorchid;}
+.darkmagenta {color: darkmagenta;}
+.purple {color: purple;}
+.indigo {color: indigo;}
+.slateblue {color: slateblue;}
+.darkslateblue {color: darkslateblue;}
+.mediumslateblue {color: mediumslateblue;}
+
+/*             GREEN COLORS             */
+.greenyellow {color: greenyellow;}
+.chartreuse {color: chartreuse;}
+.lawngreen {color: lawngreen;}
+.lime {color: lime;}
+.limegreen {color: limegreen;}
+.palegreen {color: palegreen;}
+.lightgreen {color: lightgreen;}
+.mediumspringgreen {color: mediumspringgreen;}
+.springgreen {color: springgreen;}
+.mediumseagreen {color: mediumseagreen;}
+.seagreen {color: seagreen;}
+.forestgreen {color: forestgreen;}
+.green {color: green;}
+.darkgreen {color: darkgreen;}
+.yellowgreen {color: yellowgreen;}
+.olivedrab {color: olivedrab;}
+.olive {color: olive;}
+.darkolivegreen {color: darkolivegreen;}
+.mediumaquamarine {color: mediumaquamarine;}
+.darkseagreen {color: darkseagreen;}
+.lightseagreen {color: lightseagreen;}
+.darkcyan {color: darkcyan;}
+.teal {color: teal;}
+
+/*             BLUE COLORS             */
+.aqua {color: aqua;}
+.cyan {color: cyan;}
+.lightcyan {color: lightcyan;}
+.paleturquoise {color: paleturquoise;}
+.aquamarine {color: aquamarine;}
+.turquoise {color: turquoise;}
+.mediumturquoise {color: mediumturquoise;}
+.darkturquoise {color: darkturquoise;}
+.cadetblue {color: cadetblue;}
+.steelblue {color: steelblue;}
+.lightsteelblue {color: lightsteelblue;}
+.powderblue {color: powderblue;}
+.lightblue {color: lightblue;} 
+.skyblue {color: skyblue;}
+.lightskyblue {color: lightskyblue;}
+.deepskyblue {color: deepskyblue;}
+.dodgerblue {color: dodgerblue;} 
+.cornflowerblue {color: cornflowerblue;}
+.mediumslateblue {color: mediumslateblue;}
+.royalblue {color: royalblue;}
+.blue {color: blue;}
+.mediumblue {color: mediumblue;}
+.darkblue {color: darkblue;}
+.navy {color: navy;}
+.midnightblue {color: midnightblue;}
+
+/*             BROWN COLORS            */
+.cornsilk {color: cornsilk;}
+.blanchedalmond {color: blanchedalmond;}
+.bisque {color: bisque;}
+.navajowhite {color: navajowhite;}
+.wheat {color: wheat;}
+.burlywood {color: burlywood;}
+.tan {color: tan;} 
+.rosybrown {color: rosybrown;}
+.sandybrown {color: sandybrown;}
+.goldenrod {color: goldenrod;}
+.darkgoldenrod {color: darkgoldenrod;}
+.peru {color: peru;}
+.chocolate {color: chocolate;}
+.saddlebrown {color: saddlebrown;}
+.sienna {color: sienna;}
+.brown {color: brown;}
+.maroon {color: maroon;}
+
+/*             WHITE COLORS           */
+.white {color: white;}
+.snow {color: snow;}
+.honeydew {color: honeydew;}
+.mintcream {color: mintcream;}
+.azure {color: azure;}
+.aliceblue {color: aliceblue;}
+.ghostwhite {color: ghostwhite;}
+.whitesmoke {color: whitesmoke;}
+.seashell {color: seashell;}
+.beige {color: beige;}
+.oldlace {color: oldlace;}
+.floralwhite {color: floralwhite;}
+.ivory {color: ivory;}
+.antiquewhite {color: antiquewhite;}
+.linen {color: linen;}
+.lavenderblush {color: lavenderblush;}
+.mistyrose {color: mistyrose;}
+
+/*             GRAY COLORS            */
+.gainsboro {color: gainsboro;}
+.lightgray {color: lightgray;}
+.lightgrey {color: lightgrey;}
+.silver {color: silver;} 
+.darkgray {color: darkgray;}
+.darkgrey {color: darkgrey;}
+.gray {color: gray;}
+.grey {color: grey;}
+.dimgray {color: dimgray;}
+.dimgrey {color: dimgrey;}
+.lightslategray {color: lightslategray;}
+.lightslategrey {color: lightslategrey;}
+.slategray {color: slategray;}
+.slategrey {color: slategrey;}
+.darkslategray {color: darkslategray;}
+.darkslategrey {color: darkslategrey;}
+.black {color: black;}
+
+
+
+
+
+
+/*        RED BACKGROUND COLORS       */
+.bg-indianred {background-color: indianred;}
+.bg-lightcoral {background-color: lightcoral;}
+.bg-salmon {background-color: salmon;}
+.bg-darksalmon {background-color: darksalmon;}
+.bg-lightsalmon {background-color: lightsalmon;}
+.bg-crimson {background-color: crimson;}
+.bg-red {background-color: red;}
+.bg-firebrick {background-color: firebrick;}
+.darkred {background-color: darkred;}
+
+/*        PINK BACKGROUND COLORS      */
+.bg-pink {background-color: pink;}
+.bg-lightpink {background-color: lightpink;}
+.bg-hotpink {background-color: hotpink;}
+.bg-deeppink {background-color: deeppink;}
+.bg-mediumvioletred {background-color: mediumvioletred;}
+.bg-palevioletred {background-color: palevioletred;}
+
+/*        ORANGE BACKGROUND COLORS     */
+.bg-coral {background-color: coral;}
+.bg-tomato {background-color: tomato;}
+.bg-orangered {background-color: orangered;}
+.bg-darkorange {background-color: darkorange;}
+.bg-orange {background-color: orange;}
+
+/*        YELLOW BACKGROUND COLORS     */
+.bg-gold {background-color: gold;}
+.bg-yellow {background-color: yellow;}
+.bg-lightyellow {background-color: lightyellow;}
+.bg-lemonchiffon {background-color: lemonchiffon;}
+.bg-lightgoldenrodyellow {background-color: lightgoldenrodyellow;}
+.bg-papayawhip {background-color: papayawhip;}
+.bg-moccasin {background-color: moccasin;}
+.bg-peachpuff {background-color: peachpuff;}
+.bg-palegoldenrod {background-color: palegoldenrod;}
+.bg-khaki {background-color: khaki;}
+.bg-darkkhaki {background-color: darkkhaki;}
+
+/*        PURPLE BACKGROUND COLORS      */
+.bg-lavender {background-color: lavender;}
+.bg-thistle {background-color: thistle;}
+.bg-plum {background-color: plum;}
+.bg-violet {background-color: violet;}
+.bg-orchid {background-color: orchid;}
+.bg-fuchsia {background-color: fuchsia;}
+.bg-magenta {background-color: magenta;}
+.bg-mediumorchid {background-color: mediumorchid;}
+.bg-mediumpurple {background-color: mediumpurple;}
+.bg-rebeccapurple {background-color: rebeccapurple;}
+.bg-blueviolet {background-color: blueviolet;}
+.bg-darkviolet {background-color: darkviolet;}
+.bg-darkorchid {background-color: darkorchid;}
+.bg-darkmagenta {background-color: darkmagenta;}
+.bg-purple {background-color: purple;}
+.bg-indigo {background-color: indigo;}
+.bg-slateblue {background-color: slateblue;}
+.bg-darkslateblue {background-color: darkslateblue;}
+.bg-mediumslateblue {background-color: mediumslateblue;}
+
+/*         GREEN BACKGROUND COLORS       */
+.bg-greenyellow {background-color: greenyellow;}
+.bg-chartreuse {background-color: chartreuse;}
+.bg-lawngreen {background-color: lawngreen;}
+.bg-lime {background-color: lime;}
+.bg-limegreen {background-color: limegreen;}
+.bg-palegreen {background-color: palegreen;}
+.bg-lightgreen {background-color: lightgreen;}
+.bg-mediumspringgreen {background-color: mediumspringgreen;}
+.bg-springgreen {background-color: springgreen;}
+.bg-mediumseagreen {background-color: mediumseagreen;}
+.bg-seagreen {background-color: seagreen;}
+.bg-forestgreen {background-color: forestgreen;}
+.bg-green {background-color: green;}
+.bg-darkgreen {background-color: darkgreen;}
+.bg-yellowgreen {background-color: yellowgreen;}
+.bg-olivedrab {background-color: olivedrab;}
+.bg-olive {background-color: olive;}
+.bg-darkolivegreen {background-color: darkolivegreen;}
+.bg-mediumaquamarine {background-color: mediumaquamarine;}
+.bg-darkseagreen {background-color: darkseagreen;}
+.bg-lightseagreen {background-color: lightseagreen;}
+.bg-darkcyan {background-color: darkcyan;}
+.bg-teal {background-color: teal;}
+
+/*         BLUE BACKGROUND COLORS       */
+.bg-aqua {background-color: aqua;}
+.bg-cyan {background-color: cyan;}
+.bg-lightcyan {background-color: lightcyan;}
+.bg-paleturquoise {background-color: paleturquoise;}
+.bg-aquamarine {background-color: aquamarine;}
+.bg-turquoise {background-color: turquoise;}
+.bg-mediumturquoise {background-color: mediumturquoise;}
+.bg-darkturquoise {background-color: darkturquoise;}
+.bg-cadetblue {background-color: cadetblue;}
+.bg-steelblue {background-color: steelblue;}
+.bg-lightsteelblue {background-color: lightsteelblue;}
+.bg-powderblue {background-color: powderblue;}
+.bg-lightblue {background-color: lightblue;} 
+.bg-skyblue {background-color: skyblue;}
+.bg-lightskyblue {background-color: lightskyblue;}
+.bg-deepskyblue {background-color: deepskyblue;}
+.bg-dodgerblue {background-color: dodgerblue;} 
+.bg-cornflowerblue {background-color: cornflowerblue;}
+.bg-mediumslateblue {background-color: mediumslateblue;}
+.bg-royalblue {background-color: royalblue;}
+.bg-blue {background-color: blue;}
+.bg-mediumblue {background-color: mediumblue;}
+.bg-darkblue {background-color: darkblue;}
+.bg-navy {background-color: navy;}
+.bg-midnightblue {background-color: midnightblue;}
+
+/*          BROWN BACKGROUND COLORS      */
+.bg-cornsilk {background-color: cornsilk;}
+.bg-blanchedalmond {background-color: blanchedalmond;}
+.bg-bisque {background-color: bisque;}
+.bg-navajowhite {background-color: navajowhite;}
+.bg-wheat {background-color: wheat;}
+.bg-burlywood {background-color: burlywood;}
+.bg-tan {background-color: tan;} 
+.bg-rosybrown {background-color: rosybrown;}
+.bg-sandybrown {background-color: sandybrown;}
+.bg-goldenrod {background-color: goldenrod;}
+.bg-darkgoldenrod {background-color: darkgoldenrod;}
+.bg-peru {background-color: peru;}
+.bg-chocolate {background-color: chocolate;}
+.bg-saddlebrown {background-color: saddlebrown;}
+.bg-sienna {background-color: sienna;}
+.bg-brown {background-color: brown;}
+.bg-maroon {background-color: maroon;}
+
+/*         WHITE BACKGROUND COLORS        */
+.bg-white {background-color: white;}
+.bg-snow {background-color: snow;}
+.bg-honeydew {background-color: honeydew;}
+.bg-mintcream {background-color: mintcream;}
+.bg-azure {background-color: azure;}
+.bg-aliceblue {background-color: aliceblue;}
+.bg-ghostwhite {background-color: ghostwhite;}
+.bg-whitesmoke {background-color: whitesmoke;}
+.bg-seashell {background-color: seashell;}
+.bg-beige {background-color: beige;}
+.bg-oldlace {background-color: oldlace;}
+.bg-floralwhite {background-color: floralwhite;}
+.bg-ivory {background-color: ivory;}
+.bg-antiquewhite {background-color: antiquewhite;}
+.bg-linen {background-color: linen;}
+.bg-lavenderblush {background-color: lavenderblush;}
+.bg-mistyrose {background-color: mistyrose;}
+
+/*          GRAY BACKGROUND COLORS         */
+.bg-gainsboro {background-color: gainsboro;}
+.bg-lightgray {background-color: lightgray;}
+.bg-lightgrey {background-color: lightgrey;}
+.bg-silver {background-color: silver;} 
+.bg-darkgray {background-color: darkgray;}
+.bg-darkgrey {background-color: darkgrey;}
+.bg-gray {background-color: gray;}
+.bg-grey {background-color: grey;}
+.bg-dimgray {background-color: dimgray;}
+.bg-dimgrey {background-color: dimgrey;}
+.bg-lightslategray {background-color: lightslategray;}
+.bg-lightslategrey {background-color: lightslategrey;}
+.bg-slategray {background-color: slategray;}
+.bg-slategrey {background-color: slategrey;}
+.bg-darkslategray {background-color: darkslategray;}
+.bg-darkslategrey {background-color: darkslategrey;}
+.bg-black {background-color: black;}
+
+
+
+/*          TEXT CONFIGURATIONS           */
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.text-left {text-align: left;}
+
+/*          TEXT SIZES                    */
+.text-1 {font-size: 1px;}
+.text-2 {font-size: 2px;}
+.text-3 {font-size: 3px;}
+.text-4 {font-size: 4px;}
+.text-5 {font-size: 5px;}
+.text-6 {font-size: 6px;}
+.text-7 {font-size: 7px;}
+.text-8 {font-size: 8px;}
+.text-9 {font-size: 9px;}
+.text-10 {font-size: 10px;}
+.text-11 {font-size: 11px;}
+.text-12 {font-size: 12px;}
+.text-13 {font-size: 13px;}
+.text-14 {font-size: 14px;}
+.text-15 {font-size: 15px;}
+.text-16 {font-size: 16px;}
+.text-17 {font-size: 17px;}
+.text-18 {font-size: 18px;}
+.text-19 {font-size: 19px;}
+.text-20 {font-size: 20px;}
+.text-21 {font-size: 21px;}
+.text-22 {font-size: 22px;}
+.text-23 {font-size: 23px;}
+.text-24 {font-size: 24px;}
+.text-25 {font-size: 25px;}
+.text-26 {font-size: 26px;}
+.text-27 {font-size: 27px;}
+.text-28 {font-size: 28px;}
+.text-29 {font-size: 29px;}
+.text-30 {font-size: 30px;}
+.text-31 {font-size: 31px;}
+.text-32 {font-size: 32px;}
+.text-33 {font-size: 33px;}
+.text-34 {font-size: 34px;}
+.text-35 {font-size: 35px;}
+.text-36 {font-size: 36px;}
+.text-37 {font-size: 37px;}
+.text-38 {font-size: 38px;}
+.text-39 {font-size: 39px;}
+.text-40 {font-size: 40px;}
+.text-41 {font-size: 41px;}
+.text-42 {font-size: 42px;}
+.text-43 {font-size: 43px;}
+.text-44 {font-size: 44px;}
+.text-45 {font-size: 45px;}
+.text-46 {font-size: 46px;}
+.text-47 {font-size: 47px;}
+.text-48 {font-size: 48px;}
+.text-49 {font-size: 49px;}
+.text-50 {font-size: 50px;}
+.text-51 {font-size: 51px;}
+.text-52 {font-size: 52px;}
+.text-53 {font-size: 53px;}
+.text-54 {font-size: 54px;}
+.text-55 {font-size: 55px;}
+.text-56 {font-size: 56px;}
+.text-57 {font-size: 57px;}
+.text-58 {font-size: 58px;}
+.text-59 {font-size: 59px;}
+.text-60 {font-size: 60px;}
+.text-61 {font-size: 61px;}
+.text-62 {font-size: 62px;}
+.text-63 {font-size: 63px;}
+.text-64 {font-size: 64px;}
+.text-65 {font-size: 65px;}
+.text-66 {font-size: 66px;}
+.text-67 {font-size: 67px;}
+.text-68 {font-size: 68px;}
+.text-69 {font-size: 69px;}
+.text-70 {font-size: 70px;}
+.text-71 {font-size: 71px;}
+.text-72 {font-size: 72px;}
+.text-73 {font-size: 73px;}
+.text-74 {font-size: 74px;}
+.text-75 {font-size: 75px;}
+.text-76 {font-size: 76px;}
+.text-77 {font-size: 77px;}
+.text-78 {font-size: 78px;}
+.text-79 {font-size: 79px;}
+.text-80 {font-size: 80px;}
+.text-81 {font-size: 81px;}
+.text-82 {font-size: 82px;}
+.text-83 {font-size: 83px;}
+.text-84 {font-size: 84px;}
+.text-85 {font-size: 85px;}
+.text-86 {font-size: 86px;}
+.text-87 {font-size: 87px;}
+.text-88 {font-size: 88px;}
+.text-89 {font-size: 89px;}
+.text-90 {font-size: 90px;}
+.text-91 {font-size: 91px;}
+.text-92 {font-size: 92px;}
+.text-93 {font-size: 93px;}
+.text-94 {font-size: 94px;}
+.text-95 {font-size: 95px;}
+.text-96 {font-size: 96px;}
+.text-97 {font-size: 97px;}
+.text-98 {font-size: 98px;}
+.text-99 {font-size: 99px;}
+.text-100 {font-size: 100px;}
+.text-101 {font-size: 101px;}
+.text-102 {font-size: 102px;}
+.text-103 {font-size: 103px;}
+.text-104 {font-size: 104px;}
+.text-105 {font-size: 105px;}
+.text-106 {font-size: 106px;}
+.text-107 {font-size: 107px;}
+.text-108 {font-size: 108px;}
+.text-109 {font-size: 109px;}
+.text-110 {font-size: 110px;}
+.text-111 {font-size: 111px;}
+.text-112 {font-size: 112px;}
+.text-113 {font-size: 113px;}
+.text-114 {font-size: 114px;}
+.text-115 {font-size: 115px;}
+.text-116 {font-size: 116px;}
+.text-117 {font-size: 117px;}
+.text-118 {font-size: 118px;}
+.text-119 {font-size: 119px;}
+.text-120 {font-size: 120px;}
+.text-121 {font-size: 121px;}
+.text-122 {font-size: 122px;}
+.text-123 {font-size: 123px;}
+.text-124 {font-size: 124px;}
+.text-125 {font-size: 125px;}
+.text-126 {font-size: 126px;}
+.text-127 {font-size: 127px;}
+.text-128 {font-size: 128px;}

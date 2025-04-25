@@ -1,0 +1,80 @@
+html, body {
+    background-color: black;
+    font-family: fixedsys;
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+#phone {
+    width: 15rem;
+    height: 30rem;
+    border: 3px solid dimgray;
+    border-radius: 15px;
+    display: flexbox;
+    justify-self: center;
+    position: relative;
+    z-index: 1;
+}
+
+.app {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+}
+
+pre {
+    font-family: fixedsys;
+}
+
+#bottom {
+    background-color: gray;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button {
+    background-color: dimgray;
+    color: white;
+    font-family: fixedsys;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+hr {
+    border-color: lightgray;
+    width: 90%;
+}
+
+.appIcon {
+    margin: 10px;
+}
+
+#settings {
+    position: relative;
+    top: -36%;
+    z-index: 100;
+    display: none;
+    height: 28.85rem;
+    width: 15rem;
+    background: slategray;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+#homepage {
+    background: none;
+    border: 4px double cyan;
+    display: flex;
+    justify-self: center;
+}
+
+.hidden {
+    display: none;
+}

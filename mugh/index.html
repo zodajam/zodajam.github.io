@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUGH - Phone emulator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../zodacss.css"> <!-- my own css framework :) -->
+</head>
+<body>
+    <h2 class="text-center cyan">MUGH - Phone emulator</h2>
+    <h4 class="text-center cyan">OS: MUGH-1.0<br>RAM: 8GB<br>CPU: SNAPDRAGON 8 GEN 2</h4>
+    <button id="homepage"><a href="https://neocoral.org" class="cyan">HOME PAGE</a></button><br>
+
+    <div id="phone" class="bg-silver">
+        <pre id="predude">
+             <span class="cyan" id="head"> O</span>
+             <span class="dodgerblue" id="torso">/|\</span>
+             <span class="blue" id="legs">/ \</span>
+        </pre>
+        <div class="blue text-center" id="welcome"><span>WELCOME TO MUGH</span></div>
+        <hr>
+        
+        <button onclick="on('settings')" class="appIcon">⚙</button>
+
+        <footer>
+            <div id="bottom">
+                <center><button onclick="off('settings')" id="btm-btn">X</button></center>
+            </div>
+        </footer>
+
+        <div id="settings">
+            <div class="text-center text-20"><u class="cyan"><span class="magenta">System</span></u> <u class="magenta"><span class="cyan">settings</span></u></div>
+            <hr>
+            <button onclick="on('noUpdate')">Update system</button>
+            <span class="text-12 white hidden" id="noUpdate">There are no updates</span>
+            <hr>
+            <button onclick="on('changeTheme')">Change theme</button>
+            <div id="changeTheme" class="hidden"><button id="lightMode">light</button><button id="darkMode">dark</button></div>
+            <hr>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
