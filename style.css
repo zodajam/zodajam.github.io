@@ -36,6 +36,10 @@ html, body {
     #phone1, #phone2, #phone3 {
         display: none;
     }
+
+    #titlePre {
+        font-size: small;
+    }
 }
 
 @media screen and (max-width: 1930px) {
