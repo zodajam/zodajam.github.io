@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archaic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<pre>
+Enter the secret password
+
+
+<span class="magenta">gerg: </span>"so, what's the secret password?"
+<a id="passwordBox" style="cursor:pointer;"><u>enter password</u></a>
+
+
+      ____________________
+     /                    \
+    |                      |
+    |                      |
+    |  O             N     |
+    | /|\           /|\    |
+    | / \           / \    |
+    |                      |
+     \____________________/
+</pre>
+<script>
+    document.getElementById("passwordBox").onclick = function() {
+        var password = window.prompt("What is the password");
+        if(password === "yggogaga") {
+            location.href = "yggogaga.html";
+        } else {
+            alert("nope");
+        }
+    }
+</script>
+</body>
+</html>

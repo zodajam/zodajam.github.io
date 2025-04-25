@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(../../fonts/FSEX300.ttf);
+}
+
+pre {
+    color: white;
+    font-size: large;
+    font-family: fixedsys;
+}
+
+a {
+    color: aqua;
+}
+
+.magenta {
+    color: magenta;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: dodgerblue;
+}
+
+.green {
+    color: lime;
+}
+
+.archiac {
+    font-size: larger;
+}
+
+.gray {
+    background-color: gray;
+}
