@@ -1,0 +1,39 @@
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+#dice {
+    background-color: black;
+    border: 4px double magenta;
+    color: cyan;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 22px;
+    font-family: fixedsys;
+    animation-name: dice;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+button {
+    border: 3px double;
+    background-color: black;
+    color: magenta;
+    margin-bottom: 4px;
+    font-family: fixedsys;
+    cursor: pointer;
+}
+
+@keyframes dice {
+    100% {
+        transform: rotate(720deg);
+    }
+}

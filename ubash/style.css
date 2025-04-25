@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(to bottom right, #0c0c0c, #151515);
+    height: 100vh;
+    color: lime;
+    font-family: ap;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+
+@font-face {
+    font-family: ap;
+    src: url(fonts/ap.ttf);
+}
+
+@font-face {
+    font-family: apb;
+    src: url(fonts/apb.ttf);
+}
+
+.purple {
+    color: #b700b6;
+}
+
+.blue {
+    color: #1547ff;
+}
+
+.gray {
+    color: gray;
+}
+
+input {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background: none;
+    color: lime;
+    font-family: ap;
+    font-weight: bold;
+    width: 50vw;
+}
+
+#user {
+    display: inline-block;
+}
+
+#cover {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 100;
+    background: none;
+}
+
+#basic-html {
+    display: none;
+    color: black;
+}
+
+#game {
+    display: none;
+}
+

@@ -1,0 +1,188 @@
+html, body {
+    background-color: black;
+    color: magenta;
+    margin: 1;
+    box-sizing: border-box;
+    flex-grow: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: black;
+}
+
+@media screen and (max-width: 600px) {   
+    #pre-dude, #pre-dude2 {
+        position: absolute;
+        top: 70%;
+    }
+
+    #pre-dude2 {
+        margin-left: 10%;
+    }
+
+    iframe {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 1930px) {
+    #pre-dude, #pre-dude2 {
+        position: absolute;
+        top: 70%;
+    }
+
+    #pre-dude2 {
+        margin-left: 16%;
+    }
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(fonts/FSEX300.ttf);
+}
+
+.title {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+    color: white;
+}
+
+#chat {
+    border: 4px double magenta;
+    margin-bottom: 5px;
+    scrollbar-width: 5px;
+    scrollbar-color: #ff00ff;
+}
+
+a {color: cyan; font-family: fixedsys;}
+.cyan {color: cyan;}
+
+span {font-family: fixedsys;}
+
+.main {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    width: 25rem;
+    padding: 15px;
+    border-radius: 2px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    border: 4px double magenta;
+    position: relative;
+}
+
+#onlyKind {
+    text-align: center;
+    color: cyan;
+}
+
+h1{font-family: fixedsys;}
+h2{font-family: fixedsys;}
+p{font-family: fixedsys;}
+
+#log {
+    display: none;
+    background-color: black;
+    border: 4px double magenta;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    width: 35%;
+    height: 60%;
+    text-align: center;
+    z-index: 1000;
+    overflow-y: scroll;
+}
+
+#settings {
+    display: none;
+    background-color: black;
+    border: 4px double magenta;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    width: 35%;
+    height: 60%;
+    text-align: center;
+    z-index: 1000;
+}
+
+#titleSpan {
+    font-family: fixedsys;
+}
+
+.x {
+    float: right;
+    cursor: pointer;
+}
+
+#cover {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+#background-music {
+    border: 4px double magenta;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.other {
+    border: 4px double magenta;
+    padding: 2px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0px;
+}
+
+button {
+    border: 3px double;
+    background-color: black;
+    color: magenta;
+    margin-bottom: 4px; 
+    font-family: fixedsys;
+    cursor: pointer;
+}
+
+#pre-dude {
+    color: cyan;
+    font-size: larger;
+    position: absolute;
+    margin-top: 2%;
+    z-index: 10;
+}
+
+#pre-dude2 {
+    color: cyan;
+    font-size: larger;
+    position: absolute;
+    z-index: 100;
+    margin-top: 2%;
+    left: 55%;
+}
+
+#canvas {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7xoekfqZxDbkCP6TLChaSoZvhtgWCZpUfnx5rLVtwxe5VqVaqJe55gHdH-A1Fsxos8Ss&usqp=CAU");}

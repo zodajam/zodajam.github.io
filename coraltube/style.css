@@ -1,0 +1,125 @@
+body {
+    background-color: black;
+    font-family: fixedsys;
+    color: magenta;
+    position: relative;
+    z-index: 1;
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+button {
+    border: 3px double;
+    background-color: black;
+    color: magenta;
+    font-family: fixedsys;
+    cursor: pointer;
+}
+
+.blue {color: dodgerblue;}
+.lime {color: lime;}
+.red {color: red;}
+a {color: aqua;}
+.title {text-align: center;font-size: 2.5rem;}
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    height: 40rem;
+    padding: 5px;
+    border: 4px double magenta;
+}
+
+.trending-channels {
+    float: left;
+    height: fit-content;
+    border-right: 4px double magenta;
+    border-bottom: 4px double magenta;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+.trending-games {
+    float: left;
+    height: fit-content;
+    border-right: 4px double magenta;
+    border-bottom: 4px double magenta;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.trending-topics {
+    float: left;
+    height: fit-content;
+    border-right: 4px double magenta;
+    border-bottom: 4px double magenta;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.coraltube-news {
+    float: left;
+    border-bottom: 4px double magenta;
+    border-right: 4px double magenta;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    width: 25rem;
+}
+
+.searchBox {
+    float: left;
+    border-bottom: 4px double magenta;
+    border-right: 4px double magenta;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    width: 25rem;
+    height: 6rem;
+}
+
+#searchBar {
+    background: none;
+    border: 4px double magenta;
+    outline: none;
+    padding: 5px;
+    margin: 5px;
+    font-family: fixedsys;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 1rem;
+}
+
+#searchText {
+    font-size: xx-large;
+}
+
+#searchBtn {
+    height: 2rem;
+}
+
+.videos {
+    position: absolute;
+    top: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.video {border: 4px double magenta;}
+#video2 {margin-left: 11rem;}
+#video3 {margin-left: 22rem;}
+#video4 {margin-left: 34rem;}
+#video5 {margin-left: 46rem;}
+

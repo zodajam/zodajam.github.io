@@ -1,0 +1,11 @@
+#circle {
+    width: 250px;
+    height: 250px;
+    background-color: magenta;
+    border: 4px double cyan;
+    border-radius: 50%;
+}
+
+#text {
+    font-size: 24px;
+}
