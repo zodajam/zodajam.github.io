@@ -24,6 +24,14 @@ html, body {
     iframe {
         width: fit-content;
     }
+
+    #main {
+        width: fit-content;
+    }
+
+    #log {
+        width: fit-content;
+    }
 }
 
 @media screen and (max-width: 1930px) {
