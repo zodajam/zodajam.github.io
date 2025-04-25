@@ -37,9 +37,5 @@ if (isMobile()) {
    document.getElementById("phone1").src = "";
    document.getElementById("phone2").src = "";
    document.getElementById("phone3").src = "";
-   document.getElementById("settings").style.width = "fit-content";
-   document.getElementById("background-music").style.paddingLeft = "5rem";
-   document.getElementById("background-music").style.paddingRight = "5rem";
-   document.getElementById("background-music").style.border = "none";
    document.getElementById("log").style.width = "fit-content";
 }
