@@ -12,10 +12,6 @@ html, body {
 }
 
 @media screen and (max-width: 600px) {  
-    * {
-        box-sizing: border-box;
-    }
-    
     #pre-dude, #pre-dude2 {
         position: absolute;
         top: 70%;
@@ -31,14 +27,8 @@ html, body {
 
     #main {
         width: 100%;
-    }
-
-    #log {
+        box-sizing: border-box;
         display: block;
-        width: 25rem;
-        padding: 0;
-        margin: 0;
-        max-width: none;
     }
 
     #phone1, #phone2, #phone3 {
@@ -58,6 +48,10 @@ html, body {
 
     #pre-dude2 {
         margin-left: 16%;
+    }
+
+    #log {
+        width: 30rem;
     }
 }
 
@@ -121,7 +115,6 @@ p{font-family: fixedsys;}
     margin-left: auto;
     margin-right: auto;
     margin-top: 12px;
-    width: 35%;
     height: 60%;
     text-align: center;
     z-index: 1000;
