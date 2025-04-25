@@ -9,7 +9,6 @@
 </head>
 <body>
     <h2 class="text-center cyan">MUGH - Phone emulator</h2>
-    <h4 class="text-center cyan">OS: MUGH-1.0<br>RAM: 8GB<br>CPU: SNAPDRAGON 8 GEN 2</h4>
     <button id="homepage"><a href="https://neocoral.org" class="cyan">HOME PAGE</a></button><br>
 
     <div id="phone" class="bg-silver">
@@ -22,24 +21,27 @@
         <hr>
         
         <button onclick="on('settings')" class="appIcon">⚙</button>
+        <button onclick="on('terminal')" class="appIcon">⌇_</button>
 
         <footer>
             <div id="bottom">
-                <center><button onclick="off('settings')" id="btm-btn">X</button></center>
+                <center><button onclick="off('settings'); off('terminal')" id="btm-btn">X</button></center>
             </div>
         </footer>
 
         <div id="settings">
             <div class="text-center text-20"><u class="cyan"><span class="magenta">System</span></u> <u class="magenta"><span class="cyan">settings</span></u></div>
             <hr>
-            <button onclick="on('noUpdate')">Update system</button>
-            <span class="text-12 white hidden" id="noUpdate">There are no updates</span>
-            <hr>
             <button onclick="on('changeTheme')">Change theme</button>
             <div id="changeTheme" class="hidden"><button id="lightMode">light</button><button id="darkMode">dark</button></div>
-            <hr>
+        </div>
+
+        <div id="terminal">
+            <div id="user"><span class="lime">root</span><span class="magenta">@</span><span class="cyan">mugh</span><span class="yellow">~$</span><input id="input" type="text"></div>
+            <p id="output"></p>
         </div>
     </div>
+    <script src="terminal.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

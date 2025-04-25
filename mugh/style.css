@@ -44,7 +44,7 @@ button {
     font-family: fixedsys;
     cursor: pointer;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 hr {
@@ -54,11 +54,13 @@ hr {
 
 .appIcon {
     margin: 10px;
+    height: 1.75rem;
+    width: 1.75rem;
 }
 
 #settings {
     position: relative;
-    top: -36%;
+    top: -37.25%;
     z-index: 100;
     display: none;
     height: 28.85rem;
@@ -78,3 +80,28 @@ hr {
 .hidden {
     display: none;
 }
+
+#terminal {
+    position: relative;
+    top: -37.25%;
+    z-index: 100;
+    display: none;
+    height: 28.85rem;
+    width: 15rem;
+    background: #212121;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+    color: cyan;
+}
+
+#input {
+    background: none;
+    border: none;
+    outline: none;
+    color: cyan;
+    font-family: fixedsys;
+    display: flex;
+    width: 8rem;
+}
+
+#user {display: flex;}

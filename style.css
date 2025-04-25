@@ -49,10 +49,6 @@ html, body {
     #pre-dude2 {
         margin-left: 16%;
     }
-
-    #log {
-        width: 99%;
-    }
 }
 
 @font-face {
@@ -115,6 +111,7 @@ p{font-family: fixedsys;}
     margin-left: auto;
     margin-right: auto;
     margin-top: 12px;
+    width: 25rem;
     height: 60%;
     text-align: center;
     z-index: 1000;
