@@ -30,7 +30,7 @@ html, body {
     }
 
     #log {
-        width: fit-content;
+        width: max-content;
     }
 
     #phone1, #phone2, #phone3 {
