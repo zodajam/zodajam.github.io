@@ -30,7 +30,7 @@ html, body {
     }
 
     #log {
-        width: 600px;
+        width: 100%;
     }
 
     #phone1, #phone2, #phone3 {
