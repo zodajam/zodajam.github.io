@@ -31,10 +31,13 @@
         </footer>
 
         <div id="settings">
-            <div class="text-center text-20"><u class="cyan"><span class="magenta">System</span></u> <u class="magenta"><span class="cyan">settings</span></u></div>
+            <div class="text-center text-20"><u class="cyan" id="settingsCyanU"><span class="magenta" id="settingsMagentaSpan">System</span></u> <u class="magenta" id="settingsMagentaU"><span class="cyan" id="settingsCyanSpan">settings</span></u></div>
             <hr>
             <button onclick="on('changeTheme')">Change theme</button>
             <div id="changeTheme" class="hidden"><button id="lightMode">light</button><button id="darkMode">dark</button></div>
+            <hr>
+            <button onclick="on('changeLang')">Change language</button>
+            <div id="changeLang" class="hidden"><button id="english">english</button><button id="svenska">svenska</button></div>
         </div>
 
         <div id="terminal">
@@ -42,7 +45,6 @@
             <p id="output"></p>
         </div>
     </div>
-    <script src="terminal.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
