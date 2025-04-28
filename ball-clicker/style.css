@@ -1,8 +1,7 @@
 #circle {
     width: 250px;
     height: 250px;
-    background-color: magenta;
-    border: 4px double cyan;
+    background-color: red;
     border-radius: 50%;
 }
 
