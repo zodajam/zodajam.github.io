@@ -123,3 +123,7 @@ img {
 #video4 {margin-left: 34rem;}
 #video5 {margin-left: 46rem;}
 
+.container {
+    display: flex;
+    justify-content: center;
+}
