@@ -37,3 +37,8 @@ button {
         transform: rotate(720deg);
     }
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+} 
