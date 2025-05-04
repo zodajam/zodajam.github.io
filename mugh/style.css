@@ -13,8 +13,6 @@ html, body {
     height: 30rem;
     border: 3px solid dimgray;
     border-radius: 15px;
-    display: flexbox;
-    justify-self: center;
     position: relative;
     z-index: 1;
 }
@@ -36,6 +34,8 @@ pre {
     width: 100%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 button {
@@ -60,7 +60,7 @@ hr {
 
 #settings {
     position: relative;
-    top: -40.5%;
+    top: -44.5%;
     z-index: 100;
     display: none;
     height: 28.85rem;
@@ -73,8 +73,6 @@ hr {
 #homepage {
     background: none;
     border: 4px double cyan;
-    display: flex;
-    justify-self: center;
 }
 
 .hidden {
@@ -83,7 +81,7 @@ hr {
 
 #terminal {
     position: relative;
-    top: -40.5%;
+    top: -44.5%;
     z-index: 100;
     display: none;
     height: 28.85rem;
@@ -105,3 +103,13 @@ hr {
 }
 
 #user {display: flex;}
+
+#time {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}

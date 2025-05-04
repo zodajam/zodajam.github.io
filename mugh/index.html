@@ -9,40 +9,41 @@
 </head>
 <body>
     <h2 class="text-center cyan">MUGH - Phone emulator</h2>
-    <button id="homepage"><a href="https://neocoral.org" class="cyan">HOME PAGE</a></button><br>
+    <div class="container"><button id="homepage"><a href="https://neocoral.org" class="cyan">HOME PAGE</a></button></div><br>
+    <div class="container">
+        <div id="phone" class="bg-silver">
+            <pre id="predude">
+                <span class="cyan" id="head"> O</span>
+                <span class="dodgerblue" id="torso">/|\</span>
+                <span class="blue" id="legs">/ \</span>
+            </pre>
+            <div class="blue text-center" id="welcome"><span>WELCOME TO MUGH</span></div>
+            <span id="time" class="magenta"></span>
+            <hr>
+            
+            <button onclick="on('settings')" class="appIcon">⚙</button>
+            <button onclick="on('terminal')" class="appIcon">⌇_</button>
 
-    <div id="phone" class="bg-silver">
-        <pre id="predude">
-             <span class="cyan" id="head"> O</span>
-             <span class="dodgerblue" id="torso">/|\</span>
-             <span class="blue" id="legs">/ \</span>
-        </pre>
-        <div class="blue text-center" id="welcome"><span>WELCOME TO MUGH</span></div>
-        <center><span id="time" class="magenta"></span></center>
-        <hr>
-        
-        <button onclick="on('settings')" class="appIcon">⚙</button>
-        <button onclick="on('terminal')" class="appIcon">⌇_</button>
+            <footer>
+                <div id="bottom">
+                    <button onclick="off('settings');off('terminal')" id="btm-btn">X</button>
+                </div>
+            </footer>
 
-        <footer>
-            <div id="bottom">
-                <center><button onclick="off('settings');off('terminal')" id="btm-btn">X</button></center>
+            <div id="settings">
+                <div class="text-center text-20"><u class="cyan" id="settingsCyanU"><span class="magenta" id="settingsMagentaSpan">System</span></u> <u class="magenta" id="settingsMagentaU"><span class="cyan" id="settingsCyanSpan">settings</span></u></div>
+                <hr>
+                <button onclick="on('changeTheme')">Change theme</button>
+                <div id="changeTheme" class="hidden"><button id="lightMode">light</button><button id="darkMode">dark</button></div>
+                <hr>
+                <button onclick="on('changeLang')">Change language</button>
+                <div id="changeLang" class="hidden"><button id="english">english</button><button id="svenska">svenska</button></div>
             </div>
-        </footer>
 
-        <div id="settings">
-            <div class="text-center text-20"><u class="cyan" id="settingsCyanU"><span class="magenta" id="settingsMagentaSpan">System</span></u> <u class="magenta" id="settingsMagentaU"><span class="cyan" id="settingsCyanSpan">settings</span></u></div>
-            <hr>
-            <button onclick="on('changeTheme')">Change theme</button>
-            <div id="changeTheme" class="hidden"><button id="lightMode">light</button><button id="darkMode">dark</button></div>
-            <hr>
-            <button onclick="on('changeLang')">Change language</button>
-            <div id="changeLang" class="hidden"><button id="english">english</button><button id="svenska">svenska</button></div>
-        </div>
-
-        <div id="terminal">
-            <div id="user"><span class="lime">root</span><span class="magenta">@</span><span class="cyan">mugh</span><span class="yellow">~$</span><input id="input" type="text"></div>
-            <p id="output"></p>
+            <div id="terminal">
+                <div id="user"><span class="lime">root</span><span class="magenta">@</span><span class="cyan">mugh</span><span class="yellow">~$</span><input id="input" type="text"></div>
+                <p id="output"></p>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

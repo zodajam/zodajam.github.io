@@ -53,7 +53,7 @@ darkMode.onclick = function() {
     settingsMagentaSpan.style.color = "darkmagenta";
 }
 
-var isEnglish; // boolean values for checking language
+var isEnglish = true; // boolean values for checking language
 var isSwedish; 
 
 english.onclick = function() {
