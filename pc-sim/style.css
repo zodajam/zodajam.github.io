@@ -12,6 +12,8 @@ body {
     src: url(../fonts/FSEX300.ttf);
 }
 
+pre {font-family: fixedsys;}
+
 .main {
     background-color: black;
     border: 4px double magenta;
