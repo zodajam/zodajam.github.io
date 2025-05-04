@@ -102,14 +102,14 @@
            }
           }
           function draw() {
-            ctx.fillStyle = "#ff00ff";
+            ctx.fillStyle = "#000000";
             ctx.fillRect(0, 0, 640, 480);
             renderPaddle(player);
             renderPaddle(ai);
             renderBall(ball);
           }
           function renderPaddle(paddle) {
-            ctx.fillStyle = "cyan";
+            ctx.fillStyle = "white";
             ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height);
           }
           function renderBall(ball) {

@@ -202,6 +202,9 @@ button {
 
 #canvas {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7xoekfqZxDbkCP6TLChaSoZvhtgWCZpUfnx5rLVtwxe5VqVaqJe55gHdH-A1Fsxos8Ss&usqp=CAU");}
 
-#unlisted {
-    cursor: pointer;
+#unlisted {cursor: pointer;}
+
+.container {
+    display: flex;
+    justify-content: center;
 }
