@@ -4,10 +4,6 @@ document.getElementById("terminalBtn").onclick = function() {
     document.getElementById('input').focus()
 }
 
-document.getElementById("shrekexe").onclick = function() {
-    on('shrekexeOpen');
-}
-
 function on(id) {
     document.getElementById(id).style.display = "block";
 }
@@ -15,10 +11,6 @@ function on(id) {
 function off(id) {
     document.getElementById(id).style.display = "none";
 }
-
-$( function() {
-    $( "#shrekexeOpen" ).draggable();
-  } );
 
 $( function() {
     $( "#terminal" ).draggable();

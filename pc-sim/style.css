@@ -69,22 +69,6 @@ img {
     width: fit-content;
 }
 
-#shrekexeOpen {
-    display: none;
-    background-color: black;
-    border: 4px double magenta;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 100px;
-    width: 35%;
-    height: 60%;
-    text-align: center;
-    z-index: 1000;
-}
-
 #terminal {
     display: none;
     background-color: black;
@@ -116,7 +100,7 @@ img {
     color: lime;
     font-family: fixedsys;
     font-weight: bold;
-    display: inline-block;
+    display: flex;
     white-space: nowrap;
 }
 
@@ -131,6 +115,13 @@ img {
 #explorerIcon {
     width: 22px;
     margin-left: -3px;
+}
+
+#powerBtnIcon {
+    font-size: xx-large;
+    position: absolute;
+    top: -8px;
+    left: 5px;
 }
 
 .topBar {
