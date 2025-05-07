@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main {
+    background: linear-gradient(to bottom right,#212f3d, #34495e);
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bottom {
+    width: 99vw;
+    height: 3rem;
+    background-color: #17202a;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0.5rem;
+    margin-left: 10px;
+}
+
+#power, #terminal-icon {
+    background-color: silver;
+    border-radius: 10px;
+    text-align: center;
+    font-size: x-large;
+    transition: background-color, 0.3s;
+    position: relative;
+    z-index: 1000;
+}
+
+#power:hover {background-color: whitesmoke;}
+
+#terminal-icon:hover {background-color: whitesmoke;}
+
+#menu {
+    background-color: #17202a;
+    border-radius: 10px;
+    height: 15rem;
+    width: 10rem;
+    display: none;
+    position: absolute;
+    bottom: 3.5rem;
+    padding: 5px;
+    color: white;
+}
+
+.app-icon {
+    width: 2rem;
+    height: 2rem;
+    padding: 2px;
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block;
+}
+
+#terminal {
+    display: none;
+    background-color: #154360;
+    width: 50rem;
+    height: 40rem;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    opacity: 0.5;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-items: center;
+}
+
+#shutdown-btn, #reboot-btn {
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color, 0.3s;
+}
+
+#shutdown-btn {background-color: red;}
+#reboot-btn {background-color: blue;}
+
+#shutdown-btn:hover {background-color: darkred;}
+#reboot-btn:hover {background-color: darkblue;}
