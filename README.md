@@ -1,4 +1,4 @@
 # neocoral.org
-This is my personal website.
+<a href="https://neocoral.org">neocoral.org</a> is my personal portfolio website. It focuses on my web developement projects and has a retro, early 2000's style.
 
-Keep in mind that this website is just for funzies and not proffesional!
+I built this website for funzies, not for an aaaaaaaaaaaaactual portfolio or something, more kinda just to share my project with the world, but this will be my portfolio until I have a better one!
