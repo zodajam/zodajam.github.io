@@ -36,3 +36,5 @@ button {
     background-color: blue;
     border: 4px double blue;
 }
+
+#freeMoneyBtn {display: none;}
