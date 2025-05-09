@@ -1,11 +1,8 @@
 yenom = 100;
 const btn = document.getElementById("btn"); // play button
 const money = document.getElementById("money"); // money display
+
 money.innerText = yenom;
-
-yenom = localStorage.money;
-money.innerHTML = localStorage.money;
-
 console.log("Hello, you will see all the money being console.logged (it's just for debugging) so dont worry");
 
 btn.onclick = function() {
@@ -22,7 +19,7 @@ btn.onclick = function() {
     }
     money.innerText = yenom; // displaying money
     console.log(yenom);
-    localStorage.money = yenom;
+    
 }
 
 function claimFreeMoney() { // function for claiming free money if you have $0
@@ -30,5 +27,5 @@ function claimFreeMoney() { // function for claiming free money if you have $0
     yenom = 100;
     money.innerText = yenom;
     document.getElementById("freeMoneyBtn").style.display = "none";
-    localStorage.money = yenom;
 }
+
