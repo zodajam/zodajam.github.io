@@ -4,7 +4,7 @@ const money = document.getElementById("money"); // money display
 money.innerText = yenom;
 
 yenom = localStorage.money;
-money.innerHTML = yenom;
+money.innerHTML = localStorage.money;
 
 console.log("Hello, you will see all the money being console.logged (it's just for debugging) so dont worry");
 
