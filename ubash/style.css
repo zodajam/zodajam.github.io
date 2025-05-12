@@ -1,64 +1,45 @@
-body {
-    background: linear-gradient(to bottom right, #0c0c0c, #151515);
-    height: 100vh;
-    color: lime;
-    font-family: ap;
+html, body {
+    background-color: black;
+    font-family: fixedsys;
+    color: deeppink;
     overflow: hidden;
-    position: relative;
-    z-index: 100;
+    margin: 0;
 }
 
 @font-face {
-    font-family: ap;
-    src: url(fonts/ap.ttf);
+    font-family: fixedsys;
+    src: url(../fonts/FSEX300.ttf);
 }
 
-@font-face {
-    font-family: apb;
-    src: url(fonts/apb.ttf);
-}
-
-.purple {
-    color: #b700b6;
-}
-
-.blue {
-    color: #1547ff;
-}
-
-.gray {
-    color: gray;
-}
-
-input {
-    border: none;
-    outline: none;
-    text-decoration: none;
-    background: none;
-    color: lime;
-    font-family: ap;
-    font-weight: bold;
-    width: 50vw;
+#main {
+    width: 100vw;
+    height: 100vh;
+    cursor: none;
 }
 
 #user {
-    display: inline-block;
+    font-size: 20px;
+    margin-top: 15px;
+    margin: 0.5rem;
 }
 
-#cover {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    z-index: 100;
+#input {
     background: none;
+    outline: none;
+    border: none;
+    color: deeppink;
+    font-family: fixedsys;
+    font-size: 15px;
+    width: 50rem;
+    cursor: none;
 }
 
-#basic-html {
-    display: none;
-    color: black;
-}
+#input-align {display: inline-block;}
 
-#game {
-    display: none;
-}
+#user-input {margin: 0.5rem;}
 
+#text {margin-left: 0.5rem;}
+
+#logo {color: lime;}
+
+pre {font-family: fixedsys;}

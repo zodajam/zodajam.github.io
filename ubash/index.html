@@ -5,24 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>uBash</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../zodacss.css"> <!-- my own css framework!1!1!1 -->
 </head>
-<body onload="document.getElementById('input').focus()">
-    <div id="cover">
-        <b>Welcome to <span class="purple">uBash.</span> To navigate around the site, you will use bash commands. For help, type <span class="blue">help</span></b><br><br>
-        <div id="user"><b class="userdir">root<span class="purple">@vm:</span><span class="gray">~/</span></b></div>
-        <input type="text" id="input" autocomplete="off" autofocus><br>
-        <b id="text"></b>
-        <div id="basic-html">
-            <h1>Hello, World!</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ut minima facilis perspiciatis placeat, dolore officiis,
-                nam illo earum ducimus eligendi impedit soluta saepe,
-                molestiae omnis similique ab natus ipsam rerum.
-            </p>
+<body>
+    <div id="main">
+<pre id="logo">
+          _       
+        _|_|_     
+        (o o)     
+         (_)
+    uBash terminal
+</pre>
+        <div id="user-input">
+            <span class="cyan">root</span><span class="magenta">@</span><span class="yellow">archlinux</span> <span id="directory" class="red">»</span>
+            <input type="text" id="input" autofocus>
         </div>
+        <div id="text"></div>
     </div>
     <script src="script.js"></script>
-    <script src="pong.js"></script>
 </body>
 </html>
