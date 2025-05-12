@@ -12,24 +12,25 @@ document.getElementById("main").onclick = function() { input.focus(); } // focus
 window.onload = function() { input.value = ""; }
 
 // ↓↓↓ IMPORTANT ↓↓↓
-const version = 1.3;
+const version = "1.3.1";
 // ↑↑↑ IMPORTANT ↑↑↑
 
 function main() { // main function
     const text = document.getElementById("text"); // text element that changes based on input
+    var godmode = false;
 
-    // C 
-    //   O
-    //     M 
-    //       M
-    //         A 
-    //           N
-    //             D 
-    //               S
+    // » C « 
+    //   » O «
+    //     » M « 
+    //       » M «
+    //         » A « 
+    //           » N «
+    //             » D «
+    //               » S «    
     if(input.value === "help") { // shows help menu
         input.value = "";
         text.innerHTML = `
-        uBash v1.3 - help menu<br><br>
+        uBash v${version} - help menu<br><br>
         help - shows the help menu<br>
         clear - clears the terminal window<br>
         exit - exits the terminal, duh<br>
@@ -38,7 +39,8 @@ function main() { // main function
         about - shows info about the terminal<br>
         version - shows the current uBash version<br>
         print - prints the page<br>
-        fullscreen - puts you into fullscreen (recommended)`;
+        fullscreen - puts you into fullscreen (recommended)<br><br>
+        theres also some secret commands :)`;
     } else if(input.value === "clear") { // clears the terminal window
         input.value = "";
         text.textContent = "";
@@ -52,8 +54,8 @@ function main() { // main function
   _     OS: archlinux       
 _|_|_   CPU: 12 × AMD Ryzen 5 5500
 (o o)   GPU: NVIDIA GeForce GTX 1650
- (_)    RAM: 16GBB DDR4<br></pre>
-        `;
+ (_)    RAM: 16GB DDR4<br></pre>
+            `; 
     } else if(input.value === "date") { // shows the current time and date
         input.value = "";
         text.innerHTML = window.Date();
@@ -76,7 +78,10 @@ _|_|_   CPU: 12 × AMD Ryzen 5 5500
         location.href = "../gy7Gygw63Yhbg6323gyiYGRbY3/";
         input.value = "";
         text.innerHTML = "";
-    } else {
+    } else if(input.value.trim() === "") {
+        return;
+    }
+    else {
         text.innerHTML = `[${input.value}] unknown command`;
         input.value = "";
     }
