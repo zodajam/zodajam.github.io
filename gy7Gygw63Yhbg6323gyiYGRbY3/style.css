@@ -13,3 +13,17 @@ pre {
     font-family: fixedsys;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#ubash {
+    width: 80rem;
+    height: 30rem;
+}
+
+#neocoral {
+    width: 80rem;
+    height: 60rem;
+}
