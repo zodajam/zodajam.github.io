@@ -8,7 +8,7 @@ input.addEventListener("keyup", (event) => {
     }
 });
 
-var version = 1.0;
+var version = 1.1;
 
 function checkCommand() {
     if(input.value.toLowerCase() === "help") {
@@ -17,6 +17,8 @@ function checkCommand() {
         output.innerHTML = "";
     } else if(input.value.toLowerCase() === "version") {
         output.innerHTML = `rzDOS v${version}`;
+    } else if(input.value.toLowerCase() === "exit") {
+        document.getElementById("terminal").style.display = "none";
     } else if(input.value.toLowerCase() === "doom") {
         output.innerHTML = "now playing: the only thing they fear is you";
         doom.play();
