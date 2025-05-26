@@ -1,0 +1,89 @@
+html, body{
+    background-color: black;
+    font-family: fixedsys;
+    color: white;
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(fixedsys.ttf);
+}
+
+pre { font-family: fixedsys; }
+
+#main {
+    background-color: blue;
+    width: 35rem;
+    height: 20rem;
+    margin-top: 15%;
+    box-shadow: 10px 10px gray;
+    position: absolute;
+    z-index: 100;
+}
+
+#top {
+    background-color: darkblue;
+    width: 100%;
+    height: 1rem;
+}
+
+#bootOverlay {
+    width: 100%;
+    height: 19rem;
+    position: absolute;
+    z-index: 1000;
+    background-color: blue;
+}
+
+#bootProccess {padding-left: 5px;}
+
+#topGrid {
+    width: 100%;
+    background-color: red;
+    height: 2rem;
+}
+
+button {
+    background-color: cyan;
+    font-family: fixedsys;
+    cursor: pointer;
+}
+
+.appBtn { height: 2rem; }
+
+#watermarkTop {float: right;}
+
+#nano {
+    background-color: gray;
+    display: none;
+    margin-top: 1rem;
+}
+
+textarea { font-family: fixedsys; }
+#nanoText { background-color: lightgray; }
+
+#terminal {
+    width: 15rem;
+    height: 10rem;
+    background-color: black;
+    border: 1px solid white;
+    color: lime;
+    display: none;
+    margin-top: 15px;
+    font-size: small;
+}
+
+#input {
+    border: none;
+    background: none;
+    outline: none;
+    color: lime;
+    width: 13rem;
+}
+
+input { font-family: fixedsys; }
+
+.center {
+    display: flex;
+    justify-content: center;
+}

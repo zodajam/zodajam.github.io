@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rzDOS v1.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center">
+        <div id="main">
+            <div id="top">CPU: <span id="cpuTemp"></span>%&emsp;&emsp;&emsp14;&emsp14;RAM: <span id="ramPercent"></span>%<span id="watermarkTop">rzDOS v1.1</span></div>
+            <div id="bootOverlay">
+                <p id="bootProccess"></p>
+            </div>
+            <div id="home">
+                <div id="topGrid">
+                    <button class="appBtn" id="nanoBtn" onclick="toggle('nano'); off('terminal')">nano</button>
+                    <button class="appBtn" id="terminalBtn" onclick="toggle('terminal'); off('nano')">terminal</button>
+                </div>
+                <div class="center">
+                    <div id="nano">
+                        <textarea cols="25" rows="12" id="nanoText"></textarea><br>
+                        <button onclick="saveText()">save</button>
+                        <button onclick="loadText()">load</button>
+                        <button onclick="toggle('nano')">exit</button>
+                    </div>
+                </div>
+                <div class="center">
+                    <div id="terminal" onclick="document.getElementById('input').focus">
+                        <span id="terminalUser">=> </span><input type="text" id="input" autofocus>
+                        <p id="terminalOutput"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="doom" src="src/doom.mp3"></audio>
+    <script src="index.js"></script>
+    <script src="boot.js"></script><!-- comment out this line to skip 8 second boot proccess and add "off("bootOverlay") at top of index.js" -->
+    <script src="terminal.js"></script>
+</body>
+</html>
