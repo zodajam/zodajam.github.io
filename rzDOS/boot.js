@@ -4,12 +4,12 @@ main.onclick = function() {
 }
 
 const bootText = [ // text to loop through and display
-    "booting up",
-    "25% complete",
-    "50% complete",
-    "75% complete",
-    "100% complete",
-    "boot complete"
+    "[*] booting up",
+    "[*] 25% complete",
+    "[*] 50% complete",
+    "[*] 75% complete",
+    "[*] 100% complete",
+    "[*] boot complete"
 ]
 
 var i = 0; // index counter
