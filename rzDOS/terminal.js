@@ -8,7 +8,7 @@ input.addEventListener("keyup", (event) => {
     }
 });
 
-var version = 1.2;
+var version = 1.3;
 
 function checkCommand() {
     if(input.value.toLowerCase() === "help") {

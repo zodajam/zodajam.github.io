@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+    overflow: hidden;
+    background-color: green;
+}
+
+#player {
+    width: 25px;
+    height: 25px;
+    background-color: cyan;
+    border: 1px solid cyan;
+    position: absolute;
+}

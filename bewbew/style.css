@@ -1,0 +1,32 @@
+html, body {
+    font-family: fixedsys;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+pre { font-family: fixedsys; }
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    text-align: center;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-family: fixedsys;
+}
+
+input {
+    font-family: fixedsys;
+    background-color: black;
+    color: white;
+}

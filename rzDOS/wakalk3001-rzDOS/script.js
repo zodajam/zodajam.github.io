@@ -1,8 +1,8 @@
 const player = document.getElementById("player");
 
-const MOVE_SPEED = 50;
+const MOVE_SPEED = 25;
 let positionX = 0;
-let positionY = 100;
+let positionY = 0;
 
 player.style.top = positionY + "px";
 player.style.left = positionX + "px";
@@ -31,26 +31,4 @@ document.addEventListener("keydown", (event) => {
         player.style.left = positionX + "px";
         console.log(`X: ${positionX} Y: ${positionY}`);
     }
-
-
-    // collision stuff
-
-    if(positionY <= 50) {
-        location.reload();
-    }
 });
-
-const input = document.getElementById("input");
-input.addEventListener("keyup", (event) => {
-    if(event.key === "Enter") {
-        changeUsername();
-    }
-});
-
-function changeUsername() {
-    if(input.value.length > 25) {
-        alert(`[${input.value}] is too long, limit is 25 chars`);
-    } else {
-        player.textContent = input.value.trim();
-    }
-}

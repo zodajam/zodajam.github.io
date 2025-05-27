@@ -35,7 +35,7 @@ pre { font-family: fixedsys; }
     background-color: blue;
 }
 
-#bootProccess {padding-left: 5px;}
+#bootProccess { padding-left: 5px; }
 
 #topGrid {
     width: 100%;
@@ -54,22 +54,24 @@ button {
 #watermarkTop {float: right;}
 
 #nano {
-    background-color: gray;
+    background-color: indigo;
     display: none;
-    margin-top: 1rem;
+    height: 17rem;
 }
 
 textarea { font-family: fixedsys; }
-#nanoText { background-color: lightgray; }
+#nanoText {
+    background-color: lightgray;
+    width: 90%;
+    height: 80%;
+}
 
 #terminal {
-    width: 15rem;
-    height: 10rem;
+    height: 17rem;
     background-color: black;
     border: 1px solid white;
     color: lime;
     display: none;
-    margin-top: 15px;
     font-size: small;
 }
 
@@ -87,3 +89,18 @@ input { font-family: fixedsys; }
     display: flex;
     justify-content: center;
 }
+
+#wakalk3001, #bewbew {
+    display: none;
+}
+
+#wakalk3001frame {
+    width: 99.5%;
+    height: 17rem;
+}
+
+#bewbewframe {
+    width: 99.5%;
+    height: 17rem
+}
+
