@@ -1,34 +1,27 @@
-document.getElementById("changelog").onclick = function() {
+document.getElementById("changelog").onclick = function() { // open changelog
     on('log');
     on('cover');
-    document.getElementById('cover').onclick = function() {
+    document.getElementById('cover').onclick = function() { // click anywhere to close it
         off('log');
         off('cover');
     }
 }
 
-document.getElementById("unlistedBtn").onclick = function() {
-    on('unlisted');
+document.getElementById("unlistedProjcetsBtn").onclick = function() {
+    on('unlistedProjcets');
     on('cover');
     document.getElementById('cover').onclick = function() {
-        off('unlisted');
+        off('unlistedProjects');
         off('cover');
     }
 }
 
-function on(id) {
-    document.getElementById(id).style.display = "block";
-}
+function on(id) { document.getElementById(id).style.display = "block"; } // show stuff
+function off(id) { document.getElementById(id).style.display = "none"; } // hide stuff
 
-function off(id) {
-    document.getElementById(id).style.display = "none";
-}
+function isMobile() { return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent); } // what do you think this does?
 
-function isMobile() {
-    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-}
-
-if (isMobile()) {
+if (isMobile()) { // js mobile optimization :sob:
    document.getElementById("titlePre").innerHTML = `<h1 style="font-size:3rem;">Neocoral</h1><br><span>Copyright © 2025 zodajam</span>`;
    document.getElementById("main").style.width = "fit-content";
    document.getElementById("pre-dude").style.marginTop = "-2%";
