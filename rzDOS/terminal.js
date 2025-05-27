@@ -8,11 +8,11 @@ input.addEventListener("keyup", (event) => {
     }
 });
 
-var version = 1.1;
+var version = 1.2;
 
 function checkCommand() {
     if(input.value.toLowerCase() === "help") {
-        output.innerHTML = "rzDOS help menu:<br><br><b>help</b> - shows the help menu<br><b>clear</b> - clears the screen<br><b>version</b> - shows the current rzDOS version<br><b>doom</b> - plays the only thing they fear is you<br>doom stop - stops the doom song :("
+        output.innerHTML = "rzDOS help menu:<br><br><b>help</b> - shows the help menu<br><b>clear</b> - clears the screen<br><b>version</b> - shows the current rzDOS version<br><b>exit</b> - exits the terminal, duh<b>doom</b> - plays the only thing they fear is you<br><b>doom stop</b> - stops the doom song :("
     } else if(input.value.toLowerCase() === "clear") {
         output.innerHTML = "";
     } else if(input.value.toLowerCase() === "version") {
