@@ -118,7 +118,7 @@ p{font-family: fixedsys;}
     overflow-y: scroll;
 }
 
-#unlisted {
+#unlistedProjects {
     display: none;
     background-color: black;
     border: 4px double magenta;
