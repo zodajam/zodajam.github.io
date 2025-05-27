@@ -7,8 +7,8 @@ document.getElementById("changelog").onclick = function() { // open changelog
     }
 }
 
-document.getElementById("unlistedProjcetsBtn").onclick = function() {
-    on('unlistedProjcets');
+document.getElementById("unlistedProjectsBtn").onclick = function() {
+    on('unlistedProjects');
     on('cover');
     document.getElementById('cover').onclick = function() {
         off('unlistedProjects');
