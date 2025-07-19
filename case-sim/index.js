@@ -21,7 +21,7 @@ const pinks = [ // all pink skins
     "Small Coconut"
 ];
 
-const reds = [
+const reds = [ // all red skins
     "Large pumpkin",
     "Regular Coconut",
 ];
@@ -39,12 +39,13 @@ function openCase() {
     let skinType;
     const plusMoneyText = document.getElementById("plusMoney");
     balance = balText.textContent;
-    balance -= 5;
-    balText.textContent = balance;
 
     if(balance <= 0) {
         openCaseBtn.onclick = function() { alert("no money!") }
     }
+    
+    balance -= 5;
+    balText.textContent = balance;
 
     if(randomNum <= 70) {
         plusMoneyText.style.color = "blue";
@@ -101,8 +102,6 @@ function openCase() {
         dropText.innerHTML = randomGold;
     }
 }
-
-
 
 let clicker = document.getElementById("click");
 
