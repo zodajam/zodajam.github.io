@@ -1,5 +1,7 @@
 const main = document.getElementById("main"); // main box to add opened skin
 const balText = document.getElementById("balance");
+const dropText = document.getElementById("drop");
+const openCaseBtn = document.getElementById("openCaseBtn");
 
 const blues = [ // all blue skins
     "Rotten Carrot",
@@ -32,81 +34,79 @@ const golds = [ // all golds
 
 let balance = 100;
 
-function clear() {
-    while(main.firstChild) {
-        main.removeChild(main.lastChild);
+function openCase() {
+    let randomNum = Math.floor(Math.random() * 100); 
+    let skinType;
+    const plusMoneyText = document.getElementById("plusMoney");
+    balance = balText.textContent;
+    balance -= 5;
+    balText.textContent = balance;
+
+    if(balance <= 0) {
+        openCaseBtn.onclick = function() { alert("no money!") }
+    }
+
+    if(randomNum <= 70) {
+        plusMoneyText.style.color = "blue";
+        plusMoneyText.textContent = "+$0.25";
+        skinType = "blue";
+        balance += 0.25;        
+        balText.textContent = balance;
+        let randomBlue = blues[Math.floor(Math.random() * blues.length)];
+        dropText.style.color = "blue";
+        dropText.innerHTML = randomBlue;
+    }
+        
+    if(randomNum > 70) {
+        plusMoneyText.style.color = "#5600c4";
+        plusMoneyText.textContent = "+$1";
+        skinType = "purple";
+        balance += 1;
+        balText.textContent = balance;
+        let randomPurple = purples[Math.floor(Math.random() * purples.length)];
+        dropText.style.color = "#5600c4";
+        dropText.innerHTML = randomPurple;
+    }
+        
+    if(randomNum < 10 && randomNum > 5) {
+        plusMoneyText.style.color = "#ff00fb";
+        plusMoneyText.textContent = "+$25";
+        skinType = "pink";
+        balance += 25;
+        balText.textContent = balance;
+        let randomPink = pinks[Math.floor(Math.random() * pinks.length)];
+        dropText.style.color = "#ff00fb";
+        dropText.innerHTML = randomPink;
+    }            
+        
+    if(randomNum < 5 && randomNum > 3) {
+        plusMoneyText.style.color = "red";
+        plusMoneyText.textContent = "+$50";
+        skinType = "red";
+        balance += 50;
+        balText.textContent = balance;
+        let randomRed = reds[Math.floor(Math.random() * reds.length)];
+        dropText.style.color = "red";
+        dropText.innerHTML = randomRed;
+    }
+        
+    if(randomNum == 1) {
+        plusMoneyText.style.color = "gold";
+        plusMoneyText.textContent = "+$250";
+        skinType = "gold";
+        balance += 250;
+        balText.textContent = balance;
+        let randomGold = golds[Math.floor(Math.random() * golds.length)];
+        dropText.style.color = "gold";
+        dropText.innerHTML = randomGold;
     }
 }
+
+
 
 let clicker = document.getElementById("click");
 
 clicker.onclick = function() {
     balance += 0.25;
     balText.textContent = balance;
-}
-
-function openCase() {
-    let randomNum = Math.floor(Math.random() * 100); 
-    let skinType;
-    balance -= 5;
-    balText.textContent = balance;
-
-    if(balance <= 0) {
-        document.getElementById("openCaseBtn").onclick = function() { alert("no money!") }
-    }
-
-    if(randomNum <= 70) {
-        skinType = "blue";
-        balance += 0.25;
-        balText.textContent = balance;
-        let randomBlue = blues[Math.floor(Math.random() * blues.length)];
-        let blue = document.createElement("b");
-        blue.style.color = "blue";
-        blue.innerHTML = `${randomBlue}<br>`;
-        main.appendChild(blue);
-    }
-    
-    if(randomNum > 70) {
-        skinType = "purple";
-        balance += 1;
-        balText.textContent = balance;
-        let randomPurple = purples[Math.floor(Math.random() * purples.length)];
-        let purple = document.createElement("b");
-        purple.style.color = "#5600c4";
-        purple.innerHTML = `${randomPurple}<br>`;
-        main.appendChild(purple);
-    }
-    
-    if(randomNum < 10 && randomNum > 5) {
-        skinType = "pink";
-        balance += 25;
-        balText.textContent = balance;
-        let randomPink = pinks[Math.floor(Math.random() * pinks.length)];
-        let pink = document.createElement("b");
-        pink.style.color = "#ff00fb";
-        pink.innerHTML = `${randomPink}<br>`;
-        main.appendChild(pink);
-    }
-    
-    if(randomNum < 5 && randomNum > 3) {
-        skinType = "red";
-        balance += 50;
-        balText.textContent = balance;
-        let randomRed = reds[Math.floor(Math.random() * reds.length)];
-        let red = document.createElement("b");
-        red.style.color = "red";
-        red.innerHTML = `${randomRed}<br>`;
-        main.appendChild(red);
-    }
-    
-    if(randomNum == 1) {
-        skinType = "gold";
-        balance += 250;
-        balText.textContent = balance;
-        let randomGold = golds[Math.floor(Math.random() * golds.length)];
-        let gold = document.createElement("b");
-        gold.style.color = "gold";
-        gold.innerHTML = `${randomGold}<br>`;
-        main.appendChild(gold);
-    }
 }

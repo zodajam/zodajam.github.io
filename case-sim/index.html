@@ -9,20 +9,22 @@
 <body>
     <div class="container2">
         <nav id="topNav">
-            <b>Balance: $<span id="balance">100</span></b>
+            <b>Balance: $<span id="balance">100</span></b><br>
+            <b id="plusMoney"></b>
         </nav>
     </div>
     <div id="mainHolder">
-        <button onclick="openCase()" id="openCaseBtn" class="button"><b>CASE ($5)</b></button>
-        <button onclick="clear()" id="clearBtn" class="button"><b>CLEAR</b></button><br><br>
+        <button onclick="openCase()" id="openCaseBtn" class="button"><b>CASE ($5)</b></button><br><br>
     </div>
     <div class="container">
-        <div id="main"></div>
-    </div>
-    <div id="clicker">
-        <h3>Click to earn money!</h3>
-        <button id="click"><b>$</b></button>
-        <h4>$0.25 per click</h4>
+        <div id="main">
+            <h2 id="drop"></h2>
+        </div>
+        <div id="clicker">
+            <h3>Click to earn money!</h3>
+            <button id="click"><b>$</b></button>
+            <h4>$0.25 per click</h4>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
