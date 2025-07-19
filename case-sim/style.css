@@ -1,0 +1,78 @@
+html, body {
+    background-color: #13171b;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#mainHolder {
+    text-align: center;
+}
+
+#topNav {
+    background-color: #121314;
+    height: 4rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: orange;
+}
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: orange;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+a:hover { color: orangered; }
+
+#main {
+    background-color: #17202a;
+    width: 18rem;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 78vh;
+    font-size: small;
+}
+
+.button {
+    background-color: orange;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    height: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button:hover {
+    background-color: orangered;
+}
+
+#clicker {
+    position: absolute;
+    left: 75%;
+    top: 25%;
+    text-align: center;
+}
+
+#click {
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    font-size: 4rem;
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid darkgreen;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#click:hover { background-color: darkgreen; }

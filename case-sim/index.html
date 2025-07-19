@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASE SIM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container2">
+        <nav id="topNav">
+            <b>Balance: $<span id="balance">100</span></b>
+        </nav>
+    </div>
+    <div id="mainHolder">
+        <button onclick="openCase()" id="openCaseBtn" class="button"><b>CASE ($5)</b></button>
+        <button onclick="clear()" id="clearBtn" class="button"><b>CLEAR</b></button><br><br>
+    </div>
+    <div class="container">
+        <div id="main"></div>
+    </div>
+    <div id="clicker">
+        <h3>Click to earn money!</h3>
+        <button id="click"><b>$</b></button>
+        <h4>$0.25 per click</h4>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
