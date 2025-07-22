@@ -23,11 +23,7 @@ const pinks = [
   "Small Coconut",
 ];
 
-const reds = [ 
-    //all reds
-    "Large pumpkin",
-    "Regular Coconut"
-];
+const reds = ["Large pumpkin", "Regular Coconut"];
 
 const golds = [
   // all golds
@@ -43,14 +39,14 @@ function openCase() {
   balance = parseFloat(balText.textContent);
 
   // If the balance contains any character that is not a number this code will send message and stop executing
-  if(isNaN(balance)) {
+  if (isNaN(balance)) {
     alert("An error occurred. Please contact the developer.");
     return;
   }
 
   // Check if the balance is 5 or less, if it is then send message and stop executing
   // (This was "balance <= 0" which can give negative balance)
-  if(balance < 5) {
+  if (balance < 5) {
     // No need to add another onclick callback to the openCaseBtn element
     alert("no money!");
     return;
@@ -63,7 +59,7 @@ function openCase() {
   let skinType;
   const plusMoneyText = document.getElementById("plusMoney");
 
-  if(randomNum <= 70) {
+  if(randomNum < 69) { // 69% chance
     plusMoneyText.style.color = "blue";
     plusMoneyText.textContent = "+$0.25";
     skinType = "blue";
@@ -76,7 +72,7 @@ function openCase() {
     return;
   }
 
-  if(randomNum > 70 && randomNum < 90) {
+  if(randomNum < 87) { // 18% chance
     plusMoneyText.style.color = "#5600c4";
     plusMoneyText.textContent = "+$1";
     skinType = "purple";
@@ -89,18 +85,20 @@ function openCase() {
     return;
   }
 
-  if(randomNum < 10 && randomNum > 5) {
+  if(randomNum < 90) { // 3% chance
     plusMoneyText.style.color = "#ff00fb";
     plusMoneyText.textContent = "+$25";
     skinType = "pink";
     balance += 25;
     balText.textContent = balance;
-    let randomPurple = purples[Math.floor(Math.random() * purples.length)];
+    let randomPink = pinks[Math.floor(Math.random() * pinks.length)];
     dropText.style.color = "#ff00fb";
-    dropText.innerHTML = randomPurple;
+    dropText.innerHTML = randomPink;
+
+    return;
   }
 
-  if(randomNum < 5 && randomNum > 3) {
+  if(randomNum < 92) { // 2% chance
     plusMoneyText.style.color = "red";
     plusMoneyText.textContent = "+$50";
     skinType = "red";
@@ -109,9 +107,11 @@ function openCase() {
     let randomRed = reds[Math.floor(Math.random() * reds.length)];
     dropText.style.color = "red";
     dropText.innerHTML = randomRed;
+
+    return;
   }
 
-  if(randomNum == 1) {
+  if(randomNum < 93) { // 1% chance
     plusMoneyText.style.color = "gold";
     plusMoneyText.textContent = "+$250";
     skinType = "gold";
