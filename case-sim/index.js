@@ -131,3 +131,20 @@ clicker.onclick = function () {
   balance += 0.25;
   balText.textContent = balance;
 };
+
+
+
+// redeem code
+
+const redeemCode = document.getElementById("redeemCode");
+
+redeemCode.onclick = function() {
+  var code = window.prompt("Enter code to redeem rewards");
+
+  if(code === "1.2.5") {
+    balance += 1250;
+    balText.textContent = balance;
+  } else { 
+    alert("Not a code!");
+  }
+}

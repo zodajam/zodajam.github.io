@@ -26,8 +26,8 @@ html, body {
     background-color: black;
     height: 4rem;
     margin-bottom: 10px;
-    text-align: center;
     color: white;
+    text-align: center;
 }
 
 a {
@@ -47,6 +47,15 @@ a:hover { color: orangered; }
     padding: 10px;
     font-size: small;
     min-height: 4rem;
+}
+
+#redeemCode {
+    float: right;
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    top: 50%;
 }
 
 marquee {
