@@ -1,8 +1,15 @@
 html, body {
-    background-color: #13171b;
+    background-color: black;
+    height: 100vh;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: fixedsys;
     color: white;
+    color: magenta;
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(../fonts/FSEX300.ttf);
 }
 
 .container {
@@ -16,15 +23,15 @@ html, body {
 }
 
 #topNav {
-    background-color: #121314;
+    background-color: black;
     height: 4rem;
     margin-bottom: 10px;
     text-align: center;
-    color: orange;
+    color: white;
 }
 
 a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: fixedsys;
     color: orange;
     transition: color 0.3s;
     text-decoration: none;
@@ -33,27 +40,26 @@ a {
 a:hover { color: orangered; }
 
 #main {
-    background-color: #17202a;
+    border: 3px double;
+    background-color: black;
+    color: magenta;
     width: 18rem;
     padding: 10px;
-    border-radius: 10px;
     font-size: small;
     min-height: 4rem;
 }
 
-.button {
-    background-color: orange;
+marquee {
     color: white;
-    border: 0px;
-    border-radius: 5px;
-    height: 2rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.button:hover {
-    background-color: orangered;
+button {
+    border: 3px double;
+    background-color: black;
+    color: magenta;
+    margin-bottom: 4px; 
+    font-family: fixedsys;
+    cursor: pointer;
 }
 
 #clicker {
@@ -62,15 +68,10 @@ a:hover { color: orangered; }
 }
 
 #click {
-    background-color: green;
     color: white;
     border-radius: 50%;
     font-size: 4rem;
     width: 7rem;
     height: 7rem;
-    border: 1px solid darkgreen;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
-
-#click:hover { background-color: darkgreen; }
