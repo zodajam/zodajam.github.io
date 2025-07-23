@@ -44,7 +44,7 @@ function runAI() {
     }
 
     if(AIchosen === "scissors" && PLAYERchosen === "rock") {
-        alert(`You won! BOT Connor chose rock`);
+        alert(`You won! BOT Connor chose scissors`);
         location.reload();
     }
 
