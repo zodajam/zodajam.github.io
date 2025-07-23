@@ -30,3 +30,8 @@ input {
     background-color: black;
     color: white;
 }
+
+#searchFrame {
+    width: 100%;
+    height: 80vh;
+}
