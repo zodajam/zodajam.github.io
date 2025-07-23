@@ -1,0 +1,19 @@
+html, body {
+    background-color: black;
+    color: magenta;
+    font-family: fixedsys;
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+button {
+    border: 3px double;
+    background-color: black;
+    color: magenta;
+    margin-bottom: 4px; 
+    font-family: fixedsys;
+    cursor: pointer;
+}
