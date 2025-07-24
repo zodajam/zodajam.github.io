@@ -23,7 +23,7 @@ function isMobile() { return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.use
 
 if (isMobile()) { // js mobile optimization :sob:
    document.getElementById("titlePre").innerHTML = `
-   <div style="text-align: center;"><h1 style="font-size: 5rem;">NEOCORAL</h1><span>Copyright © 2025 zodajam</span></div>
+   <div style="text-align: center;"><h1 style="font-size: 5rem;text-align:center;">NEOCORAL</h1><span style="text-align:center;">Copyright © 2025 zodajam</span></div>
    `;
    document.getElementById("main").style.width = "fit-content";
    document.getElementById("pre-dude").style.marginTop = "-2%";
