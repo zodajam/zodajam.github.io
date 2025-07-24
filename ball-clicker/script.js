@@ -10,7 +10,7 @@ circle.addEventListener("click", function() {
     audio = new Audio(`Pop${Math.floor(Math.random() * 3)+ 1}.wav`);
     audio.play();
     localStorage.setItem("score", score);
-    scoreElement.textContent = localStorage.score;
+    scoreElement.textContent = localStorage.getItem("score");
 });
 
 scoreElement.textContent = localStorage.getItem("score");
