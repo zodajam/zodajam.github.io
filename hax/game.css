@@ -1,0 +1,27 @@
+html, body {
+    background-color: black;
+    color: magenta;
+    font-family: fixedsys;
+    text-align: center;
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(../../fonts/FSEX300.ttf);
+}
+
+input {
+    border: 4px double magenta;
+    color: magenta;
+    background: none;
+    outline: none;
+    font-family: fixedsys;
+}
+
+button {
+    border: 4px double magenta;
+    color: magenta;
+    background: none;
+    font-family: fixedsys;
+    cursor: pointer;
+}

@@ -1,0 +1,15 @@
+html, body {
+    background-color: black;
+    color: magenta;
+    font-family: fixedsys;
+    text-align: center;
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+a {
+    color: cyan;
+}
