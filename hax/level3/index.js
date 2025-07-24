@@ -1,21 +1,18 @@
 const btn = document.getElementById("btn");
 const input = document.getElementById("input");
 
+sessionStorage.clear();
+
 function upload() {
     const file = document.getElementById("file");
-    if (file) {
-        var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
-        var filename = fullPath.substring(startIndex);
-        if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
-            filename = filename.substring(1);
-        }
-        alert(filename);
+    if(file.files[0].name === "key.txt") {
+        sessionStorage.setItem("key", Math.floor(Math.random() * 10000) + 1);
     }
 }
 
 input.addEventListener("keyup", (event) => {
     if(event.key === "Enter") {
-        if(input.value === sessionStorage.key.toString()) {
+        if(input.value === sessionStorage.getItem("key")) {
             alert("Congrats!!! You have won the medium level");
             input.value = "";
         } else {
@@ -26,7 +23,7 @@ input.addEventListener("keyup", (event) => {
 });
 
 btn.onclick = function() {
-    sessionStorage.password = Math.floor(Math.random() * 1000) + 1;
+    sessionStorage.password = Math.floor(Math.random() * 10000) + 1;
 }
 
 const ball = document.getElementById("ball");
