@@ -22,7 +22,7 @@ function off(id) { document.getElementById(id).style.display = "none"; } // hide
 function isMobile() { return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent); } // what do you think this does?
 
 if (isMobile()) { // js mobile optimization :sob:
-   document.getElementById("titlePre").innerHTML = `<h1 style="font-size:3rem;">Neocoral</h1><br><span class="text-center">Copyright © 2025 zodajam</span>`;
+   document.getElementById("titlePre").innerHTML = `<h1 style="font-size:3rem;">Neocoral</h1><br><span style="text-align: center;">Copyright © 2025 zodajam</span>`;
    document.getElementById("main").style.width = "fit-content";
    document.getElementById("pre-dude").style.marginTop = "-2%";
    document.getElementById("pre-dude").style.marginLeft = "-6%";
