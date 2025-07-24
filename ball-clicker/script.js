@@ -12,7 +12,7 @@ if (!isNaN(newScore)) {
 
 circle.addEventListener("click", function() {
     score++;
-    audio = new Audio(`Pop${Math.floor(Math.random() * 3)+ 1}.wav`);
+    audio = new Audio(`Pop${Math.floor(Math.random() * 2)+ 1}.wav`);
     audio.play();
     localStorage.setItem("score", score);
     scoreElement.textContent = localStorage.getItem("score");
