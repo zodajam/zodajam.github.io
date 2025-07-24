@@ -16,7 +16,7 @@ const input = document.getElementById("input");
 input.addEventListener("keyup", (event) => {
     if(event.key === "Enter") {
         if(input.value === sessionStorage.key) {
-            alert("Congrats!!! You have won the medium level");
+            alert("Congrats!!! You have won the hard level");
             input.value = "";
         } else {
             alert("Wrong password!");
