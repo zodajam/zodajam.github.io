@@ -1,3 +1,5 @@
+sessionStorage.clear();
+
 const input = document.getElementById("input");
 
 input.addEventListener("keyup", (event) => {
@@ -10,4 +12,12 @@ input.addEventListener("keyup", (event) => {
             input.value = "";
         }
     }
+});
+
+const ball = document.getElementById("ball");
+let score = 0;
+
+ball.addEventListener("click", function() {
+    score++;
+    document.getElementById("clicks").textContent = score;
 });
