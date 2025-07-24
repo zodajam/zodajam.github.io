@@ -38,10 +38,6 @@ html, body {
     #titlePre {
         font-size: x-small;
     }
-
-    #unlistedProjects {
-        width: 6rem;
-    }
 }
 
 @media screen and (max-width: 1930px) {
