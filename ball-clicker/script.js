@@ -5,6 +5,11 @@ let score = 0;
 
 var audio = new Audio(`Pop${Math.floor(Math.random() * 3)+ 1}.wav`);
 
+let newScore = parseInt(localStorage.getItem("score"));
+if (!isNaN(newScore)) {
+  score = newScore;
+}
+
 circle.addEventListener("click", function() {
     score++;
     audio = new Audio(`Pop${Math.floor(Math.random() * 3)+ 1}.wav`);
@@ -14,4 +19,3 @@ circle.addEventListener("click", function() {
 });
 
 scoreElement.textContent = localStorage.getItem("score");
-score = localStorage.getItem("score");
