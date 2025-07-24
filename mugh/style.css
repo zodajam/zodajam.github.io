@@ -60,7 +60,7 @@ hr {
 
 #settings {
     position: relative;
-    top: -44.5%;
+    top: -40.5%;
     z-index: 100;
     display: none;
     height: 28.85rem;
@@ -81,7 +81,7 @@ hr {
 
 #terminal {
     position: relative;
-    top: -44.5%;
+    top: -40.5%;
     z-index: 100;
     display: none;
     height: 28.85rem;
