@@ -1,0 +1,59 @@
+html, body {
+    background-color: black;
+    color: magenta;
+    font-family: fixedsys;
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    border: 4px double magenta;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+}
+
+hr {
+    margin-right: 4px;
+    margin-left: 4px;
+    border-color: magenta;
+}
+
+a {
+    color: cyan;
+}
+
+.title { font-size: xx-large; }
+.title2 { font-size: x-large; }
+
+#tech {
+    float: left;
+}
+
+.inline {
+    display: flex;
+}
+
+.shop {
+    border: 4px double cyan;
+    color: cyan;
+    padding: 10px;
+    width: 30.5%;
+    height: 15rem;
+}
+
+button {
+    border: 4px double cyan;
+    color: cyan;
+    font-family: fixedsys;
+    background: none;
+    cursor: pointer;
+}

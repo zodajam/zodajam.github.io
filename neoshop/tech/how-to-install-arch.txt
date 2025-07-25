@@ -1,0 +1,11 @@
+buy the iso file for 10 neocoins in the shop or just download for free at archlinux.org
+
+if your on windows go ahead and download rufus, if your on linux just download balenaEtcher. 
+
+go ahead and flash the iso file to your usb.
+
+when thats done reboot pc and open bios (F2 or F12 most of the time) then select your usb as boot priority number 1
+
+alr now your gonna boot into the live arch linux iso.
+
+cool cool, now type archinstall and follow the thingy ok nice thanks for letting me steal your neocoins
