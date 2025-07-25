@@ -21,14 +21,17 @@ scoreElement.textContent = localStorage.getItem("score");
 const autoclickerBtn = document.getElementById("autoclicker");
 
 autoclickerBtn.onclick = function() {
-  if(score >= 2500) {
-    score -= 2500;
-    setInterval(function() {
-      score++;
-      let audio = new Audio(`Pop${Math.floor(Math.random() * 2)+ 1}.wav`);
-      audio.play();
-      localStorage.setItem("score", score);
-      scoreElement.textContent = localStorage.getItem("score");
-    }, 1000);
-  }
+  const autoclickerInterval = setInterval(function() {
+    score++;
+    let audio = new Audio(`Pop${Math.floor(Math.random() * 2)+ 1}.wav`);
+    audio.play();
+    localStorage.setItem("score", score);
+    scoreElement.textContent = localStorage.getItem("score");
+  }, 1000);
+}
+
+const removeAutoclickerBtn = document.getElementById("removeAutoclickerBtn");
+
+removeAutoclickerBtn.onclick = function() {
+  location.reload();
 }
