@@ -1,0 +1,37 @@
+html, body {
+    background-color: black;
+    font-family: fixedsys;
+    color: cyan;
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    border: 4px double cyan;
+}
+
+button {
+    border: 4px double cyan;
+    background: none;
+    color: cyan;
+    font-family: fixedsys;
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+hr {
+    margin-left: 4px;
+    margin-right: 4px;
+    border-color: cyan;
+}

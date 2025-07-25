@@ -1,32 +1,32 @@
 let scoreElement = document.getElementById("score");
 let circle = document.getElementById("circle");
 
-let score = 0;
+let neocoin = 0;
 
-let newScore = parseInt(localStorage.getItem("score"));
-if (!isNaN(newScore)) {
-  score = newScore;
+let newNeocoin = parseInt(localStorage.getItem("neocoin"));
+if (!isNaN(newNeocoin)) {
+  neocoin = newNeocoin;
 }
 
 circle.addEventListener("click", function() {
-    score++;
+    neocoin++;
     let audio = new Audio(`Pop${Math.floor(Math.random() * 2)+ 1}.wav`);
     audio.play();
-    localStorage.setItem("score", score);
-    scoreElement.textContent = localStorage.getItem("score");
+    localStorage.setItem("neocoin", neocoin);
+    scoreElement.textContent = localStorage.getItem("neocoin");
 });
 
-scoreElement.textContent = localStorage.getItem("score");
+scoreElement.textContent = localStorage.getItem("neocoin");
 
 const autoclickerBtn = document.getElementById("autoclicker");
 
 autoclickerBtn.onclick = function() {
-  const autoclickerInterval = setInterval(function() {
-    score++;
+  setInterval(function() {
+    neocoin++;
     let audio = new Audio(`Pop${Math.floor(Math.random() * 2)+ 1}.wav`);
     audio.play();
-    localStorage.setItem("score", score);
-    scoreElement.textContent = localStorage.getItem("score");
+    localStorage.setItem("neocoin", neocoin);
+    scoreElement.textContent = localStorage.getItem("neocoin");
   }, 1000);
 }
 
