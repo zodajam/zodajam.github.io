@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    font-family: main;
+    color: white;
+}
+
+@font-face {
+    font-family: main;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+#clock {
+    border: 4px ridge white;
+    width: fit-content;
+    padding: 10px;
+    height: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}

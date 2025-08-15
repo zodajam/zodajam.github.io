@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    font-family: font;
+}
+
+@font-face {
+    font-family: font;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.key {
+    display: inline-block;
+    width: 2rem;
+    height: 5rem;
+    margin-right: 2px;
+    background-color: white;
+}
+
+.key:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+#piano {
+    background-color: midnightblue;
+    padding: 5px;
+    text-align: center;
+}
+
+#randomKey { background: linear-gradient(to bottom right, mediumvioletred, orange); }
+#randomKey:hover { background: linear-gradient(to bottom right, purple, orangered); }
+
+#title {
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
