@@ -11,7 +11,7 @@ html, body {
     background: black;
 }
 
-@media screen and (max-width: 600px) {  
+@media screen and (max-width: 600px) { 
     #pre-dude, #pre-dude2 {
         position: absolute;
         top: 70%;
