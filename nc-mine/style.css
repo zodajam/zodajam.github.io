@@ -19,11 +19,20 @@ html, body {
 }
 
 button {
-    border: 4px double cyan;
-    background: none;
+    border: 3px double;
+    background-color: black;
     color: cyan;
+    margin-bottom: 4px; 
     font-family: fixedsys;
     cursor: pointer;
+    position: relative;
+}
+
+button:hover {
+    background-color: cyan;
+    color: black;
+    border-color: cyan;
+    top: -5px;
 }
 
 .text-center {

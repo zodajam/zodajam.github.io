@@ -18,11 +18,20 @@ html, body {
 pre {font-family: fixedsys;}
 
 button {
-    color: cyan;
-    border: 4px double cyan;
-    background: none;
-    cursor: pointer;
+    border: 3px double;
+    background-color: black;
+    color: magenta;
+    margin-bottom: 4px; 
     font-family: fixedsys;
+    cursor: pointer;
+    position: relative;
+}
+
+button:hover {
+    background-color: magenta;
+    color: white;
+    border-color: darkmagenta;
+    top: -5px;
 }
 
 #red {

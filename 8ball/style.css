@@ -16,6 +16,7 @@ body {
 
 #ballNum {color: cyan;}
 #ballText {color: cyan; width: 100rem;}
+
 #ball {
     color: black;
     border-radius: 50%;
@@ -34,4 +35,12 @@ button {
     margin-bottom: 4px; 
     font-family: fixedsys;
     cursor: pointer;
+    position: relative;
+}
+
+button:hover {
+    background-color: magenta;
+    color: white;
+    border-color: darkmagenta;
+    top: -5px;
 }

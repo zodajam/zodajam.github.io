@@ -29,6 +29,12 @@ hr {
 
 a {
     color: cyan;
+    font-family: fixedsys;
+}
+
+a:hover {
+    color: black;
+    background-color: cyan;
 }
 
 .title { font-size: xx-large; }
@@ -51,9 +57,18 @@ a {
 }
 
 button {
-    border: 4px double cyan;
+    border: 3px double;
+    background-color: black;
     color: cyan;
+    margin-bottom: 4px; 
     font-family: fixedsys;
-    background: none;
     cursor: pointer;
+    position: relative;
+}
+
+button:hover {
+    background-color: cyan;
+    color: black;
+    border-color: darkcyan;
+    top: -5px;
 }

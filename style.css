@@ -75,7 +75,17 @@ html, body {
 }
 
 pre {font-family: fixedsys;}
-a {color: cyan; font-family: fixedsys;}
+
+.a {
+    color: cyan;
+    font-family: fixedsys;
+}
+
+.a:hover {
+    color: black;
+    background-color: cyan;
+}
+
 .cyan {color: cyan;}
 
 span {font-family: fixedsys;}
@@ -185,6 +195,14 @@ button {
     margin-bottom: 4px; 
     font-family: fixedsys;
     cursor: pointer;
+    position: relative;
+}
+
+button:hover {
+    background-color: magenta;
+    color: white;
+    border-color: darkmagenta;
+    top: -5px;
 }
 
 #pre-dude {
@@ -211,4 +229,16 @@ button {
 .container {
     display: flex;
     justify-content: center;
+}
+
+.special-btn {
+    background: none;
+    border: 4px double cyan;
+    color: cyan;
+}
+
+.special-btn:hover {
+    border-color: darkcyan;
+    background-color: cyan;
+    color: black;
 }

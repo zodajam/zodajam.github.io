@@ -12,4 +12,10 @@ html, body {
 
 a {
     color: cyan;
+    font-family: fixedsys;
+}
+
+a:hover {
+    color: black;
+    background-color: cyan;
 }

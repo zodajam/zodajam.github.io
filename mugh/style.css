@@ -71,8 +71,20 @@ hr {
 }
 
 #homepage {
-    background: none;
-    border: 4px double cyan;
+    border: 3px double;
+    background-color: black;
+    color: cyan;
+    margin-bottom: 4px; 
+    font-family: fixedsys;
+    cursor: pointer;
+    position: relative;
+}
+
+#homepage:hover {
+    background-color: cyan;
+    color: black;
+    border-color: darkcyan;
+    top: -5px;
 }
 
 .hidden {

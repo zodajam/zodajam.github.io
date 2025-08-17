@@ -44,9 +44,20 @@ pre { font-family: fixedsys; }
 }
 
 button {
-    background-color: cyan;
+    border: 3px double;
+    background-color: black;
+    color: cyan;
+    margin-bottom: 4px; 
     font-family: fixedsys;
     cursor: pointer;
+    position: relative;
+}
+
+button:hover {
+    background-color: cyan;
+    color: black;
+    border-color: darkcyan;
+    top: -5px;
 }
 
 .appBtn { height: 2rem; }

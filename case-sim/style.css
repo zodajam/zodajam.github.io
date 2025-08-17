@@ -69,6 +69,14 @@ button {
     margin-bottom: 4px; 
     font-family: fixedsys;
     cursor: pointer;
+    position: relative;
+}
+
+button:hover {
+    background-color: magenta;
+    color: white;
+    border-color: darkmagenta;
+    top: -5px;
 }
 
 #clicker {
@@ -78,9 +86,15 @@ button {
 
 #click {
     color: white;
+    border: 2px solid white;
     border-radius: 50%;
     font-size: 4rem;
     width: 7rem;
     height: 7rem;
     cursor: pointer;
+}
+
+#dollar {
+    position: relative;
+    top: 15px;
 }
