@@ -1,0 +1,69 @@
+* {
+    position: relative;
+    z-index: 0;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    color: white;
+    font-family: font;
+    background-color: black;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: font;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+#canvas {
+    background-color: black;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+button {
+    background-color: red;
+    box-shadow: 6px 6px #242424;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border: none;
+    font-family: font;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: darkred;
+    color: whitesmoke;
+}
+
+#main {
+    margin-top: 15px;
+    text-align: center;
+    background-color: dimgray;
+    outline-offset: -7px;
+    outline-width: 4px;
+    outline-color: seashell;
+    outline-style: ridge;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+#canvasOverlay {
+    position: relative;
+    z-index: 1000000;
+    text-align: center;
+}
