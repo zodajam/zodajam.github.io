@@ -14,9 +14,7 @@ document.addEventListener("mousedown", () => {
     draw();
 });
 
-document.addEventListener("mouseup", () => {
-    drawing = false;
-});
+e
 
 document.addEventListener("mousemove", (event) => {
     if(drawing) {
