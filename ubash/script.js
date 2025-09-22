@@ -2,7 +2,7 @@ const input = document.getElementById("input"); // input box
 
 input.addEventListener("keydown", (event) => { // check if user press enter button
     if(event.key === "Enter") {
-        main(); // then call main function
+        main();
         input.value = "";
     }
 });
@@ -17,7 +17,6 @@ const version = "1.3.1";
 
 function main() { // main function
     const text = document.getElementById("text"); // text element that changes based on input
-    var godmode = false;
 
     // » C « 
     //   » O «
@@ -80,8 +79,7 @@ _|_|_   CPU: 12 × AMD Ryzen 5 5500
         text.innerHTML = "";
     } else if(input.value.trim() === "") {
         return;
-    }
-    else {
+    } else {
         text.innerHTML = `[${input.value}] unknown command`;
         input.value = "";
     }
