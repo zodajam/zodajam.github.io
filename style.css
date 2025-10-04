@@ -1,14 +1,27 @@
 html, body {
     background-color: black;
     color: magenta;
-    margin: 1;
+    margin: 0;
     box-sizing: border-box;
     flex-grow: 0;
+}
+
+#website {
+    position: relative;
+    z-index: 100000;
 }
 
 ::-webkit-scrollbar {
     width: 0px;
     background: black;
+}
+
+#background {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 
 @media screen and (max-width: 600px) { 

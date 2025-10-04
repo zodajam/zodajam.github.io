@@ -33,3 +33,29 @@ if (isMobile()) { // js mobile optimization :sob:
    document.getElementById("log").style.width = "fit-content";
    document.getElementById("unlistedProjects").style.width = "fit-content";
 }
+
+const canvas = document.getElementById("background");
+const ctx = canvas.getContext("2d");
+
+ctx.strokeStyle = "white";
+ctx.lineWidth = 15;
+
+let r = 255;
+let g = 0;
+let b = 180;
+
+document.addEventListener("mousemove", function(event) {
+    ctx.beginPath();
+    ctx.moveTo(event.x, event.y);
+    ctx.lineTo(event.x + 10, event.y + 10);
+    ctx.stroke();
+
+    setTimeout(function() {
+        ctx.clearRect(event.x - 10, event.y - 10, 30, 30);
+        ctx.strokeStyle = `rgb(${r},${g},${b})`;
+
+        r--;
+        g++;
+        b++;
+    }, 100);
+});
