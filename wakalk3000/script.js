@@ -1,56 +1,47 @@
-const player = document.getElementById("player");
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
 
-const MOVE_SPEED = 50;
-let positionX = 0;
-let positionY = 100;
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
-player.style.top = positionY + "px";
-player.style.left = positionX + "px";
-
-document.addEventListener("keydown", (event) => {
-    if(event.key === "w") { // up
-        positionY -= MOVE_SPEED;
-        player.style.top = positionY + "px";
-        console.log(`X: ${positionX} Y: ${positionY}`);
-    }
-
-    if(event.key === "a") { // left
-        positionX -= MOVE_SPEED;
-        player.style.left = positionX + "px";
-        console.log(`X: ${positionX} Y: ${positionY}`);
-    }
-
-    if(event.key === "s") { // down
-        positionY += MOVE_SPEED;
-        player.style.top = positionY + "px";
-        console.log(`X: ${positionX} Y: ${positionY}`);
-    }
-
-    if(event.key === "d") { // right
-        positionX += MOVE_SPEED;
-        player.style.left = positionX + "px";
-        console.log(`X: ${positionX} Y: ${positionY}`);
-    }
-
-
-    // collision stuff
-
-    if(positionY <= 50) {
-        location.reload();
-    }
-});
-
-const input = document.getElementById("input");
-input.addEventListener("keyup", (event) => {
-    if(event.key === "Enter") {
-        changeUsername();
-    }
-});
-
-function changeUsername() {
-    if(input.value.length > 25) {
-        alert(`[${input.value}] is too long, limit is 25 chars`);
-    } else {
-        player.textContent = input.value.trim();
+class Object {
+    constructor(x, y, width, height) {
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
     }
 }
+
+const speed = 6;
+const player = new Object(10, 10, 48, 48);
+
+let keys = {};
+
+document.addEventListener("keydown", function(event) {
+    keys[event.key] = true;
+});
+
+document.addEventListener("keyup", function(event) {
+    keys[event.key] = false;
+});
+
+ctx.fillStyle = "blue";
+function game() {
+    ctx.clearRect(player.x, player.y, player.width, player.height);
+
+    if(keys["w"]) { player.y -= speed; }
+    if(keys["s"]) { player.y += speed; }
+    if(keys["a"]) { player.x -= speed; }
+    if(keys["d"]) { player.x += speed; }
+
+    if(player.x < 0) { player.x += speed; }
+    if(player.y < 0) { player.y += speed; }
+    if(player.x > canvas.width - player.width) { player.x -= speed; }
+    if(player.y > canvas.height - player.height) { player.y -= speed; }
+
+    ctx.fillRect(player.x, player.y, player.height, player.height);
+    requestAnimationFrame(game);
+}
+
+game();

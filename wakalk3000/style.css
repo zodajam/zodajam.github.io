@@ -1,27 +1,8 @@
-html, body {
+body {
     margin: 0;
     overflow: hidden;
+}
+
+#canvas {
     background-color: green;
-}
-
-#map {
-    width: 100%;
-    height: 100%;
-}
-
-#player {
-    width: 50px;
-    height: 50px;
-    background-color: cyan;
-    border: 1px solid cyan;
-    position: absolute;
-    left: 100px;
-    top: 100px;
-}
-
-.wall { background-color: darkgray; }
-
-#wallTop {
-    height: 100px;
-    width: 100%;
 }
