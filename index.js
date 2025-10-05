@@ -57,5 +57,11 @@ document.addEventListener("mousemove", function(event) {
         r--;
         g++;
         b++;
+
+        if(r < 0 && g > 255 & b > 255) {
+            r = 255;
+            g = 0;
+            b = 180;
+        }
     }, 100);
 });
