@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+#canvas {
+    position: relative;
+    z-index: 1;
+}
+
+#display {
+    background-color: dodgerblue;
+    border: 4px ridge white;
+    padding: 5px;
+    width: fit-content;
+    color: orange;
+    font-family: fixedsys;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
