@@ -9,19 +9,25 @@ body {
 }
 
 #canvas {
+    background-color: black;
     position: relative;
     z-index: 1;
 }
 
 #display {
-    background-color: dodgerblue;
-    border: 4px ridge white;
+    background-color: black;
+    border: 4px ridge cyan;
     padding: 5px;
     width: fit-content;
-    color: orange;
+    color: white;
     font-family: fixedsys;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1000;
+    opacity: 50%;
 }
+
+#display:hover { opacity: 100; }
+
+#display-text { color: orange; }

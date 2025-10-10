@@ -13,11 +13,11 @@ class Object {
     }
 }
 
-const speed = 12;
+const speed = 6;
 const player = new Object(10, 10, 48, 48);
 const neocoin = new Object(Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height), 25, 25);
 let newNeocoin = localStorage.getItem("neocoin");
-document.getElementById("display").textContent = `neocoins: ${localStorage.getItem("neocoin")}`;
+document.getElementById("display-text").textContent = `neocoins: ${localStorage.getItem("neocoin")}`;
 
 let keys = {};
 
@@ -33,9 +33,9 @@ function isCollidingX(x1, w1, x2, w2) { return x1 < x2 + w2 && x1 + w1 > x2; }
 function isCollidingY(y1, h1, y2, h2) { return y1 < y2 + h2 && y1 + h1 > y2; }
 
 function render() {
-    ctx.fillStyle = "blue";
+    ctx.fillStyle = "cyan";
     ctx.fillRect(player.x, player.y, player.width, player.height);
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "magenta";
     ctx.fillRect(neocoin.x, neocoin.y, neocoin.width, neocoin.height);
 }
 
@@ -60,7 +60,7 @@ function game() {
         neocoin.y = Math.floor(Math.random() * canvas.height) - 25;
         newNeocoin++;
         localStorage.setItem("neocoin", newNeocoin);
-        document.getElementById("display").textContent = `neocoins: ${localStorage.getItem("neocoin")}`;
+        document.getElementById("display-text").textContent = `neocoins: ${localStorage.getItem("neocoin")}`;
     }
 
     render();
