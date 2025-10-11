@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: fixedsys;
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    background-color: #171717;
+    outline-offset: -10px;
+    outline-width: 5px;
+    outline-color: cyan;
+    outline-style: double;
+    padding: 15px;
+    text-align: center;
+    width: 15rem;
+}
+
+.title { font-size: x-large; }
+
+button {
+    background-color: black;
+    border: none;
+    color: orange;
+    font-family: fixedsys;
+    padding: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+button:hover { top: -2px; }
+
+a {
+    color: cyan;
+    text-decoration: none;
+    display: none;
+}
+
+a:hover {
+    background-color: cyan;
+    color: black;
+}
