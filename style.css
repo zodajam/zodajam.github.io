@@ -221,7 +221,7 @@ button:hover {
     color: cyan;
     font-size: larger;
     position: absolute;
-    margin-top: 2%;
+    margin-top: 7%;
     z-index: 10;
 }
 
@@ -230,8 +230,8 @@ button:hover {
     font-size: larger;
     position: absolute;
     z-index: 100;
-    margin-top: 2%;
-    left: 55%;
+    margin-top: 7%;
+    left: 35%;
 }
 
 #canvas {background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7xoekfqZxDbkCP6TLChaSoZvhtgWCZpUfnx5rLVtwxe5VqVaqJe55gHdH-A1Fsxos8Ss&usqp=CAU");}
