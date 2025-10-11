@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: fixedsys;
+}
+
+@font-face {
+    font-family: fixedsys;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+#canvas {
+    position: relative;
+    z-index: 1;
+}
+
+#bar {
+    background-color: black;
+    border-bottom: 4px ridge white;
+    width: 100%;
+    color: orange;
+}
+
+#death {
+    position: relative;
+    z-index: 10;
+    background-color: black;
+    color: orange;
+    border: 4px solid white;
+    padding: 5px;
+    display: none;
+}
+
+#how-to-play-text {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+}
+
+#how-to-play-text:hover {
+    color: darkorange;
+    cursor: pointer;
+}
+
+#how { float: right; }
+
+#how-to-play {
+    position: absolute;
+    z-index: 100;
+    top: 1rem;
+    display: none;
+    background-color: black;
+    color: orange;
+    border: 4px ridge white;
+    padding: 5px;
+}
