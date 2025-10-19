@@ -44,7 +44,7 @@ html, body {
         display: block;
     }
 
-    #phone1, #phone2, #phone3 {
+    #phone1, #phone2 {
         display: none;
     }
 
