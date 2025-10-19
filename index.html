@@ -48,10 +48,10 @@
                     <a href="virus" title="download RAM"><button id="virus">download free RAM</button></a>
                     <a href="nc-mine/" title="nC-mine"><button id="nc-mine">nC-mine</button></a>
                     <a href="stonks" title="stonks"><button id="stonks">stonks</button></a>
-                    <a href="neocoin-collector/" title="neocoin collector"><button id="neocoin-collector">neocoin collector</button></a><br>
-                    <a href="lungs-of-copper/" title="lungs of copper"><button id="lungs-of-copper">lungs of copper</button></a>
-                    <a href="bobelito/" title="bobelito"><button id="bobelito">bobelito</button></a>
-                    <a href="rps/" title="rock, paper, scissors"><button id="rps">rock, paper, scissors</button></a>
+                    <a href="bobelito/" title="bobelito"><button id="bobelito">bobelito</button></a><br>
+                    <a href="neocoin-collector/" title="neocoin collector"><button id="neocoin-collector">neocoin collector</button></a>
+                    <a href="frontwars/" title="frontwars 2.0"><button id="frontwars">frontwars 2.0</button></a>
+                    <a href="rps/" title="rock, paper, scissors"><button id="rps">rock paper scissors</button></a>
                     <br>
                 </div>
                 <div id="other">
@@ -93,14 +93,13 @@
                 <img src="img/spike.png">
                 <img src="img/spike.png">
                 <img src="img/spike.png">
-                <img src="img/spike.png" id="phone1">
-                <img src="img/spike.png" id="phone2">
-                <img src="img/spike.png" id="phone3">
             </div>
         </main>
         <div id="log">
             <button onclick="off('log')" class="x">X</button>
             <h1>Changelog for neocoral</h1>
+            <h2>v5.8</h2>
+            <p>Added stats on homepage, fixed typo in <a href="8ball/" class="a">magic 8-ball</a> and rearranged layout on homepage a bit and also got rid of background on main box on homepage so particle effect works there too</p>
             <h2>v5.7</h2>
             <p>Changed <a href="bewbew/" class="a">BEW BEW</a>, now the search result cover like the entire screen</p>
             <h2>v5.6</h2>
@@ -206,6 +205,14 @@
         <div id="cover"></div>
         <p id="onlyKind">» Only kind messages allowed «</p>
         <div class="container"><iframe src="https://www5.cbox.ws/box/?boxid=955618&boxtag=D0mwrt" id="chat" width="750" height="300" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe></div>
+        <div class="container">
+            <div id="stats">
+                <span id="stats-title"><i>stats</i></span><br>
+                neocoins: <span id="neocoins">error</span><br>
+                stonks: <span id="stonk">error</span><br>
+                time spent: <span id="time">error</span>s
+            </div>
+        </div>
     </div>
     <canvas id="background" width="10000" height="10000"></canvas>
     <script src="index.js"></script>

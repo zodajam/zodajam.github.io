@@ -2,9 +2,10 @@ const yes = [
     "Of course",
     "Yes indeed",
     "Yup",
-    "Yessir",
+    "Yes sir",
     "Yeah",
-    "Why wouldn't it be YES!!!!"
+    "Why wouldn't it be YES!!!!",
+    "Why of course"
 ]
 
 const no = [
@@ -13,7 +14,8 @@ const no = [
     "No way",
     "Nope",
     "Hell no",
-    "I'm sorry, but the anser is a NO!"
+    "I'm sorry, but the answer is a NO!",
+    "Sorry bud it's a no"
 ]
 
 var random8 = Math.floor(Math.random() * 2);

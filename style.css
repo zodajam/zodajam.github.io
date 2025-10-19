@@ -4,6 +4,7 @@ html, body {
     margin: 0;
     box-sizing: border-box;
     flex-grow: 0;
+    font-family: fixedsys;
 }
 
 #website {
@@ -88,10 +89,7 @@ html, body {
 
 pre {font-family: fixedsys;}
 
-.a {
-    color: cyan;
-    font-family: fixedsys;
-}
+.a { color: cyan; }
 
 .a:hover {
     color: black;
@@ -100,13 +98,10 @@ pre {font-family: fixedsys;}
 
 .cyan {color: cyan;}
 
-span {font-family: fixedsys;}
-
 .main {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: black;
     width: 25rem;
     padding: 15px;
     border-radius: 2px;
@@ -116,14 +111,16 @@ span {font-family: fixedsys;}
     position: relative;
 }
 
+#stats {
+    width: 25rem;
+    padding: 15px;
+    border: 4px double magenta;
+}
+
 #onlyKind {
     text-align: center;
     color: cyan;
 }
-
-h1{font-family: fixedsys;}
-h2{font-family: fixedsys;}
-p{font-family: fixedsys;}
 
 #log {
     display: none;
@@ -253,4 +250,9 @@ button:hover {
     border-color: darkcyan;
     background-color: cyan;
     color: black;
+}
+
+#stats-title {
+    color: cyan;
+    margin-left: 1.5rem;
 }
