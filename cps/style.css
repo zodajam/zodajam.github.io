@@ -1,0 +1,49 @@
+body {
+    font-family: font;
+    text-align: center;
+}
+
+@font-face {
+    font-family: font;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+#clicker {
+    width: 15rem;
+    height: 15rem;
+    border: 4px double gray;
+    opacity: 0.5;
+    background-color: lightgray;
+}
+
+#clicker:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#result {
+    display: none;
+    width: 25rem;
+    height: 20rem;
+    background-color: gray;
+    position: relative;
+    top: 5rem;
+}
+
+button {
+    cursor: pointer;
+    background-color: darkgray;
+    border: none;
+    outline-offset: -4px;
+    outline-width: 2px;
+    outline-style: dotted;
+    outline-color: white;
+    box-shadow: 6px 6px black;
+    font-family: font;
+    padding: 4px;
+}

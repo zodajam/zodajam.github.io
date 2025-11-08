@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    font-family: font;
+    color: cyan;
+}
+
+@font-face {
+    font-family: font;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+meter { width: 50%; }
+
+#text { display: none; }
+
+.center {
+    text-align: center;
+}
