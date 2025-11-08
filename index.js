@@ -65,3 +65,16 @@ document.addEventListener("mousemove", function(event) {
         }
     }, 100);
 });
+
+document.getElementById("neocoins").innerHTML = localStorage.getItem("neocoin");
+document.getElementById("stonk").innerHTML = localStorage.getItem("stonk");
+document.getElementById("time").innerHTML = localStorage.getItem("time");
+
+let time = 0;
+time = localStorage.getItem("time");
+
+setInterval(function() {
+    time++;
+    localStorage.setItem("time", time);
+    document.getElementById("time").innerHTML = localStorage.getItem("time");
+}, 1000);
