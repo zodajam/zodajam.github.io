@@ -14,6 +14,7 @@ class Object {
 }
 
 const speed = 12;
+let hp = 100;
 
 const player = new Object(10, 10, 50, 50);
 
@@ -36,10 +37,35 @@ function render() {
     ctx.fillRect(wall5.x, wall5.y, wall5.width, wall5.height);
     ctx.fillRect(wall6.x, wall6.y, wall6.width, wall6.height);
     ctx.fillRect(wall7.x, wall7.y, wall7.width, wall7.height);
+    ctx.fillStyle = "red";
+    ctx.fillRect(ai.x, ai.y, ai.width, ai.height); 
 }
 
 function isCollidingX(x1, w1, x2, w2) { return x1 < x2 + w2 && x1 + w1 > x2; }
 function isCollidingY(y1, h1, y2, h2) { return y1 < y2 + h2 && y1 + h1 > y2; }
+
+const ai = new Object(500, 500, 250, 250);
+const ai_speed = 150;
+
+function ai_bot() {
+    ctx.clearRect(ai.x, ai.y, ai.width, ai.height);
+    let randomChance = Math.floor(Math.random() * 4);
+
+    if(randomChance == 0) { ai.x += speed; }
+    if(randomChance == 1) { ai.x -= speed; }
+    if(randomChance == 2) { ai.y += speed; }
+    if(randomChance == 3) { ai.y -= speed; }
+
+    if(ai.x < 0) { ai.x += ai_speed; }
+    if(ai.x > canvas.width - ai.width) { ai.x -= ai_speed; }
+    if(ai.y < 0) { ai.y += ai_speed; }
+    if(ai.y > canvas.height - ai.height) { ai.y -= ai_speed; }
+
+    render();
+    requestAnimationFrame(ai_bot);
+}
+
+ai_bot();
 
 const keys = {};
 
@@ -66,6 +92,11 @@ function main() {
     if(player.x > canvas.width - player.width) { player.x -= speed; }
     if(player.y < 0) { player.y += speed; }
     if(player.y > canvas.height - player.height) { player.y -= speed; }
+
+
+
+
+    // hej framtida rasmus förlåt för att jag bara använder if-satser, om du läser detta måste du fixa denna dåliga kod
 
     if(
         isCollidingX(player.x, player.width, wall1.x, wall1.width) &&
@@ -121,6 +152,17 @@ function main() {
     ) {
         player.x = oldX;
         player.y = oldY;
+    }
+
+    if(
+        isCollidingX(player.x, player.width, ai.x, ai.width) &&
+        isCollidingY(player.y, player.height, ai.y, ai.height)
+    ) {
+        player.x = oldX;
+        player.y = oldY;
+        hp--;
+        document.getElementById("hp-text").textContent = hp;
+        if(hp <= 0) { document.getElementById("popup").style.display = "block"; }
     }
 
     render();
