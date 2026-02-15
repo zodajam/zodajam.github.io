@@ -1,1 +1,1 @@
-<a href="https://neocoral.org" style="background-color:cyan;color:black;">neocoral</a>
+this is my personal website: <a href="https://neocoral.org">neocoral</a>
