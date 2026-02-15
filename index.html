@@ -193,9 +193,11 @@
 /|\
 / \
                 </pre>
-                enter avatar color<br>
-                <input type="text" class="control-panel-input" id="avatar-color" placeholder="avatar color" autocapitalize="off" autocomplete="off" autocorrect="off"><br><br>
-                <span id="toggle-hat" onclick="toggleHat()">toggle hat</span>
+                <div id="avatar-box-bottom">
+                    enter avatar color<br>
+                    <input type="text" class="control-panel-input" id="avatar-color" placeholder="avatar color" autocapitalize="off" autocomplete="off" autocorrect="off"><br><br>
+                    <span id="toggle-hat" onclick="toggleHat()">toggle hat</span>
+                </div>
             </fieldset>
         </div>
 
@@ -218,6 +220,8 @@
         <div id="log">
             <button onclick="off('log')" class="x">X</button>
             <h1>Changelog for neocoral</h1>
+            <h2>v8.4</h2>
+            <p>Added marquee news box</p>
             <h2>v8.3</h2>
             <p>Added the avatar</p>
             <h2>v8.2</h2>
@@ -369,6 +373,20 @@
         </div>
         <canvas id="canvas"></canvas>
         <div id="cover"></div>
+        <div class="container">
+            <fieldset id="bottom-page-small">
+                <marquee scrollamount="6">
+                    contact: <span class="panel-text" onclick="alert('rasmuslarvia@proton.me')">email</span>,
+                    <span class="panel-text" onclick="alert('rasmuus10')">discord</span>,
+                    <a href="https://github.com/rasmuus10" class="a" target="_blank">github</a>
+                    - get neocoins: <a href="ball-clicker/" class="a">Ball-Clicker</a>,
+                    <a href="nc-mine/" class="a">nC-mine</a>,
+                    <a href="neocoin-collector/" class="a">neocoin-collector</a>,
+                    <a href="park2/" class="a">park2</a>, <a href="casino/" class="a">ca$ino</a>
+                    - buy neocoral stocks: <a href="stonks/" class="a">stonks</a>
+                </marquee>
+            </fieldset>
+        </div>
         <div id="bottom-page">
             <div class="center">
                 <p id="onlyKind">» only kind messages allowed «</p>

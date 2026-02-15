@@ -324,7 +324,7 @@ hr {
 
 #bottom-page {
     position: relative;
-    top: -65rem;
+    top: -61rem;
     z-index: 10;
 }
 
@@ -386,9 +386,10 @@ hr {
 #avatar-box {
     position: relative;
     left: -22rem;
-    top: -63rem;
+    top: -62rem;
     z-index: 100;
     text-align: center;
+    height: 8rem;
 }
 
 #toggle-hat {
@@ -406,4 +407,21 @@ hr {
 #hat {
     position: relative;
     top: 8px;
+}
+
+#bottom-page-small {
+    position: relative;
+    top: -61rem;
+    z-index: 10;
+    width: 27rem;
+}
+
+#avatar {
+    top: -2rem;
+    position: relative;
+}
+
+#avatar-box-bottom {
+    top: -4rem;
+    position: relative;
 }
