@@ -25,6 +25,14 @@ body {
     width: fit-content;
 }
 
+#how {
+    background-color: silver;
+    top: 0;
+    left: 5rem;
+    position: absolute;
+    z-index: 10;
+}
+
 #popup {
     background-color: dimgray;
     top: 0;
@@ -43,7 +51,7 @@ body {
     justify-content: center;
 }
 
-#restart {
+.restart {
     text-decoration: underline;
     text-decoration-color: white;
     text-decoration-thickness: 2px;
@@ -51,9 +59,21 @@ body {
     cursor: pointer;
 }
 
-#restart:hover {
+.restart:hover {
     top: -2px;
     background-color: orangered;
     color: white;
     text-decoration-color: orange;
+}
+
+#key-popup {
+    background-color: dimgray;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 10;
+    height: 250rem;
+    width: 100%;
+    display: none;
+    color: yellow;
 }

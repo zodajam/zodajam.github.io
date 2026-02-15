@@ -16,7 +16,11 @@ class Object {
 const speed = 12;
 let hp = 100;
 
+let neocoin = +localStorage.getItem("neocoin");
+
 const player = new Object(10, 10, 50, 50);
+
+const key = new Object(canvas.width - 250, canvas.height / 2, 25, 25);
 
 const wall1 = new Object(400, 0, 50, 500);
 const wall2 = new Object(400, canvas.height - 200, 50, 200);
@@ -38,7 +42,9 @@ function render() {
     ctx.fillRect(wall6.x, wall6.y, wall6.width, wall6.height);
     ctx.fillRect(wall7.x, wall7.y, wall7.width, wall7.height);
     ctx.fillStyle = "red";
-    ctx.fillRect(ai.x, ai.y, ai.width, ai.height); 
+    ctx.fillRect(ai.x, ai.y, ai.width, ai.height);
+    ctx.fillStyle = "mediumaquamarine";
+    ctx.fillRect(key.x, key.y, key.width, key.height);
 }
 
 function isCollidingX(x1, w1, x2, w2) { return x1 < x2 + w2 && x1 + w1 > x2; }
@@ -163,6 +169,18 @@ function main() {
         hp--;
         document.getElementById("hp-text").textContent = hp;
         if(hp <= 0) { document.getElementById("popup").style.display = "block"; }
+    }
+
+    if(
+        isCollidingX(player.x, player.width, key.x, key.width) &&
+        isCollidingY(player.y, player.height, key.y, key.height)
+    ) {
+        neocoin += 10;
+        document.getElementById("neocoin-text").textContent = `you have ${neocoin} neocoins`;
+        document.getElementById("key-popup").style.display = "block";
+        player.x = 0;
+        player.y = 0;
+        localStorage.setItem("neocoin", neocoin);
     }
 
     render();

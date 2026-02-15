@@ -9,9 +9,16 @@
 <body>
     <canvas id="canvas"></canvas>
     <div id="hp-text-holder">HP:<span id="hp-text">100</span></div>
+    <div id="how">how to play: evade the red giant and get the aquamarine key to win 10 neocoins</div>
+    <div id="key-popup">
+        you got the key! that means you won!<br><br>
+        +10 neocoins<br><br>
+        <span id="neocoin-text"></span><br><br>
+        <span class="restart" onclick="location.reload();">restart</span>
+    </div>
     <div class="center">
         <div id="popup">
-            <span>you died, <span id="restart" onclick="location.reload();">restart</span></span>
+            <span>you died, <span class="restart" onclick="location.reload();">restart</span></span>
         </div>
     </div>
     <script src="index.js"></script>
