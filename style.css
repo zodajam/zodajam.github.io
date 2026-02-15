@@ -324,7 +324,7 @@ hr {
 
 #bottom-page {
     position: relative;
-    top: -52rem;
+    top: -65rem;
     z-index: 10;
 }
 
@@ -381,4 +381,29 @@ hr {
     background-color: navy;
     top: -2px;
     cursor: pointer;
+}
+
+#avatar-box {
+    position: relative;
+    left: -22rem;
+    top: -63rem;
+    z-index: 100;
+    text-align: center;
+}
+
+#toggle-hat {
+    background-color: navy;
+    cursor: pointer;
+}
+
+#toggle-hat:hover {
+    color: navy;
+    background-color: white;
+    top: -2px;
+    position: relative;
+}
+
+#hat {
+    position: relative;
+    top: 8px;
 }
