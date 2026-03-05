@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    font-family: font;
+}
+
+@font-face {
+    font-family: font;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    background-color: silver;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 12px 12px dimgray;
+    max-width: 25rem;
+}
+
+button {
+    font-family: font;
+    border: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    position: relative;
+    top: -2px;
+}
+
+#title {
+    font-size: larger;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background-color: aquamarine;
+}
+
+#stocksWorth {
+    background-color: navy;
+    color: white;
+}
+
+#info1 {
+    background-color: orange;
+}
+
+#info2 {
+    background-color: orangered;
+}
+
+.text-center { text-align: center; }
+
+.marked {
+    background-color: black;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

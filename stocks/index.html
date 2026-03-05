@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stocks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center">
+        <div id="main">
+            <div class="text-center"><span id="title">stock investing</span></div><br><hr>
+            <span id="stocksWorth">one stock is worth <span id="price"></span> neocoin</span><br>
+            <span id="info1">you have <span id="stocks"></span> stocks</span><br>
+            <span id="info2">you have <span id="neocoins"></span> neocoins</span><br><hr>
+            <button onclick="buy()">buy 1x</button>
+            <button onclick="sell()">sell 1x</button><br><hr>
+            <p><span class="marked">how it works:</span><br>you buy stocks with neocoins and they can either go up or down in price, if it goes up or down is random. every <span class="marked">10</span> seconds it ticks
+            and the price updates. you should buy at the start when it is at a low price, and then you should sell if it goes up, but maybe it goes up a lot and you miseed out on a lot of cash,
+            so you need to be strategic</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
