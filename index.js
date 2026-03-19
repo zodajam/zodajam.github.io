@@ -77,7 +77,6 @@ document.getElementById("neocoins").innerHTML = localStorage.getItem("neocoin");
 document.getElementById("stonk").innerHTML = localStorage.getItem("stonk");
 document.getElementById("time").innerHTML = localStorage.getItem("time");
 
-let time = 0;
 time = localStorage.getItem("time");
 
 setInterval(function() {

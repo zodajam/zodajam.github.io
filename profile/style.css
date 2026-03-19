@@ -1,0 +1,77 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: font;
+}
+
+@font-face {
+    font-family: font;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+    padding: 15px;
+    border-radius: 2px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    border: 4px double blue;
+    position: relative;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
+    z-index: 10;
+}
+
+hr {
+    border: 1px dotted white;
+    margin: 1px;
+}
+
+#title {
+    border: 1px dotted white;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+#avatar {
+    font-family: font;
+    background-color: dimgray;
+    width: fit-content;
+    text-align: center;
+    color: white;
+    border: 1px dotted white;
+    resize: none;
+}
+
+#input {
+    background-color: silver;
+    color: yellow;
+    font-family: font;
+    width: 25rem;
+    outline: none;
+    box-shadow: 4px 4px darkgray;
+}
+
+button {
+    background-color: dimgray;
+    color: yellow;
+    font-family: font;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    cursor: pointer;
+    border: none;
+    box-shadow: 4px 4px darkgray;
+    position: relative;
+}
+
+button:hover { top: -2px; }
