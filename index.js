@@ -1,227 +1,397 @@
-document.getElementById("changelog").onclick = function() { // open changelog
-    on('log');
-    on('cover');
-    document.getElementById('cover').onclick = function() { // click anywhere to close it
-        off('log');
-        off('cover');
-    }
-}
-
-const bgInput = document.getElementById("bg-input");
-
-const rainbow = [
-    "red",
-    "orange",
-    "yellow",
-    "green",
-    "blue",
-    "indigo"
-];
-
-bgInput.addEventListener("keydown", (event) => {
-    if(event.key == "Enter") {
-        if(bgInput.value.toLowerCase() == "rainbow") {
-            setInterval(function () {
-                document.body.style.backgroundColor = rainbow[Math.floor(Math.random() * rainbow.length)];
-            }, 50);
-        }
-        document.body.style.backgroundColor = bgInput.value;
-    }
-});
-
-const textCinput = document.getElementById("text-color-input");
-
-textCinput.addEventListener("keydown", (event) => {
-    if(event.key == "Enter") {
-        if(textCinput.value.toLowerCase() == "rainbow") {
-            setInterval(function () {
-                document.body.style.color = rainbow[Math.floor(Math.random() * rainbow.length)];
-            }, 50);
-        }
-        document.body.style.color = textCinput.value;
-    }
-});
-
-const avatarInput = document.getElementById("avatar-color");
-
-avatarInput.addEventListener("keydown", (event) => {
-    if(event.key == "Enter") {
-        if(avatarInput.value.toLowerCase() == "rainbow") {
-            setInterval(function () {
-                document.getElementById("avatar").style.color = rainbow[Math.floor(Math.random() * rainbow.length)];
-            }, 50);
-        }
-        document.getElementById("avatar").style.color = avatarInput.value;
-    }
-});
-
-function on(id) { document.getElementById(id).style.display = "block"; } // show stuff
-function off(id) { document.getElementById(id).style.display = "none"; } // hide stuff
-
-function isMobile() { return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent); } // what do you think this does?
-
-if (isMobile()) { // js mobile optimization :sob:
-   document.getElementById("titlePre").innerHTML = `<div style="text-align: center;"><h1 style="font-size: 5rem;text-align:center;">NEOCORAL</h1></div>`;
-   document.getElementById("main").style.width = "fit-content";
-   document.getElementById("pre-dude").style.marginTop = "-2%";
-   document.getElementById("pre-dude").style.marginLeft = "-6%";
-   document.getElementById("pre-dude2").style.marginTop = "-2%";
-   document.getElementById("phone1").src = "";
-   document.getElementById("phone2").src = "";
-   document.getElementById("phone3").src = "";
-   document.getElementById("log").style.width = "fit-content";
-   document.getElementById("unlistedProjects").style.width = "fit-content";
-}
-
-document.getElementById("neocoins").innerHTML = localStorage.getItem("neocoin");
-document.getElementById("stonk").innerHTML = localStorage.getItem("stonk");
-document.getElementById("time").innerHTML = localStorage.getItem("time");
-
-time = localStorage.getItem("time");
-
-setInterval(function() {
-    time++;
-    localStorage.setItem("time", time);
-    document.getElementById("time").innerHTML = localStorage.getItem("time");
-}, 1000);
-
-
-let logins = localStorage.getItem("logins");
-
-logins++;
-
-localStorage.setItem("logins", logins);
-
-document.getElementById("logins").innerHTML = logins;
-
-let newLogins = parseInt(localStorage.getItem("logins"));
-if (!isNaN(newLogins)) {
-  logins = newLogins;
-}
-
-const songs = [
-    "holywars",
-    "rainingblood",
-    "warismyshepherd",
-    "blacklist",
-    "hangar18",
-    "poisonwasthecure",
-    "theburningofatlanta",
-    "angelofdeath",
-    "strikeofthebeast",
-    "fivemagics",
-    "thetoxicwaltz",
-    "respectthedead",
-    "takenoprisoners",
-    "rustinpeace",
-    "walktheplank"
-]
-
-function muteAudio() {
-    for(let i = 0; i < songs.length; i++) {
-        document.getElementById(songs[i]).pause();
-        document.getElementById(songs[i]).currentTime = 0;
-    }
-}
-
-function play(id) {
-    muteAudio();
-    let audio = document.getElementById(id);
-    audio.play();
-}
-
-function volume(vol) {
-    for(let i = 0; i < songs.length; i++) {
-        document.getElementById(songs[i]).volume = vol;
-    }
-}
-
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-let y = 0;
-
-const colors = [
-    "blue",
-    "cyan",
-    "mediumaquamarine"
-];
-
-let size = Math.floor(Math.random() * 8) + 4;
-
-let matrixInterval;
-
-function matrix() {
-    matrixInterval = setInterval(function() {
-        y++;
-        size = Math.floor(Math.random() * 8) + 4;
-        ctx.fillRect(Math.floor(Math.random () * 2500), y, size, size);
-        ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)];
-    }, 50);
-}
-
-let r = Math.floor(Math.random() * 255);
-let g = Math.floor(Math.random() * 255);
-let b = Math.floor(Math.random() * 255);
-
-function enableHell() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    document.addEventListener("mousemove", (event) => {
-        r = Math.floor(Math.random() * 255) + 1;
-        g = Math.floor(Math.random() * 255) + 1;
-        b = Math.floor(Math.random() * 255) + 1;
-
-        ctx.strokeStyle = `rgb(${r},${g},${b})`;
-
-        ctx.moveTo(Math.floor(Math.random() * canvas.width), Math.floor(Math.random() * canvas.height));
-        ctx.lineTo(event.x, event.y, Math.floor(Math.random() * 16) + 1, Math.floor(Math.random() * 16) + 1);
-        ctx.stroke();
-    });
-}
-
-function clearCanvas() { location.reload(); }
-
-const bot_colors = [
-    "blue",
-    "cyan",
-    "mediumaquamarine"
-]
-
-let bot_x = Math.floor(Math.random() * canvas.width);
-let bot_y = Math.floor(Math.random() * canvas.height);
-
-let speed = 12;
-
-function enableCompanion() {
-    ctx.clearRect(bot_x, bot_y, 50, 50);
-    let randomNum = Math.floor(Math.random() * 100);
-
-    if(randomNum < 25) { bot_x += speed; }
-    if(randomNum < 50 && randomNum > 25) { bot_x -= speed; }
-    if(randomNum < 75 && randomNum > 50) { bot_y += speed; }
-    if(randomNum < 100 && randomNum > 75) { bot_y -= speed; }
-
-    if(bot_x < 0) { bot_x += speed; }
-    if(bot_x > canvas.width - 50) { bot_x -= speed; }
-    if(bot_y < 0) { bot_y += speed; }
-    if(bot_y > canvas.height - 50) { bot_y -= speed; }
-
-    ctx.fillStyle = bot_colors[Math.floor(Math.random() * bot_colors.length)];
-    ctx.fillRect(bot_x, bot_y, 50, 50);
-    document.getElementById("companionSpeed").textContent = speed;
-    requestAnimationFrame(enableCompanion);
-}
-
-function botSpeedPlus() { speed++; }
-
-function toggleHat() {
-    if(document.getElementById("hat").textContent == "") {
-        document.getElementById("hat").textContent = "𐚁";
-    } else {
-        document.getElementById("hat").textContent = "";
+class Object {
+    constructor(x, y, width, height) {
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
     }
 }
+
+const speed = 12;
+let balance = +localStorage.getItem("money");
+document.getElementById("money").textContent = localStorage.getItem("money");
+const player = new Object(canvas.width / 2, 800, 50, 50);
+const wall1 = new Object(100, 100, 50, 800);
+const wall2 = new Object(canvas.width - 100, 100, 50, 800);
+const wall3 = new Object(100, 100, 2000, 50);
+const moneyBlock = new Object(canvas.width/2 - 50, 150, 150, 50);
+
+const dropper1 = new Object(250, 700, 50, 50);
+let dropper1Owned = localStorage.getItem("dropper1Owned") == 1;
+
+const dropper2 = new Object(250, 600, 50, 50);
+let dropper2Owned = localStorage.getItem("dropper2Owned") == 1;
+
+const dropper3 = new Object(250, 500, 50, 50);
+let dropper3Owned = localStorage.getItem("dropper3Owned") == 1;
+
+const dropper4 = new Object(250, 400, 50, 50);
+let dropper4Owned = localStorage.getItem("dropper4owned") == 1;
+
+const dropper5 = new Object(250, 300, 50, 50);
+let dropper5Owned = localStorage.getItem("dropper5Owned") == 1;
+
+let playtime = +localStorage.getItem("playtime");
+document.getElementById("playtime").textContent = playtime;
+
+const dropper1Bought = new Object(2000, 700, 50, 50);
+const dropper2Bought = new Object(2000, 600, 50, 50);
+const dropper3Bought = new Object(2000, 500, 50, 50);
+const dropper4Bought = new Object(2000, 400, 50, 50);
+const dropper5Bought = new Object(2000, 300, 50, 50);
+
+const lab = new Object(1400, 800, 100, 100);
+let labOwned = localStorage.getItem("labOwned") == 1;
+
+setInterval(function() {
+    playtime++;
+    localStorage.setItem("playtime", playtime);
+    document.getElementById("playtime").textContent = playtime;
+}, 1000);
+
+if(localStorage.getItem("dropper1Owned") == 1) {
+    ctx.fillStyle = "purple";
+    ctx.fillRect(dropper1Bought.x, dropper1Bought.y, dropper1Bought.width, dropper1Bought.height);
+    setInterval(function() {
+        balance++;
+        localStorage.setItem("money" ,balance);
+        document.getElementById("money").textContent = balance;
+    }, 100);
+}
+
+if(localStorage.getItem("dropper2Owned") == 1) {
+    ctx.fillStyle = "yellow";
+    ctx.fillRect(dropper2Bought.x, dropper2Bought.y, dropper2Bought.width, dropper2Bought.height);
+    setInterval(function() {
+        balance++;
+        localStorage.setItem("money" ,balance);
+        document.getElementById("money").textContent = balance;
+    }, 10);
+}
+
+if(localStorage.getItem("dropper3Owned") == 1) {
+    ctx.fillStyle = "blue";
+    ctx.fillRect(dropper3Bought.x, dropper3Bought.y, dropper3Bought.width, dropper3Bought.height);
+    setInterval(function() {
+        balance++;
+        localStorage.setItem("money" ,balance);
+        document.getElementById("money").textContent = balance;
+    }, 1);
+}
+
+if(localStorage.getItem("dropper4Owned") == 1) {
+    ctx.fillStyle = "red";
+    ctx.fillRect(dropper4Bought.x, dropper4Bought.y, dropper4Bought.width, dropper4Bought.height);
+    setInterval(function() {
+        balance += 3;
+        localStorage.setItem("money" ,balance);
+        document.getElementById("money").textContent = balance;
+    }, 1);
+}
+
+if(localStorage.getItem("dropper5Owned") == 1) {
+    ctx.fillStyle = "pink";
+    ctx.fillRect(dropper5Bought.x, dropper5Bought.y, dropper5Bought.width, dropper5Bought.height);
+    setInterval(function() {
+        balance += 6;
+        localStorage.setItem("money" ,balance);
+        document.getElementById("money").textContent = balance;
+    }, 1);
+}
+
+if(localStorage.getItem("labOwned") == 1) {
+    setInterval(function() {
+        balance += Math.floor(Math.random() * 25);
+        localStorage.setItem("money", balance);
+        document.getElementById("money").textContent = balance;
+    }, 100);                
+}
+
+let drugs = +localStorage.getItem("drugs");
+
+setInterval(function() {
+    localStorage.setItem("drugs", balance / 150);
+    const savedDrugs = localStorage.getItem("drugs");
+    const numDrugs = parseFloat(savedDrugs);
+    document.getElementById("totalDrugs").textContent = numDrugs.toFixed(0);
+}, 100);
+
+let randomChance;
+const double = new Object(1650, 300, 25, 25);
+
+setInterval(function() {
+    randomChance = Math.floor(Math.random() * 600);
+
+    if(randomChance == 1) {
+        double.x = 1650;
+        double.y = 300;
+        ctx.fillRect(double.x, double.y, double.width, double.height);
+        ctx.fillStyle = "gold";
+        ctx.fillText("money 2x", 1600, 290);
+    }
+}, 1000);
+
+function render() {
+    ctx.fillStyle = "blue";
+    ctx.fillRect(player.x, player.y, player.width, player.height);
+    ctx.fillStyle = "silver";
+    ctx.fillRect(wall1.x, wall1.y, wall1.width, wall1.height);
+    ctx.fillRect(wall2.x, wall2.y, wall2.width, wall2.height);
+    ctx.fillRect(wall3.x, wall3.y, wall3.width, wall3.height);
+    ctx.fillStyle = "green";
+    ctx.fillRect(moneyBlock.x, moneyBlock.y, moneyBlock.width, moneyBlock.height);
+    ctx.font = "25px Arial";
+    ctx.fillStyle = "white";
+    ctx.fillText("free money", moneyBlock.x + 10, moneyBlock.y + 30);
+    ctx.fillStyle = "cyan";
+    ctx.fillText("bought droppers", 1900, 250);
+    ctx.fillStyle = "red";
+    ctx.fillText("$1000", 300, 750);
+    ctx.fillText("$5000", 300, 650);
+    ctx.fillText("$15000", 300, 550);
+    ctx.fillText("$50000", 300, 450);
+    ctx.fillText("$100000", 300, 350);
+    ctx.font = "50px Arial";
+    ctx.fillStyle = "magenta";
+    ctx.fillText("drug", canvas.width/2 - 100, 80);
+    ctx.fillStyle = "cyan";
+    ctx.fillText("tycoon", canvas.width/2, 80)
+    ctx.fillStyle = "purple";
+    ctx.fillRect(dropper1.x, dropper1.y, dropper1.width, dropper1.height);
+    ctx.fillStyle = "yellow";
+    ctx.fillRect(dropper2.x, dropper2.y, dropper2.width, dropper2.height);
+    ctx.fillStyle = "blue";
+    ctx.fillRect(dropper3.x, dropper3.y, dropper3.width, dropper3.height);
+    ctx.fillStyle = "red";
+    ctx.fillRect(dropper4.x, dropper4.y, dropper4.width, dropper4.height);
+    ctx.fillStyle = "pink";
+    ctx.fillRect(dropper5.x, dropper5.y, dropper5.width, dropper5.height);
+    ctx.fillStyle = "mediumaquamarine";
+    ctx.fillRect(lab.x, lab.y, lab.width, lab.height);
+    ctx.fillStyle = "mediumaquamarine";
+    ctx.font = "30px Arial",
+    ctx.fillText("meth lab $10000", lab.x - 70, lab.y);
+}
+
+document.getElementById("resetSave").addEventListener("click", () => {
+    localStorage.setItem("dropper1Owned", 2);
+    localStorage.setItem("dropper2Owned", 2);
+    localStorage.setItem("dropper3Owned", 2);
+    localStorage.setItem("dropper4Owned", 2);
+    localStorage.setItem("dropper5Owned", 2);
+    localStorage.setItem("money", "0");
+    localStorage.setItem("drugs", "0");
+    localStorage.setItem("labOwned", 2);
+    location.reload();
+});
+
+const keys = {};
+
+document.addEventListener("keydown", (event) => {
+    keys[event.key] = true;
+});
+
+document.addEventListener("keyup", (event) => {
+    keys[event.key] = false;
+});
+
+function isCollidingX(x1, w1, x2, w2) { return x1 < x2 + w2 && x1 + w1 > x2; }
+function isCollidingY(y1, h1, y2, h2) { return y1 < y2 + h2 && y1 + h1 > y2; }
+
+function game() {
+    ctx.clearRect(player.x, player.y, player.width, player.height);
+
+    let oldX = player.x;
+    let oldY = player.y;
+
+    if(keys["w"]) { player.y -= speed; }
+    if(keys["s"]) { player.y += speed; }
+    if(keys["a"]) { player.x -= speed; }
+    if(keys["d"]) { player.x += speed; }
+
+    if(player.x <= 0) { player.x += speed; }
+    if(player.x >= canvas.width - player.width) { player.x -= speed; }
+    if(player.y <= 0) { player.y += speed; }
+    if(player.y >= canvas.height - player.height) { player.y -= speed; }
+
+    if(
+        isCollidingX(player.x, player.width, wall1.x, wall1.width) &&
+        isCollidingY(player.y, player.height, wall1.y, wall1.height)
+    ) {
+        player.x = oldX;
+        player.y = oldY;
+    }
+
+    if(
+        isCollidingX(player.x, player.width, wall2.x, wall2.width) &&
+        isCollidingY(player.y, player.height, wall2.y, wall2.height)
+    ) {
+        player.x = oldX;
+        player.y = oldY;
+    }
+
+    if(
+        isCollidingX(player.x, player.width, wall3.x, wall3.width) &&
+        isCollidingY(player.y, player.height, wall3.y, wall3.height)
+    ) {
+        player.x = oldX;
+        player.y = oldY;
+    }
+
+    if(
+        isCollidingX(player.x, player.width, moneyBlock.x, moneyBlock.width) &&
+        isCollidingY(player.y, player.height, moneyBlock.y, moneyBlock.height)
+    ) {
+        balance++;
+        document.getElementById("money").textContent = balance;
+        localStorage.setItem("money", balance);
+    }
+
+    if(
+        isCollidingX(player.x, player.width, dropper1.x, dropper1.width) &&
+        isCollidingY(player.y, player.height, dropper1.y, dropper1.height)
+    ) {
+        if(keys[" "]) {
+            if(!dropper1Owned) {
+                if(balance >= 1000) {
+                    balance -= 1000;
+                    dropper1Owned = localStorage.setItem("dropper1Owned", 1);
+                    ctx.fillStyle = "purple";
+                    ctx.fillRect(dropper1Bought.x, dropper1Bought.y, dropper1Bought.width, dropper1Bought.height);
+                    setInterval(function() {
+                        balance++;
+                        localStorage.setItem("money" ,balance);
+                        document.getElementById("money").textContent = balance;
+                    }, 100);
+                }
+            }
+        }
+    }
+
+    if(
+        isCollidingX(player.x, player.width, dropper2.x, dropper2.width) &&
+        isCollidingY(player.y, player.height, dropper2.y, dropper2.height)
+    ) {
+        if(keys[" "]) {
+            if(!dropper2Owned) {
+                if(balance >= 5000) {
+                    balance -= 5000;
+                    dropper2Owned = localStorage.setItem("dropper2Owned", 1);
+                    ctx.fillStyle = "yellow";
+                    ctx.fillRect(dropper2Bought.x, dropper2Bought.y, dropper2Bought.width, dropper2Bought.height);
+                    setInterval(function() {
+                        balance++;
+                        localStorage.setItem("money" ,balance);
+                        document.getElementById("money").textContent = balance;
+                    }, 10);
+                }
+            }
+        }
+    }
+
+    if(
+        isCollidingX(player.x, player.width, dropper3.x, dropper3.width) &&
+        isCollidingY(player.y, player.height, dropper3.y, dropper3.height)
+    ) {
+        if(keys[" "]) {
+            if(!dropper3Owned) {
+                if(balance >= 15000) {
+                    balance -= 15000;
+                    dropper3Owned = localStorage.setItem("dropper3Owned", 1);
+                    ctx.fillStyle = "blue";
+                    ctx.fillRect(dropper3Bought.x, dropper3Bought.y, dropper3Bought.width, dropper3Bought.height);
+                    setInterval(function() {
+                        balance++;
+                        localStorage.setItem("money" ,balance);
+                        document.getElementById("money").textContent = balance;
+                    }, 1);
+                }
+            }
+        }
+    }
+
+    if(
+        isCollidingX(player.x, player.width, dropper4.x, dropper4.width) &&
+        isCollidingY(player.y, player.height, dropper4.y, dropper4.height)
+    ) {
+        if(keys[" "]) {
+            if(!dropper4Owned) {
+                if(balance >= 50000) {
+                    balance -= 50000;
+                    dropper4Owned = localStorage.setItem("dropper4Owned", 1);
+                    ctx.fillStyle = "red";
+                    ctx.fillRect(dropper4Bought.x, dropper4Bought.y, dropper4Bought.width, dropper4Bought.height);
+                    setInterval(function() {
+                        balance += 3;
+                        localStorage.setItem("money" ,balance);
+                        document.getElementById("money").textContent = balance;
+                    }, 1);
+                }
+            }
+        }
+    }
+
+    if(
+        isCollidingX(player.x, player.width, dropper5.x, dropper5.width) &&
+        isCollidingY(player.y, player.height, dropper5.y, dropper5.height)
+    ) {
+        if(keys[" "]) {
+            if(!dropper5Owned) {
+                if(balance >= 100000) {
+                    balance -= 100000;
+                    dropper4Owned = localStorage.setItem("dropper5Owned", 1);
+                    ctx.fillStyle = "pink";
+                    ctx.fillRect(dropper5Bought.x, dropper5Bought.y, dropper5Bought.width, dropper5Bought.height);
+                    setInterval(function() {
+                        balance += 6;
+                        localStorage.setItem("money" ,balance);
+                        document.getElementById("money").textContent = balance;
+                    }, 1);
+                }
+            }
+        }
+    }
+
+    if(
+        isCollidingX(player.x, player.width, double.x, double.width) &&
+        isCollidingY(player.y, player.height, double.y, double.height)
+    ) {
+        balance = balance * 2;
+        double.x = 1000000;
+        double.y = 1000000;
+        ctx.clearRect(moneyBlock.x + 10, moneyBlock.y + 30, 1600, 290); // "money 2x" texten tas bort
+        localStorage.setItem("money", balance);
+        document.getElementById("money").textContent = balance;
+    }
+
+    if(
+        isCollidingX(player.x, player.width, lab.x, lab.width) &&
+        isCollidingY(player.y, player.height, lab.y, lab.height)
+    ) {
+        if(keys[" "]) {
+            if(!labOwned) {
+                if(balance >= 10000) {
+                    labOwned = localStorage.setItem("labOwned", 1);
+                    balance -= 10000;
+                    location.reload();
+                    setInterval(function() {
+                        balance += Math.floor(Math.random() * 25);
+                        localStorage.setItem("money", balance);
+                        document.getElementById("money").textContent = balance;
+                    }, 100);
+                }
+            }
+        }
+    }
+
+    render();
+    requestAnimationFrame(game);
+}
+
+game();
