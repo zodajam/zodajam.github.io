@@ -1,397 +1,406 @@
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neocoral</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="zodacss.css">
+</head>
+<body translate="no">
+    <!-- 
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+    ; -*- att göra -*- ;
+    fixa clear canvas i control panel så den inte refreshar sidan ba
+    göra park2
+    
+    -->
+    <div id="website">
+        <header>
+            <div class="title" title="neocoral" alt="neocoral">
+            <pre alt="neocoral" title="neocoral" id="titlePre" alt="neocoral">
+███╗   ██╗███████╗ ██████╗  ██████╗ ██████╗ ██████╗  █████╗ ██╗
+████╗  ██║██╔════╝██╔═══██╗██╔════╝██╔═══██╗██╔══██╗██╔══██╗██║
+██╔██╗ ██║█████╗  ██║   ██║██║     ██║   ██║██████╔╝███████║██║
+██║╚██╗██║██╔══╝  ██║   ██║██║     ██║   ██║██╔══██╗██╔══██║██║
+██║ ╚████║███████╗╚██████╔╝╚██████╗╚██████╔╝██║  ██║██║  ██║███████╗
+╚═╝  ╚═══╝╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+                            
+            </pre>
+            </div>
+            </header>
+        <main>
+            <fieldset class="main" id="main" alt="neocoral">
+                <legend>copyright © 2026 neocoral</legend>
+                <fieldset id="projects" alt="neocoral">
+                    <legend id="projects-text">projects</legend>
+                    <a href="casino/" title="ca$ino"><button>ca$ino</button></a>
+                    <a href="archaic/" title="Archaic"><button>Archaic</button></a>
+                    <a href="pong/" title="PONG"><button>PONG</button></a>
+                    <a href="ball-clicker/" title="Ball-Clicker"><button>Ball-Clicker</button></a>
+                    <a href="rzDOS/" title="rzDOS"><button>rzDOS</button></a>
+                    <a href="hax/" title="HAX"><button>HAX</button></a>
+                    <a href="wakalk3000/" title="wakalk3000"><button>wakalk3000</button></a>
+                    <a href="mugh/" title="MUGH"><button>MUGH</button></a>
+                    <a href="ubash/" title="uBash"><button>uBash</button></a>
+                    <a href="8ball/" title="Magic 8-ball"><button>Magic 8-ball</button></a>
+                    <a href="clock/" title="clock that doesn't show time"><button>useless clock</button></a>
+                    <a href="piano" title="disasterpiece piano"><button>disasterpiece piano</button></a>
+                    <a href="hell" title="HELL"><button>HELL</button></a>
+                    <a href="ncjs/" title="NCJS - neocoral javascript"><button>NCJS</button></a>
+                    <a href="laser" title="weird laser"><button>laser</button></a>
+                    <a href="bewbew/" title="BEW BEW"><button>BEW BEW</button></a>
+                    <a href="matrix" title="matrix rain"><button>matrix rain</button></a>
+                    <a href="coraltube/" title="CoralTube"><button>CoralTube</button></a>
+                    <a href="cps/" title="cps"><button>cps</button></a>
+                    <a href="draw" title="useless drawing app"><button>useless drawing app</button></a>
+                    <a href="virus" title="download RAM"><button>download free RAM</button></a>
+                    <a href="nc-mine/" title="nC-mine"><button>nC-mine</button></a>
+                    <a href="stonks" title="stonks"><button>stonks</button></a>
+                    <a href="bobelito/" title="bobelito"><button>bobelito</button></a>
+                    <a href="neocoin-collector/" title="neocoin collector"><button>neocoin collector</button></a>
+                    <a href="wait/" title="wait..."><button>wait...</button></a>
+                    <a href="frontwars/" title="frontwars 2.0"><button>frontwars 2.0</button></a>
+                    <a href="rps/" title="rock, paper, scissors"><button>rock paper scissors</button></a>
+                    <a href="todolist/" title="todolist"><button>todolist</button></a>
+                    <a href="park2" title="park2"><button>park2</button></a>
+                    <a href="soundboard/" title="soundboard"><button>soundboard</button></a>
+                    <a href="dice/" title="dice"><button>dice</button></a>
+                    <a href="stocks/" title="stocks"><button>stocks</button></a>
+                    <a href="profile/" title="profile"><button>profile</button></a>
+                    <br>
+                </fieldset>
+                <hr>
+                <fieldset>
+                    <legend>other</legend>
+                    <div id="other">
+                        <button id="changelog" class="special-btn">changelog</button>
+                        <a href="https://github.com/rasmuus10" target="_blank"><button id="github" class="special-btn">GITHUB</button></a>
+                        <a href="neoshop/"><button class="special-btn">★ NEOSHOP ★</button></a>
+                    </div>
+                    <br><br>
+                    <pre id="pre-dude">
+        O
+        /|\
+        / \
+                    </pre>
+                    <pre id="pre-dude2">
+        O
+        /|\
+        / \
+                    </pre>
+                    <div class="center">
+                        <div id="other-div">
+                            <span>other cool corners of the internet</span>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="other">
+                        <a href="https://cyanshock.net" target="_blank" class="a other-a">cyanshock.net</a><br>
+                        <a href="https://windows93.net" target="_blank" class="a other-a">windows93.net</a><br>
+                        <a href="https://cat-bounce.com" target="_blank" class="a other-a">cat-bounce.com</a><br>
+                        <a href="https://optical.toys" target="_blank" class="a other-a">optical.toys</a><br>
+                    </div>
+                    <img src="img/spike.png">
+                    <img src="img/spike.png">
+                    <img src="img/spike.png">
+                    <img src="img/spike.png">
+                    <img src="img/spike.png">
+                    <img src="img/spike.png">
+                    <img src="img/spike.png">
+                    <img src="img/spike.png">
+                    <img src="img/spike.png">
+                    <img src="img/spike.png">
+                    <img src="img/spike.png">
+                    <img src="img/spike.png">
+                    <img src="img/spike.png" id="phone1">
+                    <img src="img/spike.png" id="phone2">
+                </fieldset>
+            </fieldset>
+        </main>
+        <div class="center">
+            <fieldset id="jukebox">
+                <legend>jukebox</legend>
+                <button onclick="muteAudio()">stop music</button><br>
+                <i>volume:</i><br>
+                <span onclick="volume(0.25)" class="vol-btn">0.25</span>|
+                <span onclick="volume(0.50)" class="vol-btn">0.50</span>|
+                <span onclick="volume(0.75)" class="vol-btn">0.75</span>|
+                <span onclick="volume(1.0)" class="vol-btn">1.0</span><hr>
+                <span onclick="play('holywars')" class="panel-text">megadeth - holy wars</span><br>
+                <span onclick="play('hangar18')" class="panel-text">megadeth - hangar 18</span><br>
+                <span onclick="play('poisonwasthecure')" class="panel-text">megadeth - poison was the cure</span><br>
+                <span onclick="play('fivemagics')" class="panel-text">megadeth - five magics</span><br>
+                <span onclick="play('takenoprisoners')" class="panel-text">megadeth - take no prisoners</span><br>
+                <span onclick="play('rustinpeace')" class="panel-text">megadeth - rust in peace... polaris</span><br>
+                <span onclick="play('rainingblood')" class="panel-text">slayer - raining blood</span><br>
+                <span onclick="play('angelofdeath')" class="panel-text">slayer - angel of death</span><br>
+                <span onclick="play('warismyshepherd')" class="panel-text">exodus - war is my shepherd</span><br>
+                <span onclick="play('blacklist')" class="panel-text">exodus - blacklist</span><br>
+                <span onclick="play('thetoxicwaltz')" class="panel-text">exodus - the toxic waltz</span><br>
+                <span onclick="play('strikeofthebeast')" class="panel-text">exodus - strike of the beast</span><br>
+                <span onclick="play('theburningofatlanta')" class="panel-text">whiplash - the burning of atlanta</span><br>
+                <span onclick="play('respectthedead')" class="panel-text">whiplash - respect the dead</span><br>
+                <span onclick="play('walktheplank')" class="panel-text">whiplash - walk the plank</span><br>
+            </fieldset>
+        </div>
+        <div class="container">
+            <fieldset id="stats">
+                <legend class="text-center">stats</legend>
+                neocoins: <span id="neocoins">error</span><br>
+                stonks: <span id="stonk">error</span><br>
+                time spent: <span id="time">error</span>s<br>
+                logins: <span id="logins">error</span>
+            </fieldset>
+        </div>
 
-class Object {
-    constructor(x, y, width, height) {
-        this.x = x;
-        this.y = y;
-        this.width = width;
-        this.height = height;
-    }
-}
+        <div class="container">
+            <fieldset id="contact">
+                <legend>contact</legend>
+                <span class="panel-text" onclick="alert('rasmuus10@proton.me')">email</span><br>
+                <span class="panel-text" onclick="alert('rasmuus10.')">discord</span><br>
+                <span class="panel-text" onclick="location.href='https://github.com/rasmuus10'">github</span><br>
+            </fieldset>
+        </div>
 
-const speed = 12;
-let balance = +localStorage.getItem("money");
-document.getElementById("money").textContent = localStorage.getItem("money");
-const player = new Object(canvas.width / 2, 800, 50, 50);
-const wall1 = new Object(100, 100, 50, 800);
-const wall2 = new Object(canvas.width - 100, 100, 50, 800);
-const wall3 = new Object(100, 100, 2000, 50);
-const moneyBlock = new Object(canvas.width/2 - 50, 150, 150, 50);
+        <div class="container">
+            <fieldset id="control-panel">
+                <legend>control panel</legend>
+                <span class="panel-text" onclick="matrix()">enable matrix rain</span><br>
+                <span class="panel-text" onclick="clearInterval(matrixInterval);">disable matrix rain</span><br>
+                <span class="panel-text" onclick="clearCanvas()">clear canvas</span><br>
+                <span class="panel-text" onclick="enableHell()">enable hell</span><br>
+                <span class="panel-text" onclick="clearCanvas()">disable hell</span><br>
+                <span class="panel-text" onclick="enableCompanion()">enable companion</span><br>
+                <span class="panel-text" onclick="clearCanvas()">disable companion</span><br>
+                <span class="panel-text" onclick="speed++;">++ companion speed</span><br>
+                <span class="panel-text" onclick="speed--;">-- companion speed</span><br>
+                <span>companion speed: </span>
+                <span id="companionSpeed">0</span><br><br>
+                <span>enter background color</span><br>
+                <input type="text" id="bg-input" class="control-panel-input" placeholder="bg color input" autocapitalize="off" autocomplete="off" autocorrect="off"><br><br>
+                <span>enter text color</span><br>
+                <input type="text" id="text-color-input" class="control-panel-input" placeholder="text color input" autocapitalize="off" autocomplete="off" autocorrect="off"><br>
+            </fieldset>
+        </div>
 
-const dropper1 = new Object(250, 700, 50, 50);
-let dropper1Owned = localStorage.getItem("dropper1Owned") == 1;
+        <div class="container">
+            <fieldset id="avatar-box">
+                <legend>avatar</legend>
+                <pre id="avatar">
+<span id="hat"></span>
+⍩⃝
+/|\
+/ \
+                </pre>
+                <div id="avatar-box-bottom">
+                    enter avatar color<br>
+                    <input type="text" class="control-panel-input" id="avatar-color" placeholder="avatar color" autocapitalize="off" autocomplete="off" autocorrect="off"><br><br>
+                    <span id="toggle-hat" onclick="toggleHat()">toggle hat</span>
+                </div>
+            </fieldset>
+        </div>
 
-const dropper2 = new Object(250, 600, 50, 50);
-let dropper2Owned = localStorage.getItem("dropper2Owned") == 1;
+        <audio id="holywars" src="music/holywars.mp3" loop></audio>
+        <audio id="rainingblood" src="music/rainingblood.mp3" loop></audio>
+        <audio id="warismyshepherd" src="music/warismyshepherd.mp3" loop></audio>
+        <audio id="blacklist" src="music/blacklist.mp3" loop></audio>
+        <audio id="hangar18" src="music/hangar18.mp3" loop></audio>
+        <audio id="poisonwasthecure" src="music/poisonwasthecure.mp3" loop></audio>
+        <audio id="theburningofatlanta" src="music/theburningofatlanta.mp3" loop></audio>
+        <audio id="angelofdeath" src="music/angelofdeath.mp3" loop></audio>
+        <audio id="strikeofthebeast" src="music/strikeofthebeast.mp3" loop></audio>
+        <audio id="thetoxicwaltz" src="music/thetoxicwaltz.mp3" loop></audio>
+        <audio id="fivemagics" src="music/fivemagics.mp3" loop></audio>
+        <audio id="respectthedead" src="music/respectthedead.mp3" loop></audio>
+        <audio id="rustinpeace" src="music/rustinpeace.mp3" loop></audio>
+        <audio id="takenoprisoners" src="music/takenoprisoners.mp3" loop></audio>
+        <audio id="walktheplank" src="music/walktheplank.mp3" loop></audio>
 
-const dropper3 = new Object(250, 500, 50, 50);
-let dropper3Owned = localStorage.getItem("dropper3Owned") == 1;
-
-const dropper4 = new Object(250, 400, 50, 50);
-let dropper4Owned = localStorage.getItem("dropper4owned") == 1;
-
-const dropper5 = new Object(250, 300, 50, 50);
-let dropper5Owned = localStorage.getItem("dropper5Owned") == 1;
-
-let playtime = +localStorage.getItem("playtime");
-document.getElementById("playtime").textContent = playtime;
-
-const dropper1Bought = new Object(2000, 700, 50, 50);
-const dropper2Bought = new Object(2000, 600, 50, 50);
-const dropper3Bought = new Object(2000, 500, 50, 50);
-const dropper4Bought = new Object(2000, 400, 50, 50);
-const dropper5Bought = new Object(2000, 300, 50, 50);
-
-const lab = new Object(1400, 800, 100, 100);
-let labOwned = localStorage.getItem("labOwned") == 1;
-
-setInterval(function() {
-    playtime++;
-    localStorage.setItem("playtime", playtime);
-    document.getElementById("playtime").textContent = playtime;
-}, 1000);
-
-if(localStorage.getItem("dropper1Owned") == 1) {
-    ctx.fillStyle = "purple";
-    ctx.fillRect(dropper1Bought.x, dropper1Bought.y, dropper1Bought.width, dropper1Bought.height);
-    setInterval(function() {
-        balance++;
-        localStorage.setItem("money" ,balance);
-        document.getElementById("money").textContent = balance;
-    }, 100);
-}
-
-if(localStorage.getItem("dropper2Owned") == 1) {
-    ctx.fillStyle = "yellow";
-    ctx.fillRect(dropper2Bought.x, dropper2Bought.y, dropper2Bought.width, dropper2Bought.height);
-    setInterval(function() {
-        balance++;
-        localStorage.setItem("money" ,balance);
-        document.getElementById("money").textContent = balance;
-    }, 10);
-}
-
-if(localStorage.getItem("dropper3Owned") == 1) {
-    ctx.fillStyle = "blue";
-    ctx.fillRect(dropper3Bought.x, dropper3Bought.y, dropper3Bought.width, dropper3Bought.height);
-    setInterval(function() {
-        balance++;
-        localStorage.setItem("money" ,balance);
-        document.getElementById("money").textContent = balance;
-    }, 1);
-}
-
-if(localStorage.getItem("dropper4Owned") == 1) {
-    ctx.fillStyle = "red";
-    ctx.fillRect(dropper4Bought.x, dropper4Bought.y, dropper4Bought.width, dropper4Bought.height);
-    setInterval(function() {
-        balance += 3;
-        localStorage.setItem("money" ,balance);
-        document.getElementById("money").textContent = balance;
-    }, 1);
-}
-
-if(localStorage.getItem("dropper5Owned") == 1) {
-    ctx.fillStyle = "pink";
-    ctx.fillRect(dropper5Bought.x, dropper5Bought.y, dropper5Bought.width, dropper5Bought.height);
-    setInterval(function() {
-        balance += 6;
-        localStorage.setItem("money" ,balance);
-        document.getElementById("money").textContent = balance;
-    }, 1);
-}
-
-if(localStorage.getItem("labOwned") == 1) {
-    setInterval(function() {
-        balance += Math.floor(Math.random() * 25);
-        localStorage.setItem("money", balance);
-        document.getElementById("money").textContent = balance;
-    }, 100);                
-}
-
-let drugs = +localStorage.getItem("drugs");
-
-setInterval(function() {
-    localStorage.setItem("drugs", balance / 150);
-    const savedDrugs = localStorage.getItem("drugs");
-    const numDrugs = parseFloat(savedDrugs);
-    document.getElementById("totalDrugs").textContent = numDrugs.toFixed(0);
-}, 100);
-
-let randomChance;
-const double = new Object(1650, 300, 25, 25);
-
-setInterval(function() {
-    randomChance = Math.floor(Math.random() * 600);
-
-    if(randomChance == 1) {
-        double.x = 1650;
-        double.y = 300;
-        ctx.fillRect(double.x, double.y, double.width, double.height);
-        ctx.fillStyle = "gold";
-        ctx.fillText("money 2x", 1600, 290);
-    }
-}, 1000);
-
-function render() {
-    ctx.fillStyle = "blue";
-    ctx.fillRect(player.x, player.y, player.width, player.height);
-    ctx.fillStyle = "silver";
-    ctx.fillRect(wall1.x, wall1.y, wall1.width, wall1.height);
-    ctx.fillRect(wall2.x, wall2.y, wall2.width, wall2.height);
-    ctx.fillRect(wall3.x, wall3.y, wall3.width, wall3.height);
-    ctx.fillStyle = "green";
-    ctx.fillRect(moneyBlock.x, moneyBlock.y, moneyBlock.width, moneyBlock.height);
-    ctx.font = "25px Arial";
-    ctx.fillStyle = "white";
-    ctx.fillText("free money", moneyBlock.x + 10, moneyBlock.y + 30);
-    ctx.fillStyle = "cyan";
-    ctx.fillText("bought droppers", 1900, 250);
-    ctx.fillStyle = "red";
-    ctx.fillText("$1000", 300, 750);
-    ctx.fillText("$5000", 300, 650);
-    ctx.fillText("$15000", 300, 550);
-    ctx.fillText("$50000", 300, 450);
-    ctx.fillText("$100000", 300, 350);
-    ctx.font = "50px Arial";
-    ctx.fillStyle = "magenta";
-    ctx.fillText("drug", canvas.width/2 - 100, 80);
-    ctx.fillStyle = "cyan";
-    ctx.fillText("tycoon", canvas.width/2, 80)
-    ctx.fillStyle = "purple";
-    ctx.fillRect(dropper1.x, dropper1.y, dropper1.width, dropper1.height);
-    ctx.fillStyle = "yellow";
-    ctx.fillRect(dropper2.x, dropper2.y, dropper2.width, dropper2.height);
-    ctx.fillStyle = "blue";
-    ctx.fillRect(dropper3.x, dropper3.y, dropper3.width, dropper3.height);
-    ctx.fillStyle = "red";
-    ctx.fillRect(dropper4.x, dropper4.y, dropper4.width, dropper4.height);
-    ctx.fillStyle = "pink";
-    ctx.fillRect(dropper5.x, dropper5.y, dropper5.width, dropper5.height);
-    ctx.fillStyle = "mediumaquamarine";
-    ctx.fillRect(lab.x, lab.y, lab.width, lab.height);
-    ctx.fillStyle = "mediumaquamarine";
-    ctx.font = "30px Arial",
-    ctx.fillText("meth lab $10000", lab.x - 70, lab.y);
-}
-
-document.getElementById("resetSave").addEventListener("click", () => {
-    localStorage.setItem("dropper1Owned", 2);
-    localStorage.setItem("dropper2Owned", 2);
-    localStorage.setItem("dropper3Owned", 2);
-    localStorage.setItem("dropper4Owned", 2);
-    localStorage.setItem("dropper5Owned", 2);
-    localStorage.setItem("money", "0");
-    localStorage.setItem("drugs", "0");
-    localStorage.setItem("labOwned", 2);
-    location.reload();
-});
-
-const keys = {};
-
-document.addEventListener("keydown", (event) => {
-    keys[event.key] = true;
-});
-
-document.addEventListener("keyup", (event) => {
-    keys[event.key] = false;
-});
-
-function isCollidingX(x1, w1, x2, w2) { return x1 < x2 + w2 && x1 + w1 > x2; }
-function isCollidingY(y1, h1, y2, h2) { return y1 < y2 + h2 && y1 + h1 > y2; }
-
-function game() {
-    ctx.clearRect(player.x, player.y, player.width, player.height);
-
-    let oldX = player.x;
-    let oldY = player.y;
-
-    if(keys["w"]) { player.y -= speed; }
-    if(keys["s"]) { player.y += speed; }
-    if(keys["a"]) { player.x -= speed; }
-    if(keys["d"]) { player.x += speed; }
-
-    if(player.x <= 0) { player.x += speed; }
-    if(player.x >= canvas.width - player.width) { player.x -= speed; }
-    if(player.y <= 0) { player.y += speed; }
-    if(player.y >= canvas.height - player.height) { player.y -= speed; }
-
-    if(
-        isCollidingX(player.x, player.width, wall1.x, wall1.width) &&
-        isCollidingY(player.y, player.height, wall1.y, wall1.height)
-    ) {
-        player.x = oldX;
-        player.y = oldY;
-    }
-
-    if(
-        isCollidingX(player.x, player.width, wall2.x, wall2.width) &&
-        isCollidingY(player.y, player.height, wall2.y, wall2.height)
-    ) {
-        player.x = oldX;
-        player.y = oldY;
-    }
-
-    if(
-        isCollidingX(player.x, player.width, wall3.x, wall3.width) &&
-        isCollidingY(player.y, player.height, wall3.y, wall3.height)
-    ) {
-        player.x = oldX;
-        player.y = oldY;
-    }
-
-    if(
-        isCollidingX(player.x, player.width, moneyBlock.x, moneyBlock.width) &&
-        isCollidingY(player.y, player.height, moneyBlock.y, moneyBlock.height)
-    ) {
-        balance++;
-        document.getElementById("money").textContent = balance;
-        localStorage.setItem("money", balance);
-    }
-
-    if(
-        isCollidingX(player.x, player.width, dropper1.x, dropper1.width) &&
-        isCollidingY(player.y, player.height, dropper1.y, dropper1.height)
-    ) {
-        if(keys[" "]) {
-            if(!dropper1Owned) {
-                if(balance >= 1000) {
-                    balance -= 1000;
-                    dropper1Owned = localStorage.setItem("dropper1Owned", 1);
-                    ctx.fillStyle = "purple";
-                    ctx.fillRect(dropper1Bought.x, dropper1Bought.y, dropper1Bought.width, dropper1Bought.height);
-                    setInterval(function() {
-                        balance++;
-                        localStorage.setItem("money" ,balance);
-                        document.getElementById("money").textContent = balance;
-                    }, 100);
-                }
-            }
-        }
-    }
-
-    if(
-        isCollidingX(player.x, player.width, dropper2.x, dropper2.width) &&
-        isCollidingY(player.y, player.height, dropper2.y, dropper2.height)
-    ) {
-        if(keys[" "]) {
-            if(!dropper2Owned) {
-                if(balance >= 5000) {
-                    balance -= 5000;
-                    dropper2Owned = localStorage.setItem("dropper2Owned", 1);
-                    ctx.fillStyle = "yellow";
-                    ctx.fillRect(dropper2Bought.x, dropper2Bought.y, dropper2Bought.width, dropper2Bought.height);
-                    setInterval(function() {
-                        balance++;
-                        localStorage.setItem("money" ,balance);
-                        document.getElementById("money").textContent = balance;
-                    }, 10);
-                }
-            }
-        }
-    }
-
-    if(
-        isCollidingX(player.x, player.width, dropper3.x, dropper3.width) &&
-        isCollidingY(player.y, player.height, dropper3.y, dropper3.height)
-    ) {
-        if(keys[" "]) {
-            if(!dropper3Owned) {
-                if(balance >= 15000) {
-                    balance -= 15000;
-                    dropper3Owned = localStorage.setItem("dropper3Owned", 1);
-                    ctx.fillStyle = "blue";
-                    ctx.fillRect(dropper3Bought.x, dropper3Bought.y, dropper3Bought.width, dropper3Bought.height);
-                    setInterval(function() {
-                        balance++;
-                        localStorage.setItem("money" ,balance);
-                        document.getElementById("money").textContent = balance;
-                    }, 1);
-                }
-            }
-        }
-    }
-
-    if(
-        isCollidingX(player.x, player.width, dropper4.x, dropper4.width) &&
-        isCollidingY(player.y, player.height, dropper4.y, dropper4.height)
-    ) {
-        if(keys[" "]) {
-            if(!dropper4Owned) {
-                if(balance >= 50000) {
-                    balance -= 50000;
-                    dropper4Owned = localStorage.setItem("dropper4Owned", 1);
-                    ctx.fillStyle = "red";
-                    ctx.fillRect(dropper4Bought.x, dropper4Bought.y, dropper4Bought.width, dropper4Bought.height);
-                    setInterval(function() {
-                        balance += 3;
-                        localStorage.setItem("money" ,balance);
-                        document.getElementById("money").textContent = balance;
-                    }, 1);
-                }
-            }
-        }
-    }
-
-    if(
-        isCollidingX(player.x, player.width, dropper5.x, dropper5.width) &&
-        isCollidingY(player.y, player.height, dropper5.y, dropper5.height)
-    ) {
-        if(keys[" "]) {
-            if(!dropper5Owned) {
-                if(balance >= 100000) {
-                    balance -= 100000;
-                    dropper4Owned = localStorage.setItem("dropper5Owned", 1);
-                    ctx.fillStyle = "pink";
-                    ctx.fillRect(dropper5Bought.x, dropper5Bought.y, dropper5Bought.width, dropper5Bought.height);
-                    setInterval(function() {
-                        balance += 6;
-                        localStorage.setItem("money" ,balance);
-                        document.getElementById("money").textContent = balance;
-                    }, 1);
-                }
-            }
-        }
-    }
-
-    if(
-        isCollidingX(player.x, player.width, double.x, double.width) &&
-        isCollidingY(player.y, player.height, double.y, double.height)
-    ) {
-        balance = balance * 2;
-        double.x = 1000000;
-        double.y = 1000000;
-        ctx.clearRect(moneyBlock.x + 10, moneyBlock.y + 30, 1600, 290); // "money 2x" texten tas bort
-        localStorage.setItem("money", balance);
-        document.getElementById("money").textContent = balance;
-    }
-
-    if(
-        isCollidingX(player.x, player.width, lab.x, lab.width) &&
-        isCollidingY(player.y, player.height, lab.y, lab.height)
-    ) {
-        if(keys[" "]) {
-            if(!labOwned) {
-                if(balance >= 10000) {
-                    labOwned = localStorage.setItem("labOwned", 1);
-                    balance -= 10000;
-                    location.reload();
-                    setInterval(function() {
-                        balance += Math.floor(Math.random() * 25);
-                        localStorage.setItem("money", balance);
-                        document.getElementById("money").textContent = balance;
-                    }, 100);
-                }
-            }
-        }
-    }
-
-    render();
-    requestAnimationFrame(game);
-}
-
-game();
+        <div id="log">
+            <button onclick="off('log')" class="x">X</button>
+            <h1>Changelog for neocoral</h1>
+            <h2>v8.7</h2>
+            <p>Changed so the time counts in every page and not just on index page</p>
+            <h2>v8.6</h2>
+            <p>Added <a href="profile/" class="a">profile</a>.</p>
+            <h2>v8.5</h2>
+            <p>Added <a href="stocks/" class="a">stocks</a> so you can earn neocoins by investing in them</p>
+            <h2>v8.4</h2>
+            <p>Added marquee news box</p>
+            <h2>v8.3</h2>
+            <p>Added the avatar</p>
+            <h2>v8.2</h2>
+            <p>Now you have to evade the red giant and get the aquamarine key to win 10 neocoins in <a href="park2/" class="a">park2</a></p>
+            <h2>v8.1</h2>
+            <p>Changed <a href="park2/" class="a">park2</a> so there's a giant you have to avoid or you lose hp</p>
+            <h2>v8.0</h2>
+            <p>Added input to change text color in control panel</p>
+            <h2>v7.9</h2>
+            <p>Changed <a href="park2" class="a">park2</a> to a entire new thing, still not a finished game tho</p>
+            <h2>v7.8</h2>
+            <p>Added volume for jukebox</p>
+            <h2>v7.7</h2>
+            <p>Changed code for muting audio and fixed issue so you can play new song without pressing stop button. And added new songs</p>
+            <h2>v7.6</h2>
+            <p>Changed theme for special button on homepage</p>
+            <h2>v7.5</h2>
+            <p>Added <a href="dice/" class="a">dice</a> and changed theme for buttons on the entire site</p>
+            <h2>v7.4</h2>
+            <p>Added background color input in control panel, there's also a secret word for an easter egg in the bg color input</p>
+            <h2>v7.3</h2>
+            <p>Changed name from <a href="casino" class="a">CASE-SIM</a> to <a href="casino" class="a">ca$ino</a></p>
+            <h2>v7.2</h2>
+            <p>Added companion in control panel. Also added new song to jukebox</p>
+            <h2>v7.1</h2>
+            <p>Changed <a href="case-sim/" class="a">CASE-SIM</a> so you gamble with your neocoins instead of money with no use. Also changed drops in <a href="case-sim/" class="a">CASE-SIM</a></p>
+            <h2>v7.0</h2>
+            <p>Added contact box on right side, and added control panel on the left side. Also made <i class="cyan">stats</i> into fieldset</p>
+            <h2>v6.9</h2>
+            <p>Moved <i class="cyan">stats</i> tab under the jukebox</p>
+            <h2>v6.8</h2>
+            <p>Changes format for notes in <a href="piano/" class="a">disasterpiece piano</a> from <span class="aquamarine">.wav</span> to <span class="aquamarine">.mp3</span></p>
+            <h2>v6.7</h2>
+            <p>Added jukebox, and 11 songs with it</p>
+            <h2>v6.6</h2>
+            <p>Minor update to <a href="park2/" class="a">park2</a></p>
+            <h2>v6.5</h2>
+            <p>Added <a href="soundboard/" class="a">soundboard</a></p>
+            <h2>v6.4</h2>
+            <p>New favicon <img src="favicon.ico" id="favicon-changelog"></p>
+            <h2>v6.3</h2>
+            <p>BIG UPDATE!!! Changed the entire theme on the site, much better now</p>
+            <h2>v6.2</h2>
+            <p>Added login counter at <i class="cyan">stats</i> tab</p>
+            <h2>v6.1</h2>
+            <p>Added <a href="park2/" class="a">park2</a> and <a href="todolist/" class="a">todolist</a></p>
+            <h2>v6.0</h2>
+            <p>Made the cursor follow effect only one square</p>
+            <h2>v5.9</h2>
+            <p>Added <a href="cps/" class="a">cps</a>. It measures your clicks per second.</p>
+            <h2>v5.8</h2>
+            <p>Added <a href="wait/" class="a">wait...</a> and added it to unlisted projects</p>
+            <h2>v5.7</h2>
+            <p>Changed <a href="bewbew/" class="a">BEW BEW</a>, now the search result cover like the entire screen</p>
+            <h2>v5.6</h2>
+            <p>Made it so you need 10000 stonks to access admin page so you cant just buy stonks get the page and sell stonks.</p>
+            <h2>v5.5</h2>
+            <p>Added <a href="stonks" class="a">stonks</a> and now regular people can access admin page</p>
+            <h2>v5.4</h2>
+            <p>Added <a href="lungs-of-copper/" class="a">lungs of copper</a> and <a href="bobelito/" class="a">bobelito</a></p>
+            <h2>v5.3</h2>
+            <p>Changed theme for <a href="neocoin-collector/" class="a">neocoin collector</a></p>
+            <h2>v5.2</h2>
+            <p>Added <a href="neocoin-collector/" class="a">neocoin collector</a> - a new way to make neocoins and spend them in <a href="neoshop" class="a">neoshop</a>. I also added <a href="rps/" class="a">rock, paper, scissors</a> to the unlisted projects list and replaced it with <a href="neocoin-collector/" class="a">neocoin collector</a></p>
+            <h2>v5.1</h2>
+            <p>Made it so the particle thing following the cursor has a reset function for when the rgb maxes out</p>
+            <h2>v5.0</h2>
+            <p>Updated <a href="wakalk3000/" class="a">wakalk3000</a> and its now smooth movement and border collision</p>
+            <h2>v4.9</h2>
+            <p>Added <a href="ncjs" class="a">NCJS</a></p>
+            <h2>v4.8</h2>
+            <p>Added a particle system for the cursor.</p>
+            <h2>v4.7</h2>
+            <p>Added <a href="nc-mine/" class="a">nC-mine</a> to the list of projects and fixed admin page error</p>
+            <h2>v4.6</h2>
+            <p>Made <a href="laser/" class="a">weird laser</a> not follow cursor but you have to press left mouse button</p>
+            <h2>v4.5</h2>
+            <p>Added a <a href="virus/" class="a">virus</a> and added all unlisted projects to the main page</p>
+            <h2>v4.4</h2>
+            <p>Another big update, I updated the style of all buttons and hyperlinks to make them feel more alive! Much better than just a cursor: pointer; if you know you know</p>
+            <h2>v4.3</h2>
+            <p>Big update! Added 6 new projects that i made for my neocities website but this site has more traffic so i moved them here</p>
+            <h2>v4.2</h2>
+            <p>Added auto clicker to <a href="ball-clicker/" class="a">Ball-Clicker</a></p>
+            <h2>v4.1</h2>
+            <p>Added <a href="hax/" class="a">HAX</a></p>
+            <h2>v4.0</h2>
+            <p>Added localStorage to <a href="ball-clicker/" class="a">Ball-Clicker</a> and added 2 different click sounds (50-50)</p>
+            <h2>v3.9</h2>
+            <p>Fixed positioning of apps in <a href="mugh/" class="a">MUGH</a></p>
+            <h2>v3.8</h2>
+            <p>Added iframe to <a href="bewbew/" class="a">Bew Bew</a></p>
+            <h2>v3.7</h2>
+            <p>Added <a href="rps/" class="a">Rock, Paper, Scissors</a> and added it to unlisted projects</p>
+            <h2>v3.6</h2>
+            <p>Fixed <a href="case-sim/" class="a">CASE-SIM</a> and changed it's style. Go gamble!</p>
+            <h2>v3.5</h2>
+            <p>Added <a href="case-sim/" class="a">Case-Sim</a> but it's kinda broken rn so don't play it</p>
+            <h2>v3.4</h2>
+            <p>Added <a href="bewbew/" class="a">Bew Bew</a>, a search engine. I also added <a href="bewbew/" class="a">Bew Bew</a> to <a href="rzDOS/" class="a">rzDOS</a></p>
+            <h2>v3.3</h2>
+            <p>Added <a href="wakalk3000/" class="a">wakalk3000</a> and added "unlisted projects"</p>
+            <h2>v3.2</h2>
+            <p>Added <a href="rzDOS/" class="a">rzDOS</a></p>
+            <h2>v3.1</h2>
+            <p>Changed the access path to admin page and rewrote old uBash terminal (OG people will know what that is)</p>
+            <h2>v3.0</h2>
+            <p>Added the <a href="casino/" class="a">Casino</a></p>
+            <h2>v2.9</h2>
+            <p>Added a README.md to every project, avaliable on <a href="https://github.com/zodajam" class="a">GitHub</a></p>
+            <h2>v2.8</h2>
+            <p>Made small changes to <a href="pc-sim/" class="a">PC-SIM</a> and smaaaall changes to main page</p>
+            <h2>v2.7</h2>
+            <p>Rewrote some projects to get rid of &ltcenter> tags</p>
+            <h2>v2.6</h2>
+            <p>Change color of ball in <a href="ball-clicker/" class="a">BALL CLICKER</a> and added clock in <a href="mugh/" class="a">MUGH</a></p>
+            <h2>v2.5</h2>
+            <p>Added and changed some stuff to <a href="mugh/" class="a">MUGH</a> and fixed major problem for mobile user</p>
+            <h2>v2.4</h2>
+            <p>Added <a href="mugh/" class="a">MUGH</a> and changed some layout on the main page and finally fixed the guys on the main page</p>
+            <h2>v2.3</h2>
+            <p>Changed the admin page, but I aint letting you see that</p>
+            <h2>v2.2</h2>
+            <p>Just changed some problems in <a href="coraltube" class="a">CoralTube, </a><a href="soundboard" class="a">Soundboard</a> and <a href="archaic" class="a">Archaic</a></p>
+            <h2>v2.1</h2>
+            <p>Changed style of <a href="pong" class="a">PONG</a> and <a href="ball-clicker" class="a">Ball-Clicker</a></p>
+            <h2>v2.0</h2>
+            <p>Fixed major problem for mobile devices.</p>
+            <h2>v1.9</h2>
+            <p>Changed theme of the chatbox.</p>
+            <h2>v1.8</h2>
+            <p>Added the chatbox.</p>
+            <h2>v1.7</h2>
+            <p>Added the admin page.</p>
+            <h2>v1.6</h2>
+            <p>Changed changelog for mobile devices.</p>
+            <h2>v1.5</h2>
+            <p>Fixed buttons and href for buttons.</p>
+            <h2>v1.4</h2>
+            <p>Corrected typos in <a href="/archaic" class="a">Archaic.</a></p>
+            <h2>v1.3</h2>
+            <p>Added the <a href="8ball/" class="a">the Magic 8-ball.</a></p>
+            <h2>v1.2</h2>
+            <p>Added accessibility for mobile devices.</p>
+            <h2>v1.1</h2>
+            <p>Added spikes to the bottom of the page.</p>
+            <h2>v1.0</h2>
+            <p>The site is officialy launched on <a href="https://github.com/rasmuus10" target="_blank" class="a">GitHub</a> by zodajam.</p>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div id="cover"></div>
+        <div class="container">
+            <fieldset id="bottom-page-small">
+                <marquee scrollamount="6">
+                    contact: <span class="panel-text" onclick="alert('rasmuus10@proton.me')">email</span>,
+                    <span class="panel-text" onclick="alert('rasmuus10.')">discord</span>,
+                    <a href="https://github.com/rasmuus10" class="a" target="_blank">github</a>
+                    - get neocoins: <a href="ball-clicker/" class="a">Ball-Clicker</a>,
+                    <a href="nc-mine/" class="a">nC-mine</a>,
+                    <a href="neocoin-collector/" class="a">neocoin-collector</a>,
+                    <a href="park2/" class="a">park2</a>, <a href="casino/" class="a">ca$ino</a>
+                    - buy neocoral stocks: <a href="stonks/" class="a">stonks</a>
+                </marquee>
+            </fieldset>
+        </div>
+        <div id="bottom-page">
+            <div class="center">
+                <p id="onlyKind">» only kind messages allowed «</p>
+            </div>
+            <div class="container"><iframe src="https://www5.cbox.ws/box/?boxid=955618&boxtag=D0mwrt" id="chat" width="750" height="300" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
