@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#moneyText {
+top: 0;
+left: 0;
+}
+
+#playTimeHolder {
+top: 0;
+left: 20rem;
+}
+
+#totalDrugsHolder {
+top: 0;
+left: 40rem;
+}
+
+#resetSaveHolder {
+top: 0;
+left: 60rem;
+}
+
+#resetSave {
+color: cyan;
+text-decoration: underline;
+text-decoration-color: cyan;
+cursor: pointer;
+}
+
+.top {
+    position: absolute;
+    z-index: 100;
+    font-size: xx-large;
+}
