@@ -18,8 +18,8 @@ let balance = +localStorage.getItem("money");
 document.getElementById("money").textContent = localStorage.getItem("money");
 const player = new Object(canvas.width / 2, 800, 50, 50);
 const wall1 = new Object(100, 100, 50, 800);
-const wall2 = new Object(canvas.width - 100, 100, 50, 800);
-const wall3 = new Object(100, 100, 2000, 50);
+const wall2 = new Object(canvas.width - 200, 100, 50, 800);
+const wall3 = new Object(100, 100, 1650, 50);
 const moneyBlock = new Object(canvas.width/2 - 50, 150, 150, 50);
 
 const dropper1 = new Object(250, 700, 50, 50);
@@ -40,12 +40,6 @@ let dropper5Owned = localStorage.getItem("dropper5Owned") == 1;
 let playtime = +localStorage.getItem("playtime");
 document.getElementById("playtime").textContent = playtime;
 
-const dropper1Bought = new Object(2000, 700, 50, 50);
-const dropper2Bought = new Object(2000, 600, 50, 50);
-const dropper3Bought = new Object(2000, 500, 50, 50);
-const dropper4Bought = new Object(2000, 400, 50, 50);
-const dropper5Bought = new Object(2000, 300, 50, 50);
-
 const lab = new Object(1400, 800, 100, 100);
 let labOwned = localStorage.getItem("labOwned") == 1;
 
@@ -56,8 +50,6 @@ setInterval(function() {
 }, 1000);
 
 if(localStorage.getItem("dropper1Owned") == 1) {
-    ctx.fillStyle = "purple";
-    ctx.fillRect(dropper1Bought.x, dropper1Bought.y, dropper1Bought.width, dropper1Bought.height);
     setInterval(function() {
         balance++;
         localStorage.setItem("money" ,balance);
@@ -66,8 +58,6 @@ if(localStorage.getItem("dropper1Owned") == 1) {
 }
 
 if(localStorage.getItem("dropper2Owned") == 1) {
-    ctx.fillStyle = "yellow";
-    ctx.fillRect(dropper2Bought.x, dropper2Bought.y, dropper2Bought.width, dropper2Bought.height);
     setInterval(function() {
         balance++;
         localStorage.setItem("money" ,balance);
@@ -76,8 +66,6 @@ if(localStorage.getItem("dropper2Owned") == 1) {
 }
 
 if(localStorage.getItem("dropper3Owned") == 1) {
-    ctx.fillStyle = "blue";
-    ctx.fillRect(dropper3Bought.x, dropper3Bought.y, dropper3Bought.width, dropper3Bought.height);
     setInterval(function() {
         balance++;
         localStorage.setItem("money" ,balance);
@@ -86,8 +74,6 @@ if(localStorage.getItem("dropper3Owned") == 1) {
 }
 
 if(localStorage.getItem("dropper4Owned") == 1) {
-    ctx.fillStyle = "red";
-    ctx.fillRect(dropper4Bought.x, dropper4Bought.y, dropper4Bought.width, dropper4Bought.height);
     setInterval(function() {
         balance += 3;
         localStorage.setItem("money" ,balance);
@@ -96,8 +82,6 @@ if(localStorage.getItem("dropper4Owned") == 1) {
 }
 
 if(localStorage.getItem("dropper5Owned") == 1) {
-    ctx.fillStyle = "pink";
-    ctx.fillRect(dropper5Bought.x, dropper5Bought.y, dropper5Bought.width, dropper5Bought.height);
     setInterval(function() {
         balance += 6;
         localStorage.setItem("money" ,balance);
@@ -149,8 +133,6 @@ function render() {
     ctx.font = "25px Arial";
     ctx.fillStyle = "white";
     ctx.fillText("free money", moneyBlock.x + 10, moneyBlock.y + 30);
-    ctx.fillStyle = "cyan";
-    ctx.fillText("bought droppers", 1900, 250);
     ctx.fillStyle = "red";
     ctx.fillText("$1000", 300, 750);
     ctx.fillText("$5000", 300, 650);
@@ -161,7 +143,7 @@ function render() {
     ctx.fillStyle = "magenta";
     ctx.fillText("drug", canvas.width/2 - 100, 80);
     ctx.fillStyle = "cyan";
-    ctx.fillText("tycoon", canvas.width/2, 80)
+    ctx.fillText("tycoon", canvas.width/2 + 10, 80)
     ctx.fillStyle = "purple";
     ctx.fillRect(dropper1.x, dropper1.y, dropper1.width, dropper1.height);
     ctx.fillStyle = "yellow";
@@ -262,8 +244,6 @@ function game() {
                 if(balance >= 1000) {
                     balance -= 1000;
                     dropper1Owned = localStorage.setItem("dropper1Owned", 1);
-                    ctx.fillStyle = "purple";
-                    ctx.fillRect(dropper1Bought.x, dropper1Bought.y, dropper1Bought.width, dropper1Bought.height);
                     setInterval(function() {
                         balance++;
                         localStorage.setItem("money" ,balance);
@@ -283,8 +263,6 @@ function game() {
                 if(balance >= 5000) {
                     balance -= 5000;
                     dropper2Owned = localStorage.setItem("dropper2Owned", 1);
-                    ctx.fillStyle = "yellow";
-                    ctx.fillRect(dropper2Bought.x, dropper2Bought.y, dropper2Bought.width, dropper2Bought.height);
                     setInterval(function() {
                         balance++;
                         localStorage.setItem("money" ,balance);
@@ -304,8 +282,6 @@ function game() {
                 if(balance >= 15000) {
                     balance -= 15000;
                     dropper3Owned = localStorage.setItem("dropper3Owned", 1);
-                    ctx.fillStyle = "blue";
-                    ctx.fillRect(dropper3Bought.x, dropper3Bought.y, dropper3Bought.width, dropper3Bought.height);
                     setInterval(function() {
                         balance++;
                         localStorage.setItem("money" ,balance);
@@ -325,8 +301,6 @@ function game() {
                 if(balance >= 50000) {
                     balance -= 50000;
                     dropper4Owned = localStorage.setItem("dropper4Owned", 1);
-                    ctx.fillStyle = "red";
-                    ctx.fillRect(dropper4Bought.x, dropper4Bought.y, dropper4Bought.width, dropper4Bought.height);
                     setInterval(function() {
                         balance += 3;
                         localStorage.setItem("money" ,balance);
@@ -346,8 +320,6 @@ function game() {
                 if(balance >= 100000) {
                     balance -= 100000;
                     dropper4Owned = localStorage.setItem("dropper5Owned", 1);
-                    ctx.fillStyle = "pink";
-                    ctx.fillRect(dropper5Bought.x, dropper5Bought.y, dropper5Bought.width, dropper5Bought.height);
                     setInterval(function() {
                         balance += 6;
                         localStorage.setItem("money" ,balance);
