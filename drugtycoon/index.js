@@ -13,7 +13,7 @@ class Object {
     }
 }
 
-const speed = 12;
+const speed = 8;
 let balance = +localStorage.getItem("money");
 document.getElementById("money").textContent = localStorage.getItem("money");
 const player = new Object(canvas.width / 2, 800, 50, 50);
@@ -110,7 +110,7 @@ let randomChance;
 const double = new Object(1650, 300, 25, 25);
 
 setInterval(function() {
-    randomChance = Math.floor(Math.random() * 600);
+    randomChance = Math.floor(Math.random() * 6000);
 
     if(randomChance == 1) {
         double.x = 1650;

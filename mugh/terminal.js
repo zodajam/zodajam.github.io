@@ -34,7 +34,7 @@ function run() {
         output.innerHTML = `<pre>
 ##       ##  root@mugh
 ####   ####  OS: MUGH-1.0
-## ## ## ##  made by zodajam
+## ## ## ##  made by rasmuus10
 ##  ###  ##  ( ͡ᵔ ͜ʖ ͡ᵔ )
         </pre>`;
         input.focus();
