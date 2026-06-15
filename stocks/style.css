@@ -62,3 +62,20 @@ button:hover {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+#updatedPriceHolder {
+    color: cyan;
+}
+
+#updatedPrice {
+    font-size: x-large;
+    color: orange;
+    background-color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 3rem;
+}
+
+#countdown {
+    float: right;
+}
