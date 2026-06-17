@@ -42,19 +42,6 @@ textCinput.addEventListener("keydown", (event) => {
     }
 });
 
-const avatarInput = document.getElementById("avatar-color");
-
-avatarInput.addEventListener("keydown", (event) => {
-    if(event.key == "Enter") {
-        if(avatarInput.value.toLowerCase() == "rainbow") {
-            setInterval(function () {
-                document.getElementById("avatar").style.color = rainbow[Math.floor(Math.random() * rainbow.length)];
-            }, 50);
-        }
-        document.getElementById("avatar").style.color = avatarInput.value;
-    }
-});
-
 function on(id) { document.getElementById(id).style.display = "block"; } // show stuff
 function off(id) { document.getElementById(id).style.display = "none"; } // hide stuff
 
@@ -218,10 +205,19 @@ function enableCompanion() {
 
 function botSpeedPlus() { speed++; }
 
-function toggleHat() {
-    if(document.getElementById("hat").textContent == "") {
-        document.getElementById("hat").textContent = "𐚁";
-    } else {
-        document.getElementById("hat").textContent = "";
-    }
-}
+
+const avatar = document.getElementById("avatar");
+
+avatar.textContent = localStorage.getItem("avatar");
+
+const username = document.getElementById("username");
+
+username.textContent = localStorage.getItem("username");
+
+
+
+
+
+
+
+document.getElementById("stocks").textContent = localStorage.getItem("stocks");

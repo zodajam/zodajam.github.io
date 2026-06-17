@@ -390,6 +390,7 @@ hr {
     z-index: 100;
     text-align: center;
     height: 8rem;
+    width: 11rem;
 }
 
 #toggle-hat {
@@ -419,9 +420,9 @@ hr {
 #avatar {
     top: -2rem;
     position: relative;
+    padding: 2rem;
 }
 
-#avatar-box-bottom {
-    top: -4rem;
-    position: relative;
+#editProfileText {
+    font-size: smaller;
 }
