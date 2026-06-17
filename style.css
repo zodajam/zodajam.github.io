@@ -362,7 +362,7 @@ hr {
 #control-panel {
     position: relative;
     left: -22rem;
-    top: -63rem;
+    top: -65rem;
     z-index: 10;
     text-align: center;
 }
@@ -386,7 +386,7 @@ hr {
 #avatar-box {
     position: relative;
     left: -22rem;
-    top: -62rem;
+    top: -64rem;
     z-index: 100;
     text-align: center;
     height: 8rem;
