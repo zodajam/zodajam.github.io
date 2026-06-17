@@ -99,3 +99,12 @@ button:hover {
     border-color: blue;
     top: -2px;
 }
+
+#discountHolder {
+    display: none;
+}
+
+#annoucnement {
+    background-color: mediumaquamarine;
+    color: black;
+}

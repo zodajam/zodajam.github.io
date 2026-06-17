@@ -218,6 +218,14 @@ username.textContent = localStorage.getItem("username");
 
 
 
+let levels = 0;
 
+if(+localStorage.getItem("levels") > 0) {
+    levels = +localStorage.getItem("levels");
+}
+
+localStorage.setItem("levels", +localStorage.getItem("neocoin") / 5 + +localStorage.getItem("stonk") / 5);
 
 document.getElementById("stocks").textContent = localStorage.getItem("stocks");
+
+document.getElementById("levels").textContent = localStorage.getItem("levels");
