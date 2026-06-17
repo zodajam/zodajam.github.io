@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: font;
+}
+
+@font-face {
+    font-family: font;
+    src: url(../fonts/FSEX300.ttf);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    padding: 15px;
+    border: 4px double blue;
+    outline-offset: -4px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
+    padding: 2rem;
+    width: 20rem;
+}
+
+hr {
+    border: 1px dotted white;
+    margin: 1px;
+}
+
+#title {
+    font-size: x-large;
+    background-color: navy;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+button {
+    border: 3px double dodgerblue;
+    background-color: navy;
+    color: white;
+    margin-bottom: 4px; 
+    font-family: font;
+    cursor: pointer;
+    position: relative;
+    outline-offset: -2px;
+    outline-color: white;
+    outline-style: dotted;
+    outline-width: 1px;
+    box-shadow: 2px 2px darkslateblue;
+}
+
+button:hover {
+    background-color: dodgerblue;
+    color: white;
+    border-color: blue;
+    top: -2px;
+}

@@ -215,21 +215,6 @@ const username = document.getElementById("username");
 username.textContent = localStorage.getItem("username");
 
 
-
-
-
-let levels = 0;
-
-let storedLevels = +localStorage.getItem("levels");
-if (storedLevels > 0) {
-    levels = storedLevels;
-}
-
-let levelCalc = (+localStorage.getItem("neocoin") / 5) + (+localStorage.getItem("stonk") / 5);
-let levelInt = Math.trunc(levelCalc);
-
-localStorage.setItem("levels", levelInt);
-
 document.getElementById("stocks").textContent = localStorage.getItem("stocks");
 
 document.getElementById("levels").textContent = localStorage.getItem("levels");
