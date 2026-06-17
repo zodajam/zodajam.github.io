@@ -16,30 +16,42 @@ amountStocks.innerText = stocks;
 amountNeocoins.innerText = neocoins;
 
 function buy() {
-    localStorage.setItem("stocks", stocks);
-    if(price <= 0) {
+    if(!enter) {
+        localStorage.setItem("stocks", stocks);
+        if(price <= 0) {
 
-    } else {
-        stocks++;
-        neocoins -= price;
-        localStorage.setItem("neocoin", neocoins);
-        amountNeocoins.innerText = neocoins;
-        amountStocks.innerText = stocks;
+        } else {
+            stocks++;
+            neocoins -= price;
+            localStorage.setItem("neocoin", neocoins);
+            amountNeocoins.innerText = neocoins;
+            amountStocks.innerText = stocks;
+        }
     }
 }
 
 function sell() {
-    localStorage.setItem("stocks", stocks);
-    if(stocks <= 0) {
-        alert("you dont have any stocks dumbass");
-    } else {
-        stocks--;
-        neocoins += price;
-        localStorage.setItem("neocoin", neocoins);
-        amountNeocoins.innerText = neocoins;
-        amountStocks.innerText = stocks;
+    if(!enter) {
+        localStorage.setItem("stocks", stocks);
+        if(stocks <= 0) {
+            alert("you dont have any stocks dumbass");
+        } else {
+            stocks--;
+            neocoins += price;
+            localStorage.setItem("neocoin", neocoins);
+            amountNeocoins.innerText = neocoins;
+            amountStocks.innerText = stocks;
+        }
     }
 }
+
+let enter;
+
+document.addEventListener("keydown", (event) => {
+    if(event.key == "Enter") {
+        enter = true;
+    }
+});
 
 let plus;
 let minus;
