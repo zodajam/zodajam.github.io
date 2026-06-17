@@ -24,7 +24,9 @@ howToInstallArchTxt.onclick = function() {
         } else {
             neocoin -= price;
             localStorage.setItem("neocoin", neocoin);
-            localStorage.setItem("levels", +localStorage.getItem("neocoin") / 5 + +localStorage.getItem("stonk") / 5);
+            let levelCalc = (+localStorage.getItem("neocoin") / 5) + (+localStorage.getItem("stonk") / 5);
+            let levelInt = Math.trunc(levelCalc);
+            localStorage.setItem("levels", levelInt);
             document.getElementById("levels").textContent = localStorage.getItem("levels");
             if(+localStorage.getItem("levels") >= 1000) {
                 document.getElementById("discountHolder").style.display = "block";
@@ -42,7 +44,9 @@ howToInstallArchTxt.onclick = function() {
         } else {
             neocoin -= price;
             localStorage.setItem("neocoin", neocoin);
-            localStorage.setItem("levels", +localStorage.getItem("neocoin") / 5 + +localStorage.getItem("stonk") / 5);
+            let levelCalc = (+localStorage.getItem("neocoin") / 5) + (+localStorage.getItem("stonk") / 5);
+            let levelInt = Math.trunc(levelCalc);
+            localStorage.setItem("levels", levelInt);
             document.getElementById("levels").textContent = localStorage.getItem("levels");
             if(+localStorage.getItem("levels") >= 1000) {
                 document.getElementById("discountHolder").style.display = "block";
@@ -69,7 +73,9 @@ song1.onclick = function() {
         } else {
             neocoin -= price;
             localStorage.setItem("neocoin", neocoin);
-            localStorage.setItem("levels", +localStorage.getItem("neocoin") / 5 + +localStorage.getItem("stonk") / 5);
+            let levelCalc = (+localStorage.getItem("neocoin") / 5) + (+localStorage.getItem("stonk") / 5);
+            let levelInt = Math.trunc(levelCalc);
+            localStorage.setItem("levels", levelInt);
             document.getElementById("levels").textContent = localStorage.getItem("levels");
             if(+localStorage.getItem("levels") >= 1000) {
                 document.getElementById("discountHolder").style.display = "block";
@@ -87,7 +93,9 @@ song1.onclick = function() {
         } else {
             neocoin -= price;
             localStorage.setItem("neocoin", neocoin);
-            localStorage.setItem("levels", +localStorage.getItem("neocoin") / 5 + +localStorage.getItem("stonk") / 5);
+            let levelCalc = (+localStorage.getItem("neocoin") / 5) + (+localStorage.getItem("stonk") / 5);
+            let levelInt = Math.trunc(levelCalc);
+            localStorage.setItem("levels", levelInt);
             document.getElementById("levels").textContent = localStorage.getItem("levels");
             if(+localStorage.getItem("levels") >= 1000) {
                 document.getElementById("discountHolder").style.display = "block";
@@ -114,7 +122,9 @@ song2.onclick = function() {
         } else {
             neocoin -= price;
             localStorage.setItem("neocoin", neocoin);
-            localStorage.setItem("levels", +localStorage.getItem("neocoin") / 5 + +localStorage.getItem("stonk") / 5);
+            let levelCalc = (+localStorage.getItem("neocoin") / 5) + (+localStorage.getItem("stonk") / 5);
+            let levelInt = Math.trunc(levelCalc);
+            localStorage.setItem("levels", levelInt);
             document.getElementById("levels").textContent = localStorage.getItem("levels");
             if(+localStorage.getItem("levels") >= 1000) {
                 document.getElementById("discountHolder").style.display = "block";
@@ -132,7 +142,9 @@ song2.onclick = function() {
         } else {
             neocoin -= price;
             localStorage.setItem("neocoin", neocoin);
-            localStorage.setItem("levels", +localStorage.getItem("neocoin") / 5 + +localStorage.getItem("stonk") / 5);
+            let levelCalc = (+localStorage.getItem("neocoin") / 5) + (+localStorage.getItem("stonk") / 5);
+            let levelInt = Math.trunc(levelCalc);
+            localStorage.setItem("levels", levelInt);
             document.getElementById("levels").textContent = localStorage.getItem("levels");
             if(+localStorage.getItem("levels") >= 1000) {
                 document.getElementById("discountHolder").style.display = "block";
@@ -160,7 +172,9 @@ bgjpg.onclick = function() {
         } else {
             neocoin -= price;
             localStorage.setItem("neocoin", neocoin);
-            localStorage.setItem("levels", +localStorage.getItem("neocoin") / 5 + +localStorage.getItem("stonk") / 5);
+            let levelCalc = (+localStorage.getItem("neocoin") / 5) + (+localStorage.getItem("stonk") / 5);
+            let levelInt = Math.trunc(levelCalc);
+            localStorage.setItem("levels", levelInt);
             document.getElementById("levels").textContent = localStorage.getItem("levels");
             if(+localStorage.getItem("levels") >= 1000) {
                 document.getElementById("discountHolder").style.display = "block";
@@ -178,7 +192,8 @@ bgjpg.onclick = function() {
         } else {
             neocoin -= price;
             localStorage.setItem("neocoin", neocoin);
-            localStorage.setItem("levels", +localStorage.getItem("neocoin") / 5 + +localStorage.getItem("stonk") / 5);
+            let levelInt = Math.trunc(levelCalc);
+            localStorage.setItem("levels", levelInt);
             document.getElementById("levels").textContent = localStorage.getItem("levels");
             if(+localStorage.getItem("levels") >= 1000) {
                 document.getElementById("discountHolder").style.display = "block";
@@ -201,11 +216,15 @@ function download(url, name) {
 
 let levels = 0;
 
-if(+localStorage.getItem("levels") > 0) {
-    levels = +localStorage.getItem("levels");
+let storedLevels = +localStorage.getItem("levels");
+if (storedLevels > 0) {
+    levels = storedLevels;
 }
 
-localStorage.setItem("levels", +localStorage.getItem("neocoin") / 5 + +localStorage.getItem("stonk") / 5);
+let levelCalc = (+localStorage.getItem("neocoin") / 5) + (+localStorage.getItem("stonk") / 5);
+let levelInt = Math.trunc(levelCalc);
+
+localStorage.setItem("levels", levelInt);
 
 document.getElementById("levels").textContent = localStorage.getItem("levels");
 
