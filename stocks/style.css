@@ -76,6 +76,7 @@ button:hover {
     width: 3rem;
 }
 
-#countdown {
+#tick {
     float: right;
+    display: none;
 }

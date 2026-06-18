@@ -48,7 +48,8 @@ function sell() {
 let enter;
 
 document.addEventListener("keydown", (event) => {
-    if(event.key == "Enter") {
+    if (event.key === "Enter" && !event.repeat) {
+        event.preventDefault();
         enter = true;
     }
 });
@@ -73,16 +74,8 @@ setInterval(function() {
     if(+localStorage.getItem("stockPrice") == oldPrice) { updatedPriceText.textContent = "-"; updatedPriceText.style.color = "orange" };
     if(+localStorage.getItem("stockPrice") < oldPrice)  { updatedPriceText.textContent = "↓"; updatedPriceText.style.color = "red" };
     priceText.innerText = price;
+    document.getElementById("tick").style.display = "block";
+    setTimeout(function() {
+        document.getElementById("tick").style.display = "none";
+    }, 250);
 }, 10000);
-
-let i = 0;
-
-setInterval(function () {
-    if(i == 10) {
-        countdownText.textContent = 10;
-        i = 0;
-    }
-
-    i++;    
-    countdownText.textContent = 10 - i;
-}, 1000);
