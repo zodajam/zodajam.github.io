@@ -1,6 +1,6 @@
-time = localStorage.getItem("time");
+let time = Number(localStorage.getItem("time")) || 0;
 
-setInterval(function() {
-    time++;
-    localStorage.setItem("time", time);
+setInterval(() => {
+    time += 1;
+    localStorage.setItem("time", String(time));
 }, 1000);
