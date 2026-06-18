@@ -66,7 +66,7 @@ setInterval(function() {
             price = 1;
             localStorage.setItem("stockPrice", price);
         } else {
-            price -= Math.floor(Math.random() * 5);
+            price = Math.max(0, price - Math.floor(Math.random() * 5));
         }
     } 
     localStorage.setItem("stockPrice", price);
