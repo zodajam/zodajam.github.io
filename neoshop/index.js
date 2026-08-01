@@ -14,7 +14,7 @@ const howToInstallArchTxt = document.getElementById("how-to-install-arch.txt");
 let price;
 
 howToInstallArchTxt.onclick = function() {
-    if(+localStorage.getItem("levels") >= 1000) { discount = true; } else { discount = false; }
+    if(+localStorage.getItem("levels") >= 100) { discount = true; } else { discount = false; }
     price = 100;
     if(discount) {
         price = price - price / 10;
@@ -25,7 +25,7 @@ howToInstallArchTxt.onclick = function() {
             neocoin -= price;
             localStorage.setItem("neocoin", neocoin);
             document.getElementById("levels").textContent = localStorage.getItem("levels");
-            if(+localStorage.getItem("levels") >= 1000) {
+            if(+localStorage.getItem("levels") >= 100) {
                 document.getElementById("discountHolder").style.display = "block";
             } else {
                 document.getElementById("discountHolder").style.display = "none";
@@ -42,7 +42,7 @@ howToInstallArchTxt.onclick = function() {
             neocoin -= price;
             localStorage.setItem("neocoin", neocoin);
             document.getElementById("levels").textContent = localStorage.getItem("levels");
-            if(+localStorage.getItem("levels") >= 1000) {
+            if(+localStorage.getItem("levels") >= 100) {
                 document.getElementById("discountHolder").style.display = "block";
             } else {
                 document.getElementById("discountHolder").style.display = "none";
@@ -57,7 +57,7 @@ howToInstallArchTxt.onclick = function() {
 const song1 = document.getElementById("song1");
 
 song1.onclick = function() {
-    if(+localStorage.getItem("levels") >= 1000) { discount = true; } else { discount = false; }
+    if(+localStorage.getItem("levels") >= 100) { discount = true; } else { discount = false; }
     price = 500;
     if(discount) {
         price = price - price / 10;
@@ -68,7 +68,7 @@ song1.onclick = function() {
             neocoin -= price;
             localStorage.setItem("neocoin", neocoin);
             document.getElementById("levels").textContent = localStorage.getItem("levels");
-            if(+localStorage.getItem("levels") >= 1000) {
+            if(+localStorage.getItem("levels") >= 100) {
                 document.getElementById("discountHolder").style.display = "block";
             } else {
                 document.getElementById("discountHolder").style.display = "none";
@@ -85,7 +85,7 @@ song1.onclick = function() {
             neocoin -= price;
             localStorage.setItem("neocoin", neocoin);
             document.getElementById("levels").textContent = localStorage.getItem("levels");
-            if(+localStorage.getItem("levels") >= 1000) {
+            if(+localStorage.getItem("levels") >= 100) {
                 document.getElementById("discountHolder").style.display = "block";
             } else {
                 document.getElementById("discountHolder").style.display = "none";
@@ -100,7 +100,7 @@ song1.onclick = function() {
 const song2 = document.getElementById("song2");
 
 song2.onclick = function() {
-    if(+localStorage.getItem("levels") >= 1000) { discount = true; } else { discount = false; }
+    if(+localStorage.getItem("levels") >= 100) { discount = true; } else { discount = false; }
     price = 500
     if(discount) {
         price = price - price / 10;
@@ -111,7 +111,7 @@ song2.onclick = function() {
             neocoin -= price;
             localStorage.setItem("neocoin", neocoin);
             document.getElementById("levels").textContent = localStorage.getItem("levels");
-            if(+localStorage.getItem("levels") >= 1000) {
+            if(+localStorage.getItem("levels") >= 100) {
                 document.getElementById("discountHolder").style.display = "block";
             } else {
                 document.getElementById("discountHolder").style.display = "none";
@@ -128,7 +128,7 @@ song2.onclick = function() {
             neocoin -= price;
             localStorage.setItem("neocoin", neocoin);
             document.getElementById("levels").textContent = localStorage.getItem("levels");
-            if(+localStorage.getItem("levels") >= 1000) {
+            if(+localStorage.getItem("levels") >= 100) {
                 document.getElementById("discountHolder").style.display = "block";
             } else {
                 document.getElementById("discountHolder").style.display = "none";
@@ -143,7 +143,7 @@ song2.onclick = function() {
 const bgjpg = document.getElementById("bg.jpg");
 
 bgjpg.onclick = function() {
-    if(+localStorage.getItem("levels") >= 1000) { discount = true; } else { discount = false; }
+    if(+localStorage.getItem("levels") >= 100) { discount = true; } else { discount = false; }
 
     price = 100;
     if(discount) {
@@ -155,7 +155,7 @@ bgjpg.onclick = function() {
             neocoin -= price;
             localStorage.setItem("neocoin", neocoin);
             document.getElementById("levels").textContent = localStorage.getItem("levels");
-            if(+localStorage.getItem("levels") >= 1000) {
+            if(+localStorage.getItem("levels") >= 100) {
                 document.getElementById("discountHolder").style.display = "block";
             } else {
                 document.getElementById("discountHolder").style.display = "none";
@@ -172,7 +172,7 @@ bgjpg.onclick = function() {
             neocoin -= price;
             localStorage.setItem("neocoin", neocoin);
             document.getElementById("levels").textContent = localStorage.getItem("levels");
-            if(+localStorage.getItem("levels") >= 1000) {
+            if(+localStorage.getItem("levels") >= 100) {
                 document.getElementById("discountHolder").style.display = "block";
             } else {
                 document.getElementById("discountHolder").style.display = "none";
@@ -195,7 +195,7 @@ document.getElementById("levels").textContent = localStorage.getItem("levels");
 
 let discount;
 
-if(+localStorage.getItem("levels") >= 1000) {
+if(+localStorage.getItem("levels") >= 100) {
     discount = true;
     document.getElementById("discountHolder").style.display = "block";
 } else {
