@@ -46,24 +46,28 @@ if (!isNaN(newBalance)) {
 
 balText.textContent = localStorage.getItem("neocoin");
 
+let casesOpened = +localStorage.getItem("casesOpened");
+
+if(+localStorage.getItem("casesOpened") >= 500) {
+  document.getElementById("cover").style.display = "block";
+  document.getElementById("amount").textContent = casesOpened;
+}
+
 function openCase() {
-  // Make the balance into a float so balance does not concatenate the number to the string
+  
   balance = parseFloat(balText.textContent);
 
-  // If the balance contains any character that is not a number this code will send message and stop executing
   if (isNaN(balance)) {
     alert("An error occurred. Please contact the developer.");
     return;
   }
 
-  // Check if the balance is 5 or less, if it is then send message and stop executing
-  // (This was "balance <= 0" which can give negative balance)
   if (balance < 5) {
-    // No need to add another onclick callback to the openCaseBtn element
     alert("no money!");
     return;
   }
 
+  +localStorage.setItem("casesOpened", casesOpened++);
   balance -= 5;
   localStorage.setItem("neocoin", balance);
   balText.textContent = localStorage.getItem("neocoin");
