@@ -89,14 +89,6 @@ if(localStorage.getItem("dropper5Owned") == 1) {
     }, 1);
 }
 
-if(localStorage.getItem("labOwned") == 1) {
-    setInterval(function() {
-        balance += Math.floor(Math.random() * 25);
-        localStorage.setItem("money", balance);
-        document.getElementById("money").textContent = balance;
-    }, 100);
-}
-
 let drugs = +localStorage.getItem("drugs");
 
 setInterval(function() {
@@ -158,7 +150,7 @@ function render() {
     ctx.fillRect(lab.x, lab.y, lab.width, lab.height);
     ctx.fillStyle = "mediumaquamarine";
     ctx.font = "30px Arial",
-    ctx.fillText("meth lab $10000", lab.x - 70, lab.y);
+    ctx.fillText("meth lab $10000 (TEMPORARY)", lab.x - 150, lab.y - 10);
 }
 
 document.getElementById("resetSave").addEventListener("click", () => {
@@ -167,9 +159,10 @@ document.getElementById("resetSave").addEventListener("click", () => {
     localStorage.setItem("dropper3Owned", 2);
     localStorage.setItem("dropper4Owned", 2);
     localStorage.setItem("dropper5Owned", 2);
-    localStorage.setItem("money", "0");
-    localStorage.setItem("drugs", "0");
-    localStorage.setItem("labOwned", 2);
+    +localStorage.setItem("money", 0);
+    +localStorage.setItem("drugs", 0);
+    document.getElementById("money").textContent = +localStorage.getItem("money");
+    document.getElementById("totalDrugs").textContent = +localStorage.getItem("drugs");
     location.reload();
 });
 
@@ -349,11 +342,10 @@ function game() {
         if(keys[" "]) {
             if(!labOwned) {
                 if(balance >= 10000) {
-                    labOwned = localStorage.setItem("labOwned", 1);
                     balance -= 10000;
-                    location.reload();
+                    labOwned = true;
                     setInterval(function() {
-                        balance += Math.floor(Math.random() * 25);
+                        balance += Math.floor(Math.random() * 100);
                         localStorage.setItem("money", balance);
                         document.getElementById("money").textContent = balance;
                     }, 100);
