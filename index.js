@@ -170,7 +170,11 @@ function enableHell() {
     });
 }
 
-function clearCanvas() { location.reload(); }
+function clearCanvas() { 
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    clearInterval(matrixInterval);
+    y = 0;
+}
 
 const bot_colors = [
     "blue",
