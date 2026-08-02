@@ -16,11 +16,14 @@ textarea {
     color: white;
     text-decoration-color: white;
     font-family: fixedsys;
+    width: 30rem;
+    height: 15rem;
 }
 
-#title {
+.title {
     background-color: navy;
     border: 4px ridge white;
+    width: fit-content;
 }
 
 #run {
@@ -31,4 +34,59 @@ textarea {
     font-family: fixedsys;
     cursor: pointer;
     padding-top: 2px;
+}
+
+#docs {
+    background-color: navy;
+    border: 4px ridge white;
+    outline: none;
+    color: white;
+    text-decoration-color: white;
+    padding: 0.5rem;
+}
+
+#canvasHolder {
+    border: 4px ridge white;
+    width: 30rem;
+    height: 16rem;
+    float: right;
+}
+
+#canvas {
+    width: 30rem;
+    height: 15rem;
+}
+
+.examples {
+    color: blue;
+    background-color: dodgerblue;
+    font-family: fixedsys;
+    width: fit-content;
+    padding: 0.5rem;
+}
+
+.examplesText {
+    border-top: 2px ridge white;
+    border-bottom: 2px ridge dimgray;
+    border-left: 2px ridge gray;
+    border-right: 2px ridge black;
+    background: linear-gradient(dodgerblue, navy);
+}
+
+#examplesTitle {
+    color: white;
+    border-top: 2px ridge yellow;
+    border-bottom: 2px ridge red;
+    border-left: 2px ridge orange;
+    border-right: 2px ridge orangered;
+    background: linear-gradient(yellow, red);
+}
+
+#docTitle {
+    color: white;
+    border-top: 2px ridge pink;
+    border-bottom: 2px ridge violet;
+    border-left: 2px ridge orange;
+    border-right: 2px ridge mediumvioletred;
+    background: linear-gradient(pink, purple);
 }
