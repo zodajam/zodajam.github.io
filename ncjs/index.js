@@ -9,7 +9,7 @@ function rect(x, y, width, height) {
 }
 
 function run() {
-    eval(document.getElementById("text").value);
+    eval(document.getElementById("textarea").value);
     ctx.fillStyle = fillStyle;
 }
 
@@ -20,3 +20,5 @@ function plusNeocoin() { +localStorage.setItem("neocoin", neocoin++); }
 function setBackground(color) { document.body.style.backgroundColor = color; }
 
 function setColor(color) { document.body.style.color = color; }
+
+let text = document.getElementById("text");

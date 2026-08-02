@@ -9,11 +9,11 @@
 </head>
 <body>
     <span class="title">neocoral javascript</span><button id="run" onclick="run()">run</button><br>
-    <textarea cols="55" rows="15" style="resize: none;" id="text"></textarea>
+    <textarea cols="55" rows="15" style="resize: none;" id="textarea"></textarea>
     <div id="canvasHolder">
         <span>drawing canvas</span>
         <canvas id="canvas"></canvas>
-    </div><br><br>
+    </div><p id="text">you can change this text in the javascript editor. the variable name is <span class="yellow">text</span> and can be changed by <span class="cyan">text.textContent</span> <span class="red">=</span> <span class="lime">"<span class="green">text</span>"</span></p><br><br>
     <div id="docs">
         <span id="docTitle">DOCUMENTATION</span><br>
         <span class="cyan">plusNeocoin()</span> gives you one neocoin. can be put in a loop or interval to easily farm neocoins. <span class="red">NOTE: DO NOT PUT IN WHILE LOOPS</span><br>
@@ -61,6 +61,14 @@ function game() {
 }
 
 game();
+        </pre>
+
+        <span class="examplesText">get 600 neocoins every minute!</span>
+        <pre class="examples">
+setInterval(function() {
+    plusNeocoin();
+    text.textContent = "neocoins: " + +localStorage.getItem("neocoin");
+}, 100);
         </pre>
     </div>
     <script src="index.js"></script>
