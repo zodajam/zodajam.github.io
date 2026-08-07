@@ -1,7 +1,43 @@
 body {
     margin: 0;
     overflow: hidden;
+    font-family: font;
+    color: white;
 }
 
-#canvas { background-color: black; }
+@font-face {
+    font-family: font;
+    src: url(../fonts/FSEX300.ttf);
+}
 
+#canvas {
+    background-color: black;
+    display: none;
+}
+
+#cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    height: 150vh;
+    text-align: center;
+}
+
+button {
+    border: none;
+    box-shadow: 4px 4px dimgray;
+    background-color: white;
+    font-family: font;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    cursor: pointer;
+    position: relative;
+}
+
+button:hover {
+    top: -2px;
+}

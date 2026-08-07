@@ -1,16 +1,21 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-let fillStyle = "red";
-ctx.fillStyle = fillStyle;
-
-function rect(x, y, width, height) {
-    ctx.fillRect(x, y, width, height);
-}
+let fillStyle = "";
 
 function run() {
-    eval(document.getElementById("textarea").value);
+    if(fillStyle === "") {
+        fillStyle = "red";
+    }
+
     ctx.fillStyle = fillStyle;
+
+    eval(document.getElementById("textarea").value);
+}
+
+function rect(x, y, width, height) {
+    ctx.fillStyle = fillStyle;
+    ctx.fillRect(x, y, width, height);
 }
 
 let neocoin = +localStorage.getItem("neocoin");
